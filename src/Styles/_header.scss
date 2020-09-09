@@ -1,0 +1,100 @@
+.headerContainer {
+    @include dropShadow();
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    background: $primaryColorDark;
+    display: flex;
+    justify-content: space-between;
+    font-family: $headingFont;
+    font-style: italic;
+    z-index: 500;
+    .appName {
+        font-size: 1.2em;
+        line-height: 0.9em;
+        margin: 0 10px;
+        color: $primaryColorLight;
+        a, a:hover {
+            color: $primaryColorLight;
+            text-decoration: none;
+        }
+    }
+    .nav {
+        .screenMenu {
+        display: inline-block;
+        margin: 0;
+        @include laPhone {
+            display: none;
+        }
+            li{
+            display: inline;
+            list-style: none;
+            margin: 0 20px;
+            color: $primaryColorLight;
+            font-family: $bodyFont;
+            font-style: normal;
+            font-size: 0.9em;
+                a {
+                text-decoration: none;
+                color: $primaryColorLight;
+                    &:hover{
+                        color: $keyColorOne;
+                        transition-duration: 300ms;
+                    }
+                    &::after{
+                        @include afterUnderline();
+                    }
+                    &:hover::after{
+                        @include hoverUnderline();
+                    }
+                }
+            }
+        }
+        img {
+            width: 20px;
+            display: none;
+            margin: 0 10px;
+            @include laPhone {
+                display: inline-block;
+            }
+        }
+    }
+}
+// Mobile Nav //
+.mobileMenu {
+    width: calc(100vw - 20px);
+    min-height: 100px;
+    padding: 40px 10px 10px 10px;
+    background: $primaryColorDark;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: -1;
+    ul {
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+        margin: 40px auto;
+        color: #ffffff;
+        font-family: $bodyFont;
+      }
+      ul li a, ul li a:hover {
+        text-decoration: none;
+        color: #ffffff;
+      }
+  }
+  .white-screen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba(224, 224, 224 ,0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+  }

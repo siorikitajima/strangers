@@ -1,0 +1,107 @@
+/* ====== COLOR ====== */
+$primaryColorDark: rgb(34, 34, 34);
+$primaryColorLight: rgb(224, 224, 224);
+$keyColorOne: rgb(255, 53, 98);
+$keyColorTwo: rgb(30, 85, 92);
+$keyColorThree: rgb(239, 160, 11);
+$keyColorFour: rgb(49, 10, 49);
+$keyColorFive: rgb(220, 96, 46);
+
+/* ====== FONTS ====== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+$headingFont: 'Playfair Display', serif;;
+$bodyFont: 'Montserrat', sans-serif;
+
+/* ====== GLOBAL ELEMENTS ====== */
+// Link hover over effect
+@mixin afterUnderline($color: $keyColorOne) {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $color;
+    bottom: -1px;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+@mixin hoverUnderline {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+// Dropshadow for overlapping elements
+@mixin dropShadow {
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.5);
+}
+
+
+/* ====== BREAK POINTS ====== */
+$smPhone: 420px;
+$laPhone: 600px;
+$smTablet: 800px;
+$laTablet: 1000px;
+@mixin smPhone {
+    @media (max-width: #{$smPhone}) {
+        @content;
+    }
+ }
+ @mixin laPhone {
+    @media (max-width: #{$laPhone}) {
+        @content;
+    }
+ }
+ @mixin smTablet {
+    @media (max-width: #{$smTablet}) {
+        @content;
+    }
+ }
+ @mixin laTablet {
+    @media (max-width: #{$laTablet}) {
+        @content;
+    }
+ }
+
+ /* ====== PAGE GLOBAL ====== */
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ @mixin pageContainer {
+    width: 100%;
+    height: calc(100% - 80px);
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px 0;
+    color: $primaryColorDark;
+    overflow: scroll;
+    h1 {
+        font-family: $headingFont;
+        font-style: italic;
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 1.8em;
+        @include smTablet() {
+            font-size:1.6em
+        }
+        @include laPhone() {
+            font-size:1.4em
+        }
+    }
+    p {
+        font-family: $bodyFont;
+        line-height: 1.5em;
+        width: 700px;
+        max-width: 80%;
+        text-align: justify;
+        margin: 20px auto;
+    }
+    h4 {
+        margin: 30px auto 0 auto;
+    }
+ }

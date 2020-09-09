@@ -1,0 +1,38 @@
+.about {
+    @include pageContainer();
+
+    h4 {
+        font-family: $bodyFont;
+        font-style: italic;
+        font-weight: normal;
+    }
+  }
+
+.aboutImages {
+    width: 160px;
+}
+
+.embedVideo {
+    width: 700px;
+    max-width: 80%;
+    height: 340px;
+    margin: 40px auto;
+    background: $primaryColorDark;
+    color: $primaryColorLight;
+    padding-top: 30px;;
+}
+
+p.aboutCredit {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.logos img {
+    width: 200px;
+    margin: 20px;
+    @include laPhone(){
+        width: 120px;
+        margin: 20px 20px 60px 20px;
+    }
+}

@@ -1,0 +1,200 @@
+@mixin optionPanels {
+    @include dropShadow();
+    width: calc(100vw - 80px);
+    height: 60px;
+    background: $primaryColorDark;
+    position: fixed;
+    bottom: 0;   
+    color: $primaryColorLight;
+    padding: 20px 40px;
+    @include smTablet(){
+        width: calc(100vw - 40px);
+        height: 140px;
+        padding: 20px;
+    }
+    @include smPhone(){
+        height: 170px;
+        padding: 20px;
+    }
+    div {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        @include laTablet(){
+            justify-content: left;
+        }
+        @include smTablet(){
+            display: block;
+        }
+        .width400 {
+            width: 400px;
+            height: auto;
+            @include laTablet(){
+                display: none;
+            }
+        }
+        .width200 {
+            width: 200px;
+            height: auto;
+            @include laTablet(){
+                display: none;
+            }
+        }
+        .trackWrapper {
+            width: 400px;
+            height: auto;
+            display: flex;
+            @include smPhone(){
+                display: block;
+            }
+        }
+    }
+    .trackInfo {
+        text-align: left;
+        display: inline-block;
+        @include smTablet(){
+            display: block;
+        }
+        h3, p {
+            width: 330px;
+        }
+        h3 {
+            font-family: $headingFont;
+            font-size: 1em;
+            margin: 2px 0 4px 20px;
+            @include smPhone(){
+                margin: 2px 0 4px 0;
+            }
+        }
+        p {
+            font-size: 0.7em;
+            margin: 0 0 0 20px;
+            @include smPhone(){
+                margin: 0;
+            }
+        }
+    }
+    .playButton {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url(../Images/Pause_btn.svg);
+        margin: 5px 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+            transition-duration: 300ms;
+        }
+        @include smTablet(){
+            display: block;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+    }
+    .numberBtns {
+        margin: 0 20px;
+        display: flex;
+        @include smTablet(){
+            margin: 20px 10px;
+        }
+        @include smPhone(){
+            margin: 10px 0;
+        }
+        div {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-left: 30px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 18px;
+            font-family: $bodyFont;
+            font-weight: bold;
+            cursor: pointer;
+            &:nth-of-type(1){
+                background: $keyColorOne;
+                color: $primaryColorDark;
+            }
+            &:nth-of-type(2){
+                background: $keyColorTwo;
+            }
+            &:nth-of-type(3){
+                background: $keyColorThree;
+                color: $primaryColorDark;
+            }
+            &:hover {
+                opacity: 0.5;
+                transition-duration: 300ms;
+            }
+            @include laTablet(){
+                width: 22px;
+                height: 22px;
+                padding: 14px;
+                margin-top: 5px;
+                margin-left: 20px;
+            }
+            @include smTablet(){
+                &:nth-of-type(1){
+                    margin-left: 0;
+                }
+            }
+            @include smPhone(){
+                width: 22px;
+                height: 22px;
+                padding: 10px;
+                margin-top: 5px;
+                margin-left: 15px;
+            }
+        }
+    }
+    .postInput {
+        display: flex;
+        @include laTablet{
+            display: block;
+        }
+        textarea, input {
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        }
+        textarea {
+        width: 500px;
+        max-width: calc(100% - 70px);
+        font-size: 1.2em;
+        @include laTablet {
+            height: 120px;
+            width: 300px;
+            max-width: calc(100% - 40px);
+            display: block;
+            margin: 0 auto;
+            font-size: 1.4em;
+        }
+        }
+        input {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+        background-color: $primaryColorDark;
+        background-image: url(../Images/Send_btn.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        &:hover {
+            background-color: $keyColorOne;
+            transition-duration: 300ms;
+        }
+        @include laTablet {
+            height: 40px;
+            width: 100px;
+            display: block;
+            margin-left: unset;
+            margin: 10px auto;
+            background-color: $keyColorOne;
+            background-position-x: center;
+        }
+        }
+    }
+}

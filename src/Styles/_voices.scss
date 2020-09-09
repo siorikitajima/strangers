@@ -1,0 +1,104 @@
+.voices {
+    @include pageContainer();
+  }
+
+.voiceContainer {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+    grid-auto-rows: min-content;
+    @include smTablet() {
+        margin: 30px auto;
+        grid-gap: 10px;
+    }
+    @include laPhone() {
+        width: 90%;
+        margin: 20px auto 60px auto;
+    }
+}
+
+.voice {
+    padding: 20px;
+    border-radius: 5px;
+    background: $keyColorOne;
+    position: relative;
+    &:nth-of-type(5n+0) {
+        background: $keyColorTwo;
+        color: $primaryColorLight;
+    }
+    &:nth-of-type(5n+1) {
+        background: $keyColorThree;
+    }
+    &:nth-of-type(5n+2) {
+        background: $keyColorFour;
+        color: $primaryColorLight;
+    }
+    &:nth-of-type(5n+3) {
+        background: $keyColorFive;
+    }
+    h3::before, h3::after {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        opacity: 0.5;
+    }
+    h3::before {
+        content: url(../Images/quoteOpen.svg);
+        left: 10px;
+    }
+    h3::after {
+        content: url(../Images/quoteClose.svg);
+        right: 10px;
+    }
+    .byline {
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+
+.postvoice {
+    width: 170px;
+    height: 170px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: url(../Images/leftTriangle.svg) no-repeat left bottom;
+    z-index: 500;
+    cursor: pointer;
+    h4 {
+        font-size: 0.7em;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        margin: 0;
+        opacity: 0;
+        font-family: $bodyFont;
+        font-weight: normal;
+        color: $primaryColorLight;
+        @include laPhone() {
+            opacity: 0.5;
+        }
+    }
+}
+.postvoice:hover {
+    h4 {
+        opacity: 0.5;
+        transition-duration: 200ms;
+    }
+}
+
+.postOption {
+    z-index: 450;
+    @include optionPanels();
+    div {
+    justify-content: center;
+    }
+    @include laTablet(){
+        height: 300px;
+        padding: 20px;
+        width: calc(100vw - 40px);
+    }
+}

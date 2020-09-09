@@ -1,0 +1,42 @@
+.data {
+    @include pageContainer();
+  }
+
+.dataVizContainer {
+    margin: 40px auto 0 auto;
+    .dataVizImg {
+        width: 700px;
+        height: 200px;
+        max-width: 80%;
+        margin: 20px auto;
+        padding: 20px 0;
+        background: rgb(173, 173, 173) url(../Images/aGirl.svg) repeat;
+        background-size: 17%;
+    }
+    .dataText {
+        p {
+            text-align: center;
+            b, span {
+                color: $keyColorOne;
+            }
+            span {
+            font-size: 3em;
+            font-family: $headingFont;
+            font-style: italic;
+            }
+    }
+    }
+    .dataSources {
+        background: rgb(173, 173, 173);
+        padding: 20px 0;
+        h4 {
+            font-family: $bodyFont;
+            font-style: italic;
+            font-weight: normal;
+        }
+        p {
+        text-align: center;
+        font-size: 0.9em;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.scene {
+    @include pageContainer();
+    margin-top: 0;
+    height: 100vh;
+    // iframe {
+    //     top: 0;
+    //     left: 0;
+    //     position: fixed;
+    // }
+}
