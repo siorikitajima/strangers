@@ -43,7 +43,7 @@ $bodyFont: 'Montserrat', sans-serif;
 $smPhone: 420px;
 $laPhone: 600px;
 $smTablet: 800px;
-$laTablet: 1000px;
+$laTablet: 960px;
 @mixin smPhone {
     @media (max-width: #{$smPhone}) {
         @content;
@@ -63,7 +63,17 @@ $laTablet: 1000px;
     @media (max-width: #{$laTablet}) {
         @content;
     }
+}
+@mixin laTabletLandcape {
+    @media (max-width: #{$laTablet}) and (orientation: landscape) {
+        @content;
+    }
  }
+ @mixin laTabletPortrait {
+    @media (max-width: #{$laTablet}) and (orientation: portrait)    {
+        @content;
+    }
+}
 
  /* ====== PAGE GLOBAL ====== */
 
@@ -76,10 +86,17 @@ $laTablet: 1000px;
     width: 100%;
     height: calc(100% - 80px);
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 40px 0;
     color: $primaryColorDark;
     overflow: scroll;
+    @include laTablet(){
+        margin-top: 40px;
+    }
+    @include laPhone(){
+        margin-top: 30px;
+        height: calc(100% - 60px);
+    }
     h1 {
         font-family: $headingFont;
         font-style: italic;

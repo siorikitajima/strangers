@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import MenuIcon from '../Images/menu.svg'
 import {useTransition, animated} from 'react-spring';
 import NavMenuMobile from './NavMenuMobile';
+import PBLogoL from '../Images/patternbasedlogo-light.png';
+import VeryLogoL from '../Images/verylogo-light.png';
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false)
@@ -20,7 +22,7 @@ function Header() {
     return(
         <header className="headerContainer">
             <div className="appName">
-                <Link to="/"
+                <Link to="/#"
                 onClick={() => setShowMenu(false)}>
                 Strangers in my Head
                 </Link>
@@ -33,7 +35,7 @@ function Header() {
                         </Link>
                     </li>
                         <li>
-                        <Link to="/voice">
+                        <Link to="/voices">
                             Voices
                         </Link>
                     </li>
@@ -43,12 +45,17 @@ function Header() {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/help">
+                            Help
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/about">
                             About
                         </Link>
-                    </li>
+                    </li>                  
                 </ul>
-                <img src={MenuIcon} alt="MenuIcon" onClick={() => setShowMenu(!showMenu)}/>
+                <img src={MenuIcon} alt="MenuIcon" className="mobileMenuIcon" onClick={() => setShowMenu(!showMenu)}/>
                 {
                     masktransition.map(({ item, key, props}) =>
                     item && 
@@ -71,6 +78,14 @@ function Header() {
                     </animated.div>)
                 }  
             </div>
+            <ul className="headerLogos">
+                    <li className="headerLogo">
+                        <a href="https://patternbased.com/" target="_blank"><img src={PBLogoL} alt="PB logo"/></a>
+                    </li>
+                    <li className="headerLogo">
+                        <a href="https://very.sg/" target="_blank"><img src={VeryLogoL} alt="Very logo"/></a>
+                    </li>
+                </ul>
         </header>
     );
 }

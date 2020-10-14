@@ -1,7 +1,7 @@
 .headerContainer {
     @include dropShadow();
     width: calc(100% - 20px);
-    height: 20px;
+    height: 40px;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -11,27 +11,35 @@
     font-family: $headingFont;
     font-style: italic;
     z-index: 500;
+    @include laTablet {
+        height: 20px;
+    }
     .appName {
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 0.9em;
-        margin: 0 10px;
+        margin: 14px;
         color: $primaryColorLight;
         a, a:hover {
             color: $primaryColorLight;
             text-decoration: none;
         }
+        @include laTablet {
+            font-size: 1em;
+            margin: 4px 10px;
+        }
     }
     .nav {
+        display: block;
         .screenMenu {
-        display: inline-block;
-        margin: 0;
-        @include laPhone {
+        margin: 10px 20px;
+        padding-inline-start: 0;
+        @include laTablet {
             display: none;
         }
             li{
             display: inline;
             list-style: none;
-            margin: 0 20px;
+            margin: 0 16px;
             color: $primaryColorLight;
             font-family: $bodyFont;
             font-style: normal;
@@ -52,13 +60,35 @@
                 }
             }
         }
-        img {
+        img.mobileMenuIcon {
             width: 20px;
             display: none;
             margin: 0 10px;
-            @include laPhone {
+            @include laTablet {
                 display: inline-block;
             }
+        }
+    }
+}
+.headerLogos {
+    padding-inline-start: 0;
+    margin: 0;
+    display: block;
+    @include laTablet {
+    display: none;
+    }
+    .headerLogo {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        margin: 2px 10px;
+        img {
+            width: 36px;
+            height: 36px;
+        }
+        &:hover {
+            opacity: 0.5;
+            transition-duration: 300ms;
         }
     }
 }
@@ -78,13 +108,19 @@
     }
     ul li {
         list-style: none;
-        margin: 40px auto;
+        margin: 32px auto;
         color: #ffffff;
         font-family: $bodyFont;
       }
       ul li a, ul li a:hover {
         text-decoration: none;
         color: #ffffff;
+      }
+      img.headerLogo {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: 10px 10px 0 10px;
       }
   }
   .white-screen {

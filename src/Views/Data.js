@@ -1,20 +1,16 @@
 import React from 'react';
 import SoothingIcon from '../Components/SoothingIcon';
 import DataTop from '../Components/DataTop';
-import Data1in7 from '../Components/Data1in7';
-import DataMDD from '../Components/DataMDD';
+import DataTabs from '../Components/DataTabs';
 import DataSources from '../Components/DataSources';
 
 function Data() {
+    // const [key, setKey] = useState('overview');
+
     return(
         <div className="data">
             <DataTop/>
-            <Data1in7/>
-            <DataMDD/>
-            <Data1in7/>
-            <DataMDD/>
-            <Data1in7/>
-            <DataMDD/>
+            <DataTabs/>
             <DataSources/>
             <SoothingIcon/>
         </div>

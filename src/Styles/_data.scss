@@ -1,9 +1,67 @@
 .data {
     @include pageContainer();
+    padding: 40px 0 0 0;
+    p {
+        @include laPhone(){
+            max-width: 90%;
+        }
+    }
+    #dataTab, #HelpTab {
+        width: 700px;
+        display: block;
+        padding: 14px calc(50% - 350px) 14px calc(50% - 350px);
+        margin: 20px auto 0 auto;
+        background-color: $primaryColorDark;
+        // border-bottom: $keyColorOne 5px solid;
+        @include laTablet(){
+            width: 80vw;
+            padding: 14px 10vw 14px 10vw;
+        }
+        @include laPhone(){
+            width: 90vw;
+            padding: 10px 5vw 10px 5vw;
+        }
+        .tabs{
+            list-style: none;
+            width: fit-content;
+            display: inline-block;
+            font-family: $bodyFont;
+            color: $primaryColorLight;
+            padding: 10px 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            a { 
+                padding: 8px 10px;
+            &:hover {
+                color: $keyColorOne;
+                transition-duration: 300ms;
+            }
+            }
+            .selectedTab {
+                border-radius: 4px;
+                background-color: $keyColorOne;
+                color: $primaryColorLight;
+                &:hover {
+                  color: $primaryColorLight;
+              }
+            }
+            @include laPhone(){
+                padding: 7px 5px;
+                a { 
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
   }
 
 .dataVizContainer {
     margin: 40px auto 0 auto;
+    @include laPhone(){
+        margin: 30px auto 0 auto;
+    }
     .dataVizImg {
         width: 700px;
         height: 200px;
@@ -12,6 +70,9 @@
         padding: 20px 0;
         background: rgb(173, 173, 173) url(../Images/aGirl.svg) repeat;
         background-size: 17%;
+        @include laPhone(){
+            max-width: 90%;
+        }
     }
     .dataText {
         p {
@@ -24,19 +85,176 @@
             font-family: $headingFont;
             font-style: italic;
             }
+            @include laPhone(){
+                max-width: 90%;
+            }
     }
     }
     .dataSources {
         background: rgb(173, 173, 173);
         padding: 20px 0;
+        @include laPhone(){
+            padding: 20px 0 140px 0;
+        }
         h4 {
             font-family: $bodyFont;
             font-style: italic;
             font-weight: normal;
+            margin: 10px auto;
         }
         p {
         text-align: center;
         font-size: 0.9em;
         }
+    }
+p.helpList {
+        margin-bottom: 50px;
+        span {
+            font-weight: bold;
+            font-size: 1.2em;
+            display: inline-block;
+            margin: 30px 0 5px 0;
+            @include laPhone(){
+                margin: 40px 0 5px 0;
+            }
+            &:first-of-type {
+                margin: 0 0 5px 0;
+                @include laPhone(){
+                    margin: 10px 0 5px 0;
+                }
+            }
+        }
+    }
+p.helpList a {
+        position: relative;
+    &::after {
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: $keyColorOne;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        z-index: -1;
+    }
+    &:nth-of-type(5n+0)::after {
+        background-color: $keyColorTwo;
+    }
+    &:nth-of-type(5n+1)::after {
+        background-color: $keyColorThree;
+    }
+    &:nth-of-type(5n+2)::after {
+        background-color: $keyColorFour;
+    }
+    &:nth-of-type(5n+3)::after {
+        background-color: $keyColorFive;
+    }
+    &:hover::after {
+        height: 20px;
+        opacity: 0.5;
+        transition-duration: 300ms;
+    }
+    }
+p.helpList a.helpBtn {
+    display: inline-block;
+    padding: 10px 10px 10px 40px;
+    margin: 8px 14px 0 0;
+    font-weight: bold;
+    color: $primaryColorLight;
+    @include laPhone(){
+        padding: 7px 10px 5px 36px;
+        margin: 14px 14px 0 0;
+    }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: $keyColorOne;
+        position: absolute;
+        border-radius: 4px;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &:nth-of-type(5n+0)::after {
+        background-color: $keyColorTwo;
+    }
+    &:nth-of-type(5n+1)::after {
+        background-color: $keyColorThree;
+    }
+    &:nth-of-type(5n+2)::after {
+        background-color: $keyColorFour;
+    }
+    &:nth-of-type(5n+3)::after {
+        background-color: $keyColorFive;
+    }
+    &:hover::after {
+        opacity: 0.5;
+        transition-duration: 300ms;
+    }
+}
+p.helpList a.phone {
+    position: relative;
+    &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../Images/Phone_icon.svg);
+    background-size: 36px 36px;
+    background-position: 3px 3px;
+    @include laPhone(){
+        width: 32px;
+        height: 32px;
+        background-size: 30px 30px;
+    }
+    }
+}
+p.helpList a.weburl {
+    position: relative;
+        &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        background-image: url(../Images/Web_icon.svg);
+        background-size: 36px 36px;
+        background-position: 3px 3px;
+        @include laPhone(){
+            width: 32px;
+            height: 32px;
+            background-size: 30px 30px;
+        }
+        }
+    }
+    h2, h3 {
+        font-family: $headingFont;
+        font-style: italic;
+        margin: 30px auto 0 auto;
+        max-width: 80%;
+        @include laPhone(){
+            max-width: 90%;
+        }
+    }
+}
+
+.helpLink {
+    height: auto;
+    font-family: $bodyFont;
+    font-weight: bold;
+    color: $primaryColorLight;
+    width: 700px;
+    max-width: 80%;
+    padding: 10px;
+    margin: 30px auto 50px auto;
+    border-radius: 4px;
+    background-color: $keyColorOne;
+    &:hover {
+        opacity: 0.5;
+        transition-duration: 300ms;
     }
 }
