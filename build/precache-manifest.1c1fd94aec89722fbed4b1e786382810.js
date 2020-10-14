@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd9d6d39bf6d740bf08cefde445720fa",
+    "revision": "81482f420b52d3a5b08955ffc1db8aad",
     "url": "/strangers/index.html"
   },
   {
-    "revision": "3ec6325a900cfe4de7bd",
-    "url": "/strangers/static/css/main.ca98b27d.chunk.css"
+    "revision": "9246cc408be6251c256f",
+    "url": "/strangers/static/css/main.e13c685a.chunk.css"
   },
   {
-    "revision": "5a127247210a7c6b943f",
-    "url": "/strangers/static/js/2.82849539.chunk.js"
+    "revision": "e0ef635608506b24d302",
+    "url": "/strangers/static/js/2.e1aa7b96.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/strangers/static/js/2.82849539.chunk.js.LICENSE.txt"
+    "url": "/strangers/static/js/2.e1aa7b96.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3ec6325a900cfe4de7bd",
-    "url": "/strangers/static/js/main.414ea44b.chunk.js"
+    "revision": "9246cc408be6251c256f",
+    "url": "/strangers/static/js/main.0cfc34de.chunk.js"
   },
   {
     "revision": "f65ac0104e05f8b69b70",
@@ -32,8 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/strangers/static/media/Pause_btn.a0754566.svg"
   },
   {
+    "revision": "769a4645f8ac51829dae6fd327d0c544",
+    "url": "/strangers/static/media/Phone_icon.769a4645.svg"
+  },
+  {
     "revision": "78cf1435bc17f912c782df04f784280e",
     "url": "/strangers/static/media/Send_btn.78cf1435.svg"
+  },
+  {
+    "revision": "cdf1f7acfb5a740507aab73a0ab401ec",
+    "url": "/strangers/static/media/Web_icon.cdf1f7ac.svg"
   },
   {
     "revision": "598f7af9aa047f8575a4c4e4b37c3a0e",
@@ -52,8 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/strangers/static/media/menu.36454b67.svg"
   },
   {
+    "revision": "162513c659bd8ef3f6c2f36d0c94ca3a",
+    "url": "/strangers/static/media/numbers-animation.162513c6.gif"
+  },
+  {
     "revision": "994e5855ffa70477309dc4b253cc550a",
     "url": "/strangers/static/media/opening-title.994e5855.jpg"
+  },
+  {
+    "revision": "9d7cbfaa939ee61463effea4f27d6add",
+    "url": "/strangers/static/media/patternbasedlogo-light.9d7cbfaa.png"
   },
   {
     "revision": "7d94b185a2b2a4b131b213f681f23164",
