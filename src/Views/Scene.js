@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import SoothingIcon from '../Components/SoothingIcon';
 import Iframe from 'react-iframe';
 import SceneModal from '../Components/SceneModal';
@@ -21,7 +21,7 @@ function ResponsiveIFrame() {
     display="initial"
     position="relative"
     frameBorder="none"
-    styles={{margin: "0"},{border: "none"}}/>
+    styles={{margin: "0", border: "none"}}/>
 };
 
 function ScreenIFrame() {
@@ -32,7 +32,7 @@ function ScreenIFrame() {
     display="initial"
     position="relative"
     frameBorder="none"
-    styles={{margin: "0"},{border: "none"}}/>
+    styles={{margin: "0", border: "none"}}/>
 };
 
 function IFrameSize() {

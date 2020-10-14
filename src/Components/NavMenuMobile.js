@@ -20,13 +20,13 @@ function NavMenuMobile(props){
                     </Link>
                 </li>
                 <li>
-                    <Link to="/data"
+                    <Link to="/data/general"
                     onClick={props.closeMenu}>
                         Data
                     </Link>
                 </li>
                 <li>
-                    <Link to="/help"
+                    <Link to="/help/general"
                     onClick={props.closeMenu}>
                         Find Help
                     </Link>
@@ -39,8 +39,8 @@ function NavMenuMobile(props){
                 </li>       
                 <li>
                 <a href="https://patternbased.com/"
-                 target="_blank"><img src={PBLogoL} alt="PB logo" className="headerLogo"/></a>
-                <a href="https://very.sg/" target="_blank"><img src={VeryLogoL} alt="Very logo" className="headerLogo"/></a>
+                 rel="noopener noreferrer" target="_blank"><img src={PBLogoL} alt="PB logo" className="headerLogo"/></a>
+                <a href="https://very.sg/" rel="noopener noreferrer" target="_blank"><img src={VeryLogoL} alt="Very logo" className="headerLogo"/></a>
                 </li>
             </ul>
         </div>

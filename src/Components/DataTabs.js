@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    // BrowserRouter as Router,
     Switch,
     Route,
     NavLink,
     useRouteMatch
   } from "react-router-dom";
-import DataOverview from './DataOverview';
+import DataGeneral from './DataGeneral';
 import DataDepression from './DataDepression';
 import DataBipolar from './DataBipolar';
 import DataAnxiety from './DataAnxiety';
@@ -22,8 +22,8 @@ function DataTabs() {
         <div>
             <ul id="dataTab">
                 <li className="tabs">
-                <NavLink to={`${url}/overview`} activeClassName = "selectedTab"
-                >Overview</NavLink>
+                <NavLink to={`${url}/general`} activeClassName = "selectedTab"
+                >General</NavLink>
                 </li>
                 <li className="tabs">
                 <NavLink to={`${url}/depression`} activeClassName = "selectedTab">Depression</NavLink>
@@ -49,10 +49,10 @@ function DataTabs() {
             </ul>
             <Switch>
                 <Route exact path={path}>
-                    <DataOverview/>
+                    <DataGeneral/>
                 </Route>
-                <Route exact path={`${path}/overview`}>
-                    <DataOverview/>
+                <Route exact path={`${path}/general`}>
+                    <DataGeneral/>
                 </Route>
                 <Route path={`${path}/depression`}>
                     <DataDepression/>

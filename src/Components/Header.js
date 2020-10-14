@@ -40,12 +40,12 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/data">
+                        <Link to="/data/general">
                             Data
                         </Link>
                     </li>
                     <li>
-                        <Link to="/help">
+                        <Link to="/help/general">
                             Help
                         </Link>
                     </li>
@@ -80,10 +80,10 @@ function Header() {
             </div>
             <ul className="headerLogos">
                     <li className="headerLogo">
-                        <a href="https://patternbased.com/" target="_blank"><img src={PBLogoL} alt="PB logo"/></a>
+                        <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank"><img src={PBLogoL} alt="PB logo"/></a>
                     </li>
                     <li className="headerLogo">
-                        <a href="https://very.sg/" target="_blank"><img src={VeryLogoL} alt="Very logo"/></a>
+                        <a href="https://very.sg/" rel="noopener noreferrer" target="_blank"><img src={VeryLogoL} alt="Very logo"/></a>
                     </li>
                 </ul>
         </header>

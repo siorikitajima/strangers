@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DataOverview() {
+function DataGeneral() {
     return(
         <div className="dataVizContainer">
             <div className="dataVizImg">
@@ -24,4 +24,4 @@ function DataOverview() {
     );
 }
 
-export default DataOverview;
+export default DataGeneral;
