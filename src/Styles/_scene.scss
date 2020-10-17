@@ -108,3 +108,7 @@
         margin: 0;
     }
 }
+
+.info {
+    @include pageContainer();
+}

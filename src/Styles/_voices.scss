@@ -38,6 +38,7 @@
     &:nth-of-type(5n+3) {
         background: $keyColorFive;
     }
+    h3 {font-size: 1em;}
     h3::before, h3::after {
         width: 20px;
         height: 20px;
@@ -56,6 +57,7 @@
     .byline {
         font-size: 0.8em;
         text-align: center;
+        margin: 10px auto;
     }
 }
 
@@ -66,6 +68,7 @@
     left: 0;
     bottom: 0;
     background: url(../Images/leftTriangle.svg) no-repeat left bottom;
+    background-size: cover;
     z-index: 500;
     cursor: pointer;
     h4 {
@@ -93,15 +96,29 @@
 .postOption {
     z-index: 450;
     @include optionPanels();
-    height: 400px;
+    height: calc(100% - 100px);
     display: block;
+    h2 {
+        font-family: $headingFont;
+        font-style: italic;
+        margin-top: 40px;
+        @include laPhone(){
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        @include smPhone(){
+            font-size: 1.3em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
     @include laTablet(){
-        height: 50%;
+        height: calc(100% - 80px);
         padding: 20px;
         width: calc(100vw - 40px);
     }
     @include laPhone(){
-        height: 80%;
+        height: calc(100% - 80px);
     }
     .postInput {
         display: block;
@@ -111,7 +128,7 @@
         @include laPhone {
             width: 100%;
         }
-        textarea, select, input {
+        .quoteForm, .issueSelect {
         width: 500px;
         max-width: calc(100% - 70px);
         border-radius: 5px;
@@ -121,7 +138,7 @@
         background: $primaryColorDark;
         color: $primaryColorLight;
         font-family: $bodyFont;
-        font-size: 1.2em;
+        font-size: 1.1em;
         @include laTablet {
             max-width: calc(100% - 40px);
             font-size: 1.4em;
@@ -129,32 +146,59 @@
         @include laPhone {
             width: 100%;
             padding: 10px 0;
-            font-size: 1.1em;
+            font-size: 1em;
         }
         }
-        textarea {
-        height: calc(200px - 40px);
-        @include smPhone {
-            width: 100%;
-            height: 150px;
-            padding: 0;
+        .quoteForm {
+            height: 160px;
+            @include smPhone {
+                height: 120px;
+            }
         }
-        }
-        select{
+        .errorMsg {
             display: block;
+            margin: 10px auto;
+            text-align: center;
+            font-family: $bodyFont;
+            color: $keyColorOne;
         }
-        input {
+        .issueSelect{
+            display: block;
+            height: fit-content;
+            border-radius: 0;
+            border-bottom: 1px solid $primaryColorLight;
+        }
+        .quoteBtn {
+        display: block;
         width: 200px;
         height: 60px;
+        margin: 30px auto 30px auto;
+        border: none;
+        border-radius: 4px;
         background-image: url(../Images/Send_btn.svg);
         background-repeat: no-repeat;
         background-position-x: center;
         background-color: $keyColorOne;
-        opacity: 0.5;
         &:hover {
-            opacity: 1;
+            opacity: 0.5;
             transition-duration: 300ms;
+        }
+        @include smPhone {
+            height: 40px;
+            margin: 30px auto 20px auto;
         }
         }
     }
 }
+
+// .sentMsg {
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: $primaryColorDark;
+//     display: flex;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     text-align: center;
+//     justify-content: center;
+// }

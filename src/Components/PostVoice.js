@@ -4,15 +4,18 @@ import PostOption from './PostOption';
 
 function PostVoice(props) {
     const [showPostOpt, setShowPostOpt] = useState(false);
+    function handleChange(newValue) {
+        setShowPostOpt(newValue);
+      }
     const postVoicetransition = useSpring ({
         opacity: 1, transform: 'translateY(0%)',
         from: { opacity: 0, transform: 'translateY(100%)'},
     });
 
     const postOptTransition = useTransition(showPostOpt, null, {
-        from: { transform: 'translateX(-100%)'},
-        enter: { transform: 'translateX(0%)'},
-        leave: { transform: 'translateX(-100%)'},
+        from: { transform: 'translateY(110%)'},
+        enter: { transform: 'translateY(0%)'},
+        leave: { transform: 'translateY(110%)'},
     });
 
     return (
@@ -31,7 +34,7 @@ function PostVoice(props) {
         <animated.div 
         key={key} style={props}
         className="postOption">
-           <PostOption/>
+           <PostOption showPostOpt={showPostOpt} onChange={handleChange}/>
         </animated.div>)
         }
     </div>

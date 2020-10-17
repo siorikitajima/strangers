@@ -11,6 +11,7 @@ import About from './Views/About';
 import Scene from './Views/Scene';
 import Data from './Views/Data';
 import Help from './Views/Help';
+import Info from './Views/Info';
 // import Home from './Views/Home';
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/help">
             <Help/>
+          </Route>
+          <Route path="/info">
+            <Info/>
           </Route>
         </Switch>
     </div>
