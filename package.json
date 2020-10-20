@@ -2,7 +2,7 @@
   "name": "strengers",
   "version": "0.1.1",
   "private": false,
-  "homepage": "http://siorikitajima.github.io/strangers#/",
+  "homepage": "http://siorikitajima.github.io/strangers/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
