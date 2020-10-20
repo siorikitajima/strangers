@@ -122,3 +122,11 @@ $laTablet: 960px;
         margin: 30px auto 0 auto;
     }
  }
+
+ .spacerM {
+     height: 50px;
+     width: 100%;
+     @include laPhone(){
+        height: 20px;
+    }
+ }

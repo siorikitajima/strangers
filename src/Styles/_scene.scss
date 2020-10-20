@@ -111,4 +111,67 @@
 
 .info {
     @include pageContainer();
+    h1 {
+        width: 700px;
+        max-width: 90%;
+        margin: 10px auto 30px auto;
+        position: relative;
+        span {
+            font-family: $bodyFont;
+            color: $keyColorOne;
+            font-size: 0.6em;
+            position: absolute;
+            right: 50px;
+            margin-top: 10px;
+            transition-duration: 300ms;
+        }
+    }
+    .shareIcon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: -10px;
+        border-radius: 50%;
+        background-color: $keyColorOne;
+        position: absolute;
+        right: 0;
+        &:hover {
+            opacity: 0.5;
+            transition-duration: 300ms;
+        }
+    }
+    p.infoNumber {
+        font-family: $bodyFont;
+        font-weight: normal;
+        text-align: center;
+        span {
+            font-family: $headingFont;
+            color: $keyColorOne;
+            font-size: 3em;
+            font-style: italic;
+            line-height: 0.8em;
+        }
+        b {
+             color: $keyColorOne;
+        }
+    }
+    h3 {
+        font-family: $headingFont;
+        font-size: 1.4em;
+        font-style: italic;
+        margin-bottom: 0;
+        margin-top: 30px;
+        .headingIcons {
+            width: 50px;
+            height: 50px;
+            margin-bottom: -15px;
+        }
+    }
+    p.infoText {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .helpLink {
+        margin: 20px auto 50px auto;
+        width: 300px;
+    }
 }

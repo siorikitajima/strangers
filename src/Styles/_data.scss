@@ -62,18 +62,6 @@
     @include laPhone(){
         margin: 30px auto 0 auto;
     }
-    .dataVizImg {
-        width: 700px;
-        height: 200px;
-        max-width: 80%;
-        margin: 20px auto;
-        padding: 20px 0;
-        background: rgb(173, 173, 173) url(../Images/aGirl.svg) repeat;
-        background-size: 17%;
-        @include laPhone(){
-            max-width: 90%;
-        }
-    }
     .dataText {
         p {
             text-align: center;
@@ -239,6 +227,19 @@ p.helpList a.weburl {
         @include laPhone(){
             max-width: 90%;
         }
+    }
+}
+
+.dataVizImg {
+    width: 700px;
+    height: 200px;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px 0;
+    background: rgb(173, 173, 173) url(../Images/aGirl.svg) repeat;
+    background-size: 17%;
+    @include laPhone(){
+        max-width: 90%;
     }
 }
 
