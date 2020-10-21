@@ -3,21 +3,23 @@ import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
 // import {useTransition, animated} from 'react-spring';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function PostOption(props){
-const [emailSent, setEmailSent] = useState(false);
+//const [emailSent, setEmailSent] = useState(false);
     function handleChange() {
         // props.onChange(event.this.value);
         props.onChange(false);
     }
 
-const QuoteSchema = Yup.object().shape({
+    const QuoteSchema = Yup.object().shape({
     quote: Yup.string()
       .max(300, 'Max length is set as 300 characters')
       .required('Please fill in your quote'),
     issue: Yup.string()
       .required('Please select your issue'),
-  });
+    })
 
 // const [isSent, setIsSent] = useState(false);
 
@@ -37,9 +39,9 @@ const QuoteSchema = Yup.object().shape({
             }}
             validationSchema={QuoteSchema}
             onSubmit={async (values) => {
-                await new Promise((r) => setTimeout(r, 500));
+                toast("Message Sent");
+                await new Promise((r) => setTimeout(r, 1500));
                 // alert(JSON.stringify(values, null, 2));
-                // setIsSent(!isSent);
                 emailjs.send(
                     "service_wibfxg9", //Email service as defined in EmailJS setting
                     "template_76jepvv", // Email template ID provided by EmailJS
@@ -49,8 +51,9 @@ const QuoteSchema = Yup.object().shape({
                     },
                     "user_GJVnDS7vbw31lYWmcZT82" // EmailJS user ID
                   )
-                  handleChange();
+                handleChange();
             }}
+            
             >
             {({ errors, touched }) => (
             <Form>
@@ -79,6 +82,11 @@ const QuoteSchema = Yup.object().shape({
             )}
             </Formik>
 
+        <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={true}
+        />
         {/* {
         isSentTransition.map(({ item, key, props}) =>
         item && 

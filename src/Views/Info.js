@@ -3,14 +3,15 @@ import {
     Switch,
     Route,
     Link,
-    useParams,
-    useLocation
+    useParams
   } from "react-router-dom";
 import LearnIcon from '../Images/infoIcons-learn-dark.svg';
 import HelpIcon from '../Images/infoIcons-help-dark.svg';
 import VoicesIcon from '../Images/infoIcons-voices-dark.svg';
 import ShareIcon from '../Images/infoIcons-share.svg';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const infoData = [
@@ -67,20 +68,23 @@ function Info() {
 function Issues() {
     let { issue } = useParams();
     let { id } = useParams();
-    const [copied, setCopied] = useState(false);
-    const theID = infoData[id].id;
-    const theissue = infoData[id].slug;
-    // const thelink = window.location.pathname + "/info/" + theID + "/" + theissue;
     const thelink = window.location.href;
+    const notify = () => toast("URL Copied");
+
     return (
       <div>
         <h1> // {infoData[id].h1} // 
         <CopyToClipboard text={thelink}
-          onCopy={() => {setCopied(true)}}>
+          onCopy={notify}>
           <img src={ShareIcon} alt="share" className="shareIcon"/>
         </CopyToClipboard>
-        {copied ? 
-         <span>URL Copied</span> : null }
+        <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={true}
+        closeOnClick
+        rtl={true}
+        />
         </h1>
         <div className="dataVizImg">
         </div>

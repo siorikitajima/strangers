@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/strangers/static/css/main.9c15fe70.chunk.css",
-    "main.js": "/strangers/static/js/main.4f21b1ba.chunk.js",
-    "main.js.map": "/strangers/static/js/main.4f21b1ba.chunk.js.map",
+    "main.css": "/strangers/static/css/main.a57d93a3.chunk.css",
+    "main.js": "/strangers/static/js/main.b58ad822.chunk.js",
+    "main.js.map": "/strangers/static/js/main.b58ad822.chunk.js.map",
     "runtime-main.js": "/strangers/static/js/runtime-main.89638512.js",
     "runtime-main.js.map": "/strangers/static/js/runtime-main.89638512.js.map",
-    "static/js/2.15cb2e94.chunk.js": "/strangers/static/js/2.15cb2e94.chunk.js",
-    "static/js/2.15cb2e94.chunk.js.map": "/strangers/static/js/2.15cb2e94.chunk.js.map",
+    "static/css/2.d34346ea.chunk.css": "/strangers/static/css/2.d34346ea.chunk.css",
+    "static/js/2.af328647.chunk.js": "/strangers/static/js/2.af328647.chunk.js",
+    "static/js/2.af328647.chunk.js.map": "/strangers/static/js/2.af328647.chunk.js.map",
     "index.html": "/strangers/index.html",
-    "precache-manifest.068a1d1b52239ef0c6c10c7d6e04ece4.js": "/strangers/precache-manifest.068a1d1b52239ef0c6c10c7d6e04ece4.js",
+    "precache-manifest.58931498a23330eb3a34431cc4d23e3f.js": "/strangers/precache-manifest.58931498a23330eb3a34431cc4d23e3f.js",
     "service-worker.js": "/strangers/service-worker.js",
-    "static/css/main.9c15fe70.chunk.css.map": "/strangers/static/css/main.9c15fe70.chunk.css.map",
-    "static/js/2.15cb2e94.chunk.js.LICENSE.txt": "/strangers/static/js/2.15cb2e94.chunk.js.LICENSE.txt",
+    "static/css/2.d34346ea.chunk.css.map": "/strangers/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.a57d93a3.chunk.css.map": "/strangers/static/css/main.a57d93a3.chunk.css.map",
+    "static/js/2.af328647.chunk.js.LICENSE.txt": "/strangers/static/js/2.af328647.chunk.js.LICENSE.txt",
     "static/media/CC-BY-SA_icons.svg": "/strangers/static/media/CC-BY-SA_icons.57d00ac0.svg",
     "static/media/App.scss": "/strangers/static/media/video-temp.747394e6.jpg",
     "static/media/github-icon.svg": "/strangers/static/media/github-icon.76d344f0.svg",
@@ -25,8 +27,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.89638512.js",
-    "static/js/2.15cb2e94.chunk.js",
-    "static/css/main.9c15fe70.chunk.css",
-    "static/js/main.4f21b1ba.chunk.js"
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.af328647.chunk.js",
+    "static/css/main.a57d93a3.chunk.css",
+    "static/js/main.b58ad822.chunk.js"
   ]
 }

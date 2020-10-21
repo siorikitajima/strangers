@@ -7,9 +7,6 @@
         margin-top: 40px;
         height: calc(100% - 40px);
     }
-    iframe {
-        border-width: 0;
-    }
 }
 
 // .sceneModal {
@@ -116,15 +113,6 @@
         max-width: 90%;
         margin: 10px auto 30px auto;
         position: relative;
-        span {
-            font-family: $bodyFont;
-            color: $keyColorOne;
-            font-size: 0.6em;
-            position: absolute;
-            right: 50px;
-            margin-top: 10px;
-            transition-duration: 300ms;
-        }
     }
     .shareIcon {
         width: 40px;
@@ -137,6 +125,12 @@
         &:hover {
             opacity: 0.5;
             transition-duration: 300ms;
+        }
+        @include laPhone {
+            position: fixed;
+            right: 10px;
+            top: 50px;
+            opacity: 0.8;
         }
     }
     p.infoNumber {
