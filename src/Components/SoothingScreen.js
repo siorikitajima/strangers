@@ -77,8 +77,8 @@ function SoothingScreen(){
                 </AudioPlayerProvider>
             </div>
             <div className="soothingMobileBottom">
-                <h3>Number Zero</h3>
-                <p className="soothingCredit">Code by Siori Kitajima<br/> Music by Joseph Minadeo "Prism"</p>
+                <h3>{soothingData[sketch].sketch}</h3>
+                <p className="soothingCredit">Code by Siori Kitajima<br/> Music by Joseph Minadeo "{soothingData[sketch].track}"</p>
             </div>
 
         </div>

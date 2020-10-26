@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/strangers/static/css/main.3a8ed218.chunk.css",
-    "main.js": "/strangers/static/js/main.8254d83e.chunk.js",
-    "main.js.map": "/strangers/static/js/main.8254d83e.chunk.js.map",
+    "main.css": "/strangers/static/css/main.a89d1524.chunk.css",
+    "main.js": "/strangers/static/js/main.1a05dcd6.chunk.js",
+    "main.js.map": "/strangers/static/js/main.1a05dcd6.chunk.js.map",
     "runtime-main.js": "/strangers/static/js/runtime-main.89638512.js",
     "runtime-main.js.map": "/strangers/static/js/runtime-main.89638512.js.map",
     "static/css/2.d34346ea.chunk.css": "/strangers/static/css/2.d34346ea.chunk.css",
-    "static/js/2.0a233049.chunk.js": "/strangers/static/js/2.0a233049.chunk.js",
-    "static/js/2.0a233049.chunk.js.map": "/strangers/static/js/2.0a233049.chunk.js.map",
+    "static/js/2.c2c2d658.chunk.js": "/strangers/static/js/2.c2c2d658.chunk.js",
+    "static/js/2.c2c2d658.chunk.js.map": "/strangers/static/js/2.c2c2d658.chunk.js.map",
     "index.html": "/strangers/index.html",
-    "precache-manifest.8c5d4102c76969131c5570ba6768a187.js": "/strangers/precache-manifest.8c5d4102c76969131c5570ba6768a187.js",
+    "precache-manifest.59a79da187207003f914495d9051510a.js": "/strangers/precache-manifest.59a79da187207003f914495d9051510a.js",
     "service-worker.js": "/strangers/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/strangers/static/css/2.d34346ea.chunk.css.map",
-    "static/css/main.3a8ed218.chunk.css.map": "/strangers/static/css/main.3a8ed218.chunk.css.map",
-    "static/js/2.0a233049.chunk.js.LICENSE.txt": "/strangers/static/js/2.0a233049.chunk.js.LICENSE.txt",
+    "static/css/main.a89d1524.chunk.css.map": "/strangers/static/css/main.a89d1524.chunk.css.map",
+    "static/js/2.c2c2d658.chunk.js.LICENSE.txt": "/strangers/static/js/2.c2c2d658.chunk.js.LICENSE.txt",
     "static/media/CC-BY-SA_icons.svg": "/strangers/static/media/CC-BY-SA_icons.57d00ac0.svg",
     "static/media/NumberZero-Geodesic.mp3": "/strangers/static/media/NumberZero-Geodesic.71fd3541.mp3",
     "static/media/NumberZero-Prism.mp3": "/strangers/static/media/NumberZero-Prism.2903ff04.mp3",
@@ -25,14 +25,13 @@
     "static/media/infoIcons-share.svg": "/strangers/static/media/infoIcons-share.f813310c.svg",
     "static/media/infoIcons-voices-dark.svg": "/strangers/static/media/infoIcons-voices-dark.740a9902.svg",
     "static/media/menu.svg": "/strangers/static/media/menu.36454b67.svg",
-    "static/media/numbers-animation.gif": "/strangers/static/media/numbers-animation.162513c6.gif",
     "static/media/patternbasedlogo-light.png": "/strangers/static/media/patternbasedlogo-light.9d7cbfaa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.89638512.js",
     "static/css/2.d34346ea.chunk.css",
-    "static/js/2.0a233049.chunk.js",
-    "static/css/main.3a8ed218.chunk.css",
-    "static/js/main.8254d83e.chunk.js"
+    "static/js/2.c2c2d658.chunk.js",
+    "static/css/main.a89d1524.chunk.css",
+    "static/js/main.1a05dcd6.chunk.js"
   ]
 }

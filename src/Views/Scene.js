@@ -1,14 +1,14 @@
 import React from 'react';
 import SoothingIcon from '../Components/SoothingIcon';
 import Iframe from 'react-iframe';
-import SceneModal from '../Components/SceneModal';
+// import SceneModal from '../Components/SceneModal';
 
 function Scene() {
     return(
         <div className="scene">
             <IFrameSize/>
             <SoothingIcon/>
-            <SceneModal/>
+            {/* <SceneModal/> */}
         </div>
     );
 }
