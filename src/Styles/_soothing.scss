@@ -42,174 +42,183 @@
         font-size: 1em;
         margin: 2px 0 4px 20px;
     }
-    p {
+    p.soothingCredit {
         font-size: 0.7em;
         margin: 0 0 0 20px;
     }
 }
 
-// .soothingModePanel {
-//     width: 100vw;
-//     height: 100vh;
-//     padding: 0;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     background: $primaryColorLight;
-// }
+.soothingModePanel {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $primaryColorLight;
+}
 
-// .soothingOption {
-//     z-index: 550;
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: nowrap;
+.soothingOption {
+    z-index: 550;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
-//     @include optionPanels();
-//     @include smTablet(){
-//         display: none;
-//     }
-//     div {
-//         @include laTablet(){
-//             justify-content: left;
-//         }
-//     }
-//     .width400 {
-//         width: 400px;
-//         height: auto;
-//         @include laTablet(){
-//             width: 300px;
-//         }
-//     }
-//     // .width200 {
-//     //     width: 200px;
-//     //     height: auto;
-//     //     @include laTablet(){
-//     //         display: none;
-//     //     }
-//     // }
-//     .trackWrapper {
-//         width: 400px;
-//         height: auto;
-//         display: flex;
-//         @include laTablet(){
-//             width: 300px;
-//         }
-//         .trackInfo {
-//             text-align: left;
-//             display: inline-block;
-//             @include laTablet(){
-//                 width: 250px;
-//             }
-//             h3, p {
-//                 width: 250px;
-//             }
-//         }
-//     }
-// }
-// .numberBtns {
-//     margin: 0 20px;
-//     display: flex;
-//     padding-top: 5px;
-//     @include smTablet(){
-//         margin: 0;
-//         padding-top:0;
-//     }
-//     div {
-//         display: block;
-//         width: 22px;
-//         height: 22px;
-//         margin-left: 30px;
-//         border-radius: 50%;
-//         text-align: center;
-//         font-size: 1.2em;
-//         padding: 14px;
-//         font-family: $bodyFont;
-//         font-weight: bold;
-//         cursor: pointer;
-//         &:nth-of-type(1){
-//             background: $keyColorOne;
-//             color: $primaryColorDark;
-//         }
-//         &:nth-of-type(2){
-//             background: $keyColorTwo;
-//         }
-//         &:nth-of-type(3){
-//             background: $keyColorThree;
-//             color: $primaryColorDark;
-//         }
-//         &:hover {
-//             opacity: 0.5;
-//             transition-duration: 300ms;
-//         }
-//         @include smTablet(){
-//             font-size: 1.1em;
-//             width: 20px;
-//             height: 20px;
-//             padding: 10px;
-//             margin-top: 10px;
-//             margin-left: 20px;
-//             &:last-of-type{
-//                 margin-left: 50px;
-//             }
-//         }
-//     }
-// }
+    @include optionPanels();
+    @include smTablet(){
+        display: none;
+    }
+    div {
+        @include laTablet(){
+            justify-content: left;
+        }
+    }
+    .width400 {
+        width: 400px;
+        height: auto;
+        @include laTablet(){
+            width: 300px;
+        }
+    }
+    // .width200 {
+    //     width: 200px;
+    //     height: auto;
+    //     @include laTablet(){
+    //         display: none;
+    //     }
+    // }
+    .trackWrapper {
+        width: 400px;
+        height: auto;
+        display: flex;
+        @include laTablet(){
+            width: 300px;
+        }
+        .trackInfo {
+            text-align: left;
+            display: inline-block;
+            @include laTablet(){
+                width: 250px;
+            }
+            h3, p {
+                width: 250px;
+            }
+        }
+    }
+}
+.numberBtns {
+    margin: 0 20px;
+    display: flex;
+    padding-top: 5px;
+    @include smTablet(){
+        margin: 0;
+        padding-top:0;
+    }
+    div {
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-left: 30px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 14px;
+        font-family: $bodyFont;
+        font-weight: bold;
+        cursor: pointer;
+        &:nth-of-type(1){
+            background: $keyColorOne;
+            color: $primaryColorDark;
+        }
+        &:nth-of-type(2){
+            background: $keyColorTwo;
+        }
+        &:nth-of-type(3){
+            background: $keyColorThree;
+            color: $primaryColorDark;
+        }
+        &:hover {
+            opacity: 0.5;
+            transition-duration: 300ms;
+        }
+        @include smTablet(){
+            font-size: 1.1em;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+            &:last-of-type{
+                margin-left: 50px;
+                padding: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+}
 
-// .playButton {
-//     display: inline-block;
-//     width: 50px;
-//     height: 50px;
-//     background: url(../Images/Pause_btn.svg);
-//     margin: 5px 0;
-//     cursor: pointer;
-//     &:hover {
-//         opacity: 0.5;
-//         transition-duration: 300ms;
-//     }
-//     // @include laPhone(){
-//     //     width: 22px;
-//     //     height: 22px;
-//     //     padding: 10px;
-//     //     margin: 10px 15px 0 50px;
-//     //     margin-left: 50px;
-//     // }
-// }
+.playButton, .pauseButton {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../Images/Pause_btn.svg);
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+        transition-duration: 300ms;
+    }
+    &:focus {
+       outline: none;
+    }
+    @include laPhone(){
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
 
-// .soothingMobileTop {
-//     @include dropShadow();
-//     z-index: 650;
-//     width: 100%;
-//     height: 60px;
-//     display: none;
-//     justify-content: center;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     background: $primaryColorDark;
-//     @include smTablet(){
-//         display: flex;
-//     }
-// }
+}
+.playButton {
+    background: url(../Images/Play_btn.svg);
+}
 
-// .soothingMobileBottom {
-//     // @include dropShadow();
-//     position: fixed;
-//     bottom: 0;
-//     left: 0;
-//     z-index: 650;
-//     width: 100%;
-//     height: 90px;
-//     display: none;
-//     // background: $primaryColorDark;
-//     color: $primaryColorLight;
-//     text-align: left;
-//     @include smTablet(){
-//         display: block;
-//     }
-//     h3{
-//         font-size: 1.2em;
-//     }
-//     p{
-//         font-size: 0.9em;
-//     }
-// }
+.soothingMobileTop {
+    @include dropShadow();
+    z-index: 650;
+    width: 100%;
+    height: 60px;
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $primaryColorDark;
+    @include smTablet(){
+        display: flex;
+    }
+}
+
+.soothingMobileBottom {
+    // @include dropShadow();
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 650;
+    width: 100%;
+    height: 90px;
+    display: none;
+    // background: $primaryColorDark;
+    color: $primaryColorLight;
+    text-align: left;
+    @include smTablet(){
+        display: block;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+
+}

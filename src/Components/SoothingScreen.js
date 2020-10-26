@@ -1,46 +1,118 @@
 import React, {useState} from 'react';
 import Iframe from 'react-iframe';
+import AudioPlayer from './AudioPlayer';
+import { AudioPlayerProvider } from "react-use-audio-player"
+
+import trackZero from '../Sounds/NumberZero-Prism.mp3';
+import trackOne from '../Sounds/UntitledExistential.mp3';
+import trackTwo from '../Sounds/NumberZero-Geodesic.mp3';
 
 // import P5Wrapper from 'react-p5-wrapper';
 // import SketchZero from './SketchZero';
 // import SketchOne from './SketchOne';
 
-
-// const soothingData = [
-//     {id:0, 
-//       sketch:'SketchZero', 
-//       track:'Prism'
-//     },
-//     {id:1, 
-//         sketch:'SketchOne', 
-//         track:'Track2'
-//     },
-//     {id:2, 
-//         sketch:'SketchTwo', 
-//         track:'Track3'
-//     }
-// ]
+const soothingData = [
+    {id:0, 
+      sketch:'Number Zero', 
+      track:'Prism',
+      url: '../Sounds/NumberZero-Prism.mp3'
+    },
+    {id:1, 
+        sketch:'Number One', 
+        track:'Untitled Existential',
+        url: '../Sounds/UntitledExistential.mp3'
+    },
+    {id:2, 
+        sketch:'Number Two', 
+        track:'Geodesic',
+        url: '../Sounds/NumberZero-Geodesic.mp3'
+    }
+]
 
 function SoothingScreen(){
+    const [sketch, setSketch] = useState(0);
+    // const trackFile = soothingData[sketch].url;
+
+    function TrackFile() {
+        if (sketch == 0) {
+          return <AudioPlayer file={trackZero}className="playButton"/>;
+        } else if (sketch ==1) {
+            return <AudioPlayer file={trackOne}className="playButton"/>;
+        } else {
+            return <AudioPlayer file={trackTwo}className="playButton"/>;
+        }
+      }
+    // playZero = '../Sounds/NumberZero-Prism.mp3';
+    // const playOne = '../Sounds/UntitledExistential.mp3';
+    // const playTwo = '../Sounds/NumberZero-Geodesic.mp3';
+
         return(
             <div className="soothingScreen">
-                <IFrameSize/>
-            </div>
-        );
-    }
-    // const [sketch, setSketch] = useState(0);
-    // const sketchLink = soothingData[sketch].sketch;
-    // console.log(sketchLink);
+                <IFrameSketch/>
 
-        function IFrameSize() {
-            return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/"
-            width="100%"
-            height = {window.innerHeight}
-            display="initial"
-            position="relative"
-            frameBorder="none"
-            styles={{margin: "0", border: "none"}}/>
-        };
+            <div className="soothingOption">
+                <div className="trackWrapper">
+                <AudioPlayerProvider>
+                    <TrackFile />
+                </AudioPlayerProvider>
+                    {/* <div className="playButton"></div> */}
+                    <div className="trackInfo">
+                        <h3>{soothingData[sketch].sketch}</h3>
+                        <p className="soothingCredit">Code by Siori Kitajima<br/> Music by Joseph Minadeo "{soothingData[sketch].track}"</p>
+                    </div>
+                </div>
+                <div className="numberBtns">
+                    <div onClick={() => setSketch(0)}>0</div>
+                    <div onClick={() => setSketch(1)}>1</div>
+                    <div onClick={() => setSketch(2)}>2</div>
+                </div>
+                <div className="width400"></div>
+            </div>
+            <div className="soothingMobileTop numberBtns">
+                <div onClick={() => setSketch(0)}>0</div>
+                <div onClick={() => setSketch(1)}>1</div>
+                <div onClick={() => setSketch(2)}>2</div>
+                <AudioPlayerProvider>
+                    <TrackFile />
+                </AudioPlayerProvider>
+            </div>
+            <div className="soothingMobileBottom">
+                <h3>Number Zero</h3>
+                <p className="soothingCredit">Code by Siori Kitajima<br/> Music by Joseph Minadeo "Prism"</p>
+            </div>
+
+        </div>
+        );
+
+        function IFrameSketch() {
+            if(sketch == 0) {
+                return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/iframe-zero.html"
+                width="100%"
+                height = {window.innerHeight}
+                display="initial"
+                position="relative"
+                frameBorder="none"
+                styles={{margin: "0", border: "none"}}/>
+            } else if(sketch == 1) {
+                return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/iframe-one.html"
+                width="100%"
+                height = {window.innerHeight}
+                display="initial"
+                position="relative"
+                frameBorder="none"
+                styles={{margin: "0", border: "none"}}/>
+            } else {
+                return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/iframe-two.html"
+                width="100%"
+                height = {window.innerHeight}
+                display="initial"
+                position="relative"
+                frameBorder="none"
+                styles={{margin: "0", border: "none"}}/>
+            }
+        }        
+    }
+ 
 
         // <div className="soothingScreen">
         //     <P5Wrapper 
@@ -73,5 +145,25 @@ function SoothingScreen(){
         //         <p>Code by Siori Kitajima<br/> Music by Joseph Minadeo "Prism"</p>
         //     </div>
         // </div>
+
+
+// iframe all method to preserve //
+// function SoothingScreen(){
+//     return(
+//         <div className="soothingScreen">
+//             <IFrameSize/>
+//         </div>
+//     );
+// }
+
+//     function IFrameSize() {
+//         return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/"
+//         width="100%"
+//         height = {window.innerHeight}
+//         display="initial"
+//         position="relative"
+//         frameBorder="none"
+//         styles={{margin: "0", border: "none"}}/>
+//     };
 
 export default SoothingScreen;
