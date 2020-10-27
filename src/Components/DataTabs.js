@@ -12,8 +12,13 @@ import DataBipolar from './DataBipolar';
 import DataAnxiety from './DataAnxiety';
 import DataOCD from './DataOCD';
 import DataAA from './DataAA';
-import DataAD from './DataAD';
+import DataDID from './DataDID';
 import DataBDD from './DataBDD';
+import DataBPD from './DataBPD';
+import DataPTSD from './DataPTSD';
+import DataPsychosis from './DataPsychosis';
+import DataED from './DataED';
+import DataSchizophrenia from './DataSchizophrenia';
 
 function DataTabs() {
     let { path, url } = useRouteMatch();
@@ -41,11 +46,26 @@ function DataTabs() {
                 <NavLink to={`${url}/alcohol-abuse`} activeClassName = "selectedTab">Alcohol Abuse</NavLink>
                 </li>
                 <li className="tabs">
-                <NavLink to={`${url}/alcohol-dependence`} activeClassName = "selectedTab">Alcohol Dependence</NavLink>
+                <NavLink to={`${url}/did`} activeClassName = "selectedTab">DID</NavLink>
                 </li>
                 <li className="tabs">
                 <NavLink to={`${url}/bdd`} activeClassName = "selectedTab">BDD</NavLink>
-                </li>                
+                </li>
+                <li className="tabs">
+                <NavLink to={`${url}/bpd`} activeClassName = "selectedTab">BPD</NavLink>
+                </li>
+                <li className="tabs">
+                <NavLink to={`${url}/ptsd`} activeClassName = "selectedTab">PTSD</NavLink>
+                </li>
+                <li className="tabs">
+                <NavLink to={`${url}/psychosis`} activeClassName = "selectedTab">Psychosis</NavLink>
+                </li>
+                <li className="tabs">
+                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating DisorderD</NavLink>
+                </li>
+                <li className="tabs">
+                <NavLink to={`${url}/schizophrenia`} activeClassName = "selectedTab">Schizophrenia</NavLink>
+                </li>
             </ul>
             <Switch>
                 <Route exact path={path}>
@@ -69,11 +89,26 @@ function DataTabs() {
                 <Route path={`${path}/alcohol-abuse`}>
                     <DataAA/>
                 </Route>
-                <Route path={`${path}/alcohol-dependence`}>
-                    <DataAD/>
+                <Route path={`${path}/did`}>
+                    <DataDID/>
                 </Route>
                 <Route path={`${path}/bdd`}>
                     <DataBDD/>
+                </Route>
+                <Route path={`${path}/bpd`}>
+                    <DataBPD/>
+                </Route>
+                <Route path={`${path}/ptsd`}>
+                    <DataPTSD/>
+                </Route>
+                <Route path={`${path}/psychosis`}>
+                    <DataPsychosis/>
+                </Route>
+                <Route path={`${path}/eating-disorder`}>
+                    <DataED/>
+                </Route>
+                <Route path={`${path}/schizophrenia`}>
+                    <DataSchizophrenia/>
                 </Route>
             </Switch>
         </div>

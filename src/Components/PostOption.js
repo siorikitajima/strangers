@@ -64,9 +64,15 @@ function PostOption(props){
                     <option value="mdd/volvo">MDD / Depression</option>
                     <option value="bipolar">Bipolar</option>
                     <option value="gad/anxiety">GAD / Anxiety</option>
-                    <option value="ocd">OCD</option>
+                    <option value="ocd">OCD / Obessive Compulsive Disorder</option>
                     <option value="alcohol-abuse">Alcohol Abuse</option>
-                    <option value="alcohol-dependence">Alcohol Dependence</option>
+                    <option value="did">DID / Dissociative Identity Disorder</option>
+                    <option value="bdd">BDD / Body Dysmorphic Disorder</option>
+                    <option value="bpd">BPD / Borderline Personality Disorder</option>
+                    <option value="ptsd">PTSD / Post Traumatic Stress Disorder</option>
+                    <option value="psychosis">Psychosis</option>
+                    <option value="eating-disorder">Eating Disorder</option>
+                    <option value="schizophrenia">Schizophrenia</option>
                     <option value="other">Other mental health issue</option>
                     <option value="morethanone">More than one issue</option>
                     <option value="noissue">No mental health issue</option>
