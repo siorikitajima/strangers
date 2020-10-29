@@ -1,4 +1,5 @@
 import React from 'react';
+import WatchBanner from '../Components/WatchBanner';
 
 function HelpBDD() {
     return(
@@ -35,6 +36,8 @@ function HelpBDD() {
                 <br/>
                 
                 </p>
+
+                <WatchBanner issue={"Body dysmorphic disorder"} ep={"1"} date={"9 Dec"} link={"http://very.sg/"} />
         </div>
     );
 }

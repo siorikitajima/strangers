@@ -1,4 +1,5 @@
 import React from 'react';
+import WatchBanner from '../Components/WatchBanner';
 
 function HelpBPD() {
     return(
@@ -35,6 +36,8 @@ function HelpBPD() {
                 <br/>
                 
                 </p>
+
+                <WatchBanner issue={"Borderline Personality Disorder"} ep={"3"} date={"23 Dec"} link={"http://very.sg/"} />
         </div>
     );
 }

@@ -1,15 +1,17 @@
 import React from 'react';
+import Img1in7 from '../Images/Data_1-in-7.png'
+import Img3in4 from '../Images/Data_3-in-4.png'
+import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 
 function DataGeneral() {
     return(
         <div className="dataVizContainer">
-            <div className="dataVizImg">
-            </div>
+            <img src={Img1in7} alt="data" className="dataVizImg"/>
             <div className="dataText">
             <p><span>1/7</span> people in Singapore has experienced <br/><b>mental health issues</b> in their life.</p>
             </div>
             <p>A wide range of conditions that affect mood, thinking, and behavior. Among the conditions assessed in this study, MDD, alcohol abuse and OCD emerged as the top three mental disorders in Singapore.</p>
-            <div className="dataVizImg"></div>
+            <img src={Img3in4} alt="data" className="dataVizImg"/>
             <div className="dataText">
             <p><span>3/4</span> people with mental health issues <br/><b>did not seek help</b>.</p>
             </div>
@@ -20,6 +22,8 @@ function DataGeneral() {
                 Find Help
             </div>
             </a>
+
+            <WatchBannerGeneral/>
         </div>
     );
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+import Img1in62 from '../Images/Data_1-in-62.png';
+
 
 function DataBipolar() {
     return(
         <div className="dataVizContainer">
-            <div className="dataVizImg">
-            </div>
+            <img src={Img1in62} alt="data" className="dataVizImg"/>
             <div className="dataText">
             <p><span>1/62</span> people in Singapore has experienced <br/><b>Bipolar</b> in their life.</p>
             </div>

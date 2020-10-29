@@ -4,7 +4,7 @@
 	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <style type="text/css">
 	.st0{filter:url(#shadow);}
-	.st1{fill:#222222;}
+	.st1{fill:rgb(255, 53, 98);}
 	.st2{fill:#FFFFFF;}
 </style>
 <filter  height="200%" id="shadow" width="200%" x="0" y="0">

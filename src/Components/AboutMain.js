@@ -13,7 +13,7 @@ function AboutMain(){
     return(
         <div className="aboutMain">
             <div className="heroBanner">
-                <h1>// Mental Health Awareness //</h1>
+                <h1>&#47;&#47; Mental Health Awareness &#47;&#47;</h1>
                 <p>This Mini App was created along side the documentary series <b>'Strangers in my Head'</b>, in order to raise awareness of mental health issues in Singapore.</p>
             </div>
 

@@ -13,19 +13,19 @@ import trackTwo from '../Sounds/NumberZero-Geodesic.mp3';
 
 const soothingData = [
     {id:0, 
-      sketch:'Number Zero', 
+      sketch:'Sin Orbit', 
       track:'Prism',
-      url: '../Sounds/NumberZero-Prism.mp3'
+      url: '../Sounds/Soothing01.mp3'
     },
     {id:1, 
-        sketch:'Number One', 
+        sketch:'Eternal Moment', 
         track:'Untitled Existential',
-        url: '../Sounds/UntitledExistential.mp3'
+        url: '../Sounds/Soothing02.mp3'
     },
     {id:2, 
-        sketch:'Number Two', 
+        sketch:'Hasitate Wave', 
         track:'Geodesic',
-        url: '../Sounds/NumberZero-Geodesic.mp3'
+        url: '../Sounds/Soothing03.mp3'
     }
 ]
 
@@ -34,9 +34,9 @@ function SoothingScreen(){
     // const trackFile = soothingData[sketch].url;
 
     function TrackFile() {
-        if (sketch == 0) {
+        if (sketch === 0) {
           return <AudioPlayer file={trackZero}className="playButton"/>;
-        } else if (sketch ==1) {
+        } else if (sketch ===1) {
             return <AudioPlayer file={trackOne}className="playButton"/>;
         } else {
             return <AudioPlayer file={trackTwo}className="playButton"/>;
@@ -85,7 +85,7 @@ function SoothingScreen(){
         );
 
         function IFrameSketch() {
-            if(sketch == 0) {
+            if(sketch === 0) {
                 return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/iframe-zero.html"
                 width="100%"
                 height = {window.innerHeight}
@@ -93,7 +93,7 @@ function SoothingScreen(){
                 position="relative"
                 frameBorder="none"
                 styles={{margin: "0", border: "none"}}/>
-            } else if(sketch == 1) {
+            } else if(sketch === 1) {
                 return <Iframe url="https://siorikitajima.github.io/Test-Site/soothingMode/iframe-one.html"
                 width="100%"
                 height = {window.innerHeight}

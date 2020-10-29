@@ -1,10 +1,11 @@
 import React from 'react';
+import Img1in16 from '../Images/Data_1-in-16.png';
+import WatchBanner from '../Components/WatchBanner';
 
 function DataDepression() {
     return(
         <div className="dataVizContainer">
-            <div className="dataVizImg">
-            </div>
+            <img src={Img1in16} alt="data" className="dataVizImg"/>
             <div className="dataText">
             <p><span>1/16</span> people in Singapore has experienced <br/><b>Depression</b> in their life.</p>
             </div>
@@ -17,6 +18,9 @@ function DataDepression() {
                 Find Help
             </div>
             </a>
+
+            <WatchBanner issue={"Depression"} ep={"2"} date={"16 Dec"} link={"http://very.sg/"} />
+
         </div>
     );
 }

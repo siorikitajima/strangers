@@ -1,4 +1,5 @@
 import React from 'react';
+import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 
 function HelpGeneral() {
     return(
@@ -36,6 +37,7 @@ function HelpGeneral() {
                 <br/>
                 
                 </p>
+                <WatchBannerGeneral/>
         </div>
     );
 }

@@ -1,12 +1,13 @@
 import React from 'react';
+import Img1in50 from '../Images/Data_1-in-50.png';
+import WatchBanner from '../Components/WatchBanner';
 
 function DataBDD() {
     return(
         <div className="dataVizContainer">
-            <div className="dataVizImg">
-            </div>
+            <img src={Img1in50} alt="data" className="dataVizImg"/>
             <div className="dataText">
-            <p><span>1/28</span> people in Singapore has experienced <br/><b>BDD / Body dysmorphic disorder</b> in their life.</p>
+            <p><span>1/50</span> people in Singapore has experienced <br/><b>BDD / Body dysmorphic disorder</b> in their life.</p>
             </div>
             <p>A wide range of conditions that affect mood, thinking, and behavior. Among the conditions assessed in this study, MDD, alcohol abuse and OCD emerged as the top three mental disorders in Singapore.</p>
             <h2>What is BDD / Body dysmorphic disorder</h2>
@@ -17,6 +18,9 @@ function DataBDD() {
                 Find Help
             </div>
             </a>
+
+            <WatchBanner issue={"Body dysmorphic disorder"} ep={"1"} date={"9 Dec"} link={"http://very.sg/"} />
+            
         </div>
     );
 }

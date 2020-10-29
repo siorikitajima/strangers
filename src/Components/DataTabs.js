@@ -19,12 +19,30 @@ import DataPTSD from './DataPTSD';
 import DataPsychosis from './DataPsychosis';
 import DataED from './DataED';
 import DataSchizophrenia from './DataSchizophrenia';
+import ShareIcon from '../Images/infoIcons-share.svg';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function DataTabs() {
     let { path, url } = useRouteMatch();
+    const thelink = window.location.href;
+    const notify = () => toast("URL Copied");
 
     return(
         <div>
+            <CopyToClipboard text={thelink}
+                onCopy={notify}>
+                <img src={ShareIcon} alt="share" className="shareIcon"/>
+                </CopyToClipboard>
+                <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={true}
+                closeOnClick
+                rtl={true}
+                />
+
             <ul id="dataTab">
                 <li className="tabs">
                 <NavLink to={`${url}/general`} activeClassName = "selectedTab"
@@ -61,7 +79,7 @@ function DataTabs() {
                 <NavLink to={`${url}/psychosis`} activeClassName = "selectedTab">Psychosis</NavLink>
                 </li>
                 <li className="tabs">
-                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating DisorderD</NavLink>
+                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating Disorder</NavLink>
                 </li>
                 <li className="tabs">
                 <NavLink to={`${url}/schizophrenia`} activeClassName = "selectedTab">Schizophrenia</NavLink>

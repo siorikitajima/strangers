@@ -79,7 +79,7 @@
         margin: 0;
         opacity: 0;
         font-family: $bodyFont;
-        font-weight: normal;
+        font-weight: bold;
         color: $primaryColorLight;
         @include laPhone() {
             opacity: 0.5;
@@ -87,9 +87,34 @@
     }
 }
 .postvoice:hover {
+    background: url(../Images/leftTriangle-hov.svg) no-repeat left bottom;
+    transition-duration: 300ms;
     h4 {
         opacity: 0.5;
         transition-duration: 200ms;
+    }
+}
+
+.promptPost {
+    @include optionPanels();
+    justify-content: center;
+    transform: translateX(-100%);
+    padding: 10px 40px;
+    img {
+        width: 60px;
+    }
+    @include laPhone(){
+        height: 200px;
+        display: block;
+        img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+        h3 {
+            margin-top: 0;
+        }
     }
 }
 

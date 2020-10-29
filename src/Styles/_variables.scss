@@ -100,9 +100,11 @@ $laTablet: 960px;
     h1 {
         font-family: $headingFont;
         font-style: italic;
-        max-width: 80%;
+        width: 700px;
+        max-width: 90%;
         margin: 0 auto;
         font-size: 1.8em;
+        position: relative;
         @include smTablet() {
             font-size:1.6em
         }

@@ -1,10 +1,10 @@
 import React from 'react';
+import Img1in28 from '../Images/Data_1-in-28.png';
 
 function DataOCD() {
     return(
         <div className="dataVizContainer">
-            <div className="dataVizImg">
-            </div>
+            <img src={Img1in28} alt="data" className="dataVizImg"/>
             <div className="dataText">
             <p><span>1/28</span> people in Singapore has experienced <br/><b>OCD / Obsessive-Compulsive Disorder</b> in their life.</p>
             </div>

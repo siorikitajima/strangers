@@ -232,12 +232,11 @@ p.helpList a.weburl {
 
 .dataVizImg {
     width: 700px;
-    height: 200px;
+    height: auto;
     max-width: 80%;
     margin: 20px auto;
-    padding: 20px 0;
-    background: rgb(173, 173, 173) url(../Images/aGirl.svg) repeat;
-    background-size: 17%;
+    background-color: #adadad;
+    border-radius: 4px;
     @include laPhone(){
         max-width: 90%;
     }
@@ -250,12 +249,83 @@ p.helpList a.weburl {
     color: $primaryColorLight;
     width: 700px;
     max-width: 80%;
-    padding: 10px;
+    padding: 10px 0;
     margin: 30px auto 50px auto;
     border-radius: 4px;
     background-color: $keyColorOne;
     &:hover {
         opacity: 0.5;
         transition-duration: 300ms;
+    }
+}
+
+.watchBanner {
+    width: 700px;
+    height: 140px;
+    max-width: 80%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    background: $primaryColorDark;
+    border-radius: 4px;
+    color: $primaryColorLight;
+    border: $primaryColorDark solid 2px;
+    &:hover {
+        opacity: 0.6;
+        transition-duration: 300ms;
+    }
+    @include laPhone(){
+        max-width: 90%;
+        display: block;
+        height: auto;
+        padding: 0 0 5px 0;
+    }
+    .showThumb {
+        width: 240px;
+        height: 140px;
+        overflow: hidden;
+        background: gray;
+        border-radius: 4px 0 0 4px;
+        img {
+            width: auto;
+            height: 140px;
+            margin-left: -35px;
+        }
+        @include laPhone(){
+            width: 100%;
+            display: block;
+            border-radius: 4px 4px 0 0;
+            img {
+                width: 100%;
+                margin-left: unset;
+            }
+        }
+    }
+    .showInfo {
+        width: inherit;
+        height: 100%;
+        margin: 20px 0;
+        p {
+            width: 100%;
+            text-align: left;
+            margin: 10px auto;
+            span {
+                color: $keyColorOne;
+                font-weight: bold;
+            }
+        }
+        p.watchCTA {
+            font-weight: bold;
+        }
+        @include laPhone(){
+            width: 90%;
+            margin: 20px auto;
+            p {
+                text-align: center;
+                display: block;
+                width: 100%;
+                margin: 10px auto;
+            }
+        }
     }
 }
