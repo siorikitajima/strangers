@@ -13,19 +13,16 @@ import trackTwo from '../Sounds/Soothing03.mp3';
 
 const soothingData = [
     {id:0, 
-      sketch:'Sin Orbit', 
-      track:'Prism',
-      url: '../Sounds/Soothing01.mp3'
+      sketch:'Sine Orbit', 
+      track:'Prism'
     },
     {id:1, 
         sketch:'Eternal Moment', 
-        track:'Untitled Existential',
-        url: '../Sounds/Soothing02.mp3'
+        track:'Untitled Existential'
     },
     {id:2, 
-        sketch:'Hasitate Wave', 
-        track:'Geodesic',
-        url: '../Sounds/Soothing03.mp3'
+        sketch:'Pastoral Waves', 
+        track:'Geodesic'
     }
 ]
 
