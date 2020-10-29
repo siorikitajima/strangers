@@ -3,9 +3,9 @@ import Iframe from 'react-iframe';
 import AudioPlayer from './AudioPlayer';
 import { AudioPlayerProvider } from "react-use-audio-player"
 
-import trackZero from '../Sounds/NumberZero-Prism.mp3';
-import trackOne from '../Sounds/UntitledExistential.mp3';
-import trackTwo from '../Sounds/NumberZero-Geodesic.mp3';
+import trackZero from '../Sounds/Soothing01.mp3';
+import trackOne from '../Sounds/Soothing02.mp3';
+import trackTwo from '../Sounds/Soothing03.mp3';
 
 // import P5Wrapper from 'react-p5-wrapper';
 // import SketchZero from './SketchZero';

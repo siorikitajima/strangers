@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/strangers/static/css/main.00f7dbaf.chunk.css",
-    "main.js": "/strangers/static/js/main.bdcb29f2.chunk.js",
-    "main.js.map": "/strangers/static/js/main.bdcb29f2.chunk.js.map",
+    "main.js": "/strangers/static/js/main.e347e6f6.chunk.js",
+    "main.js.map": "/strangers/static/js/main.e347e6f6.chunk.js.map",
     "runtime-main.js": "/strangers/static/js/runtime-main.89638512.js",
     "runtime-main.js.map": "/strangers/static/js/runtime-main.89638512.js.map",
     "static/css/2.d34346ea.chunk.css": "/strangers/static/css/2.d34346ea.chunk.css",
     "static/js/2.f8cd5075.chunk.js": "/strangers/static/js/2.f8cd5075.chunk.js",
     "static/js/2.f8cd5075.chunk.js.map": "/strangers/static/js/2.f8cd5075.chunk.js.map",
     "index.html": "/strangers/index.html",
-    "precache-manifest.fa118e67aae15e21e767c5b5e2fe7d2c.js": "/strangers/precache-manifest.fa118e67aae15e21e767c5b5e2fe7d2c.js",
+    "precache-manifest.3c95d162caede9f6ddf21d2452bee873.js": "/strangers/precache-manifest.3c95d162caede9f6ddf21d2452bee873.js",
     "service-worker.js": "/strangers/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/strangers/static/css/2.d34346ea.chunk.css.map",
     "static/css/main.00f7dbaf.chunk.css.map": "/strangers/static/css/main.00f7dbaf.chunk.css.map",
@@ -27,10 +27,10 @@
     "static/media/Data_1-in-67.png": "/strangers/static/media/Data_1-in-67.fcdd59e9.png",
     "static/media/Data_1-in-7.png": "/strangers/static/media/Data_1-in-7.0a25d511.png",
     "static/media/Data_3-in-4.png": "/strangers/static/media/Data_3-in-4.ac828abf.png",
-    "static/media/NumberZero-Geodesic.mp3": "/strangers/static/media/NumberZero-Geodesic.71fd3541.mp3",
-    "static/media/NumberZero-Prism.mp3": "/strangers/static/media/NumberZero-Prism.2903ff04.mp3",
     "static/media/App.scss": "/strangers/static/media/video-temp.747394e6.jpg",
-    "static/media/UntitledExistential.mp3": "/strangers/static/media/UntitledExistential.6e3b5116.mp3",
+    "static/media/Soothing01.mp3": "/strangers/static/media/Soothing01.72d8ac32.mp3",
+    "static/media/Soothing02.mp3": "/strangers/static/media/Soothing02.697e81b0.mp3",
+    "static/media/Soothing03.mp3": "/strangers/static/media/Soothing03.c68cbfb8.mp3",
     "static/media/github-icon.svg": "/strangers/static/media/github-icon.76d344f0.svg",
     "static/media/infoIcons-help-dark.svg": "/strangers/static/media/infoIcons-help-dark.7cafd15a.svg",
     "static/media/infoIcons-learn-dark.svg": "/strangers/static/media/infoIcons-learn-dark.2cf8a756.svg",
@@ -45,6 +45,6 @@
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.f8cd5075.chunk.js",
     "static/css/main.00f7dbaf.chunk.css",
-    "static/js/main.bdcb29f2.chunk.js"
+    "static/js/main.e347e6f6.chunk.js"
   ]
 }
