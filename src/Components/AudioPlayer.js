@@ -5,6 +5,7 @@ const AudioPlayer = ({ file }) => {
     const { togglePlayPause, ready, loading, playing } = useAudioPlayer({
         src: file,
         format: "mp3",
+        loop: true,
         autoplay: false,
         onend: () => console.log("sound has ended!")
     })
