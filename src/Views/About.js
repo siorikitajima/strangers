@@ -2,7 +2,7 @@ import React from 'react';
 import AboutMain from '../Components/AboutMain';
 import AboutShow from '../Components/AboutShow';
 import AboutCredit from '../Components/AboutCredit';
-import SoothingIcon from '../Components/SoothingIcon';
+// import SoothingIcon from '../Components/SoothingIcon';
 
 function About() {
     return(
@@ -10,7 +10,7 @@ function About() {
             <AboutMain/>
             <AboutShow/>
             <AboutCredit/>
-            <SoothingIcon/>
+            {/* <SoothingIcon/> */}
         </div>
     );
 }

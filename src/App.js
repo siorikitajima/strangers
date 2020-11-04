@@ -12,12 +12,13 @@ import Scene from './Views/Scene';
 import Data from './Views/Data';
 import Help from './Views/Help';
 import Info from './Views/Info';
+import Breathe from './Views/Breathe';
+import BreatheIcon from './Components/BreatheIcon';
 // import Home from './Views/Home';
 
 function App() {
   return (
     <Router>
-    {/* <Router> */}
     <div className="App">
       <Header/>
       <Switch>
@@ -42,9 +43,12 @@ function App() {
           <Route path="/info">
             <Info/>
           </Route>
+          <Route path="/breathe">
+            <Breathe/>
+          </Route>
         </Switch>
     </div>
-    {/* </Router> */}
+    <BreatheIcon/>
     </Router>
   );
 }

@@ -61,7 +61,7 @@ function PostOption(props){
                 <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Message to otheres, your story, and/or thoughts. We may add it to the page to share to others. You will be 100% anonymous here." />
                 <Field name="issue" component="select" className="issueSelect">
                     <option value="" hidden >Select your issue</option>
-                    <option value="mdd/volvo">MDD / Depression</option>
+                    <option value="mdd">MDD / Depression</option>
                     <option value="bipolar">Bipolar</option>
                     <option value="gad/anxiety">GAD / Anxiety</option>
                     <option value="ocd">OCD / Obessive Compulsive Disorder</option>
