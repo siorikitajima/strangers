@@ -27,6 +27,7 @@ const soothingData = [
 
 function Breathe(){
     const [sketch, setSketch] = useState(0);
+    const [count, setCount] = useState(0);
 
     function TrackFile() {
         if (sketch === 0) {
@@ -40,7 +41,7 @@ function Breathe(){
 
         return(
             <div className="soothingScreen">
-                <IFrameSketch/>
+                <IFrameSketch key={count} onLoad={() => setCount(count + 1)}/>
 
             <div className="soothingOption">
                 <div className="trackWrapper">

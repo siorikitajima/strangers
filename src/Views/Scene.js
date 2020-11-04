@@ -1,18 +1,16 @@
-import React from 'react';
-// import SoothingIcon from '../Components/SoothingIcon';
+import React, { useState } from 'react';
 import Iframe from 'react-iframe';
-// import SceneModal from '../Components/SceneModal';
 import { isIOS } from "react-device-detect";
 
 function Scene() {
+    const [count, setCount] = useState(0);
+
     return(
         <div className="scene">
-            <IFrameSize/>
-            {/* <SoothingIcon/> */}
-            {/* <SceneModal/> */}
+            <IFrameSize key={count} onLoad={() => setCount(count + 1)}/>
         </div>
     );
-}
+};
 
 function IFrameiOSSm() {
     const theHeight = window.innerHeight - 40;
@@ -44,6 +42,6 @@ function IFrameSize() {
     } else {
         return <IFrameLa/>;
     }
-}
+};
 
 export default Scene;

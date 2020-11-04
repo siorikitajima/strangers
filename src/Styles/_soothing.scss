@@ -1,17 +1,19 @@
 .soothingIcon {
-    width: 170px;
-    height: 170px;
+    width: 220px;
+    height: 220px;
     position: fixed;
     right: 0;
-    bottom: 0;
-    background: url(../Images/rightTriangle.svg) no-repeat left bottom;
-    cursor: pointer;
+    bottom: -170px;
+    overflow: visible;
     z-index: 600;
+    cursor: pointer;
     h4 {
         font-size: 0.7em;
         position: absolute;
-        bottom: 10px;
-        right: 28px;
+        width: 100%;
+        height: 100%;
+        bottom: -23px;
+        right: -140px;
         margin: 0;
         opacity: 0;
         font-family: $bodyFont;
@@ -21,15 +23,34 @@
             opacity: 0.5;
         }
     }
-}
-.soothingIcon:hover {
-    background: url(../Images/rightTriangle-hov.svg) no-repeat left bottom;
-    transition-duration: 300ms;
-    h4 {
-        opacity: 0.5;
-        transition-duration: 200ms;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-origin: 100% 100%;
+        transform: rotate(45deg);
+        background: $primaryColorDark url(../Images/rightTriangleIcon.svg);
+        background-size: 80px 80px;
+        background-repeat: no-repeat;
+        background-position: -10px 60px;
+        @include dropShadow();
+    }
+    &:hover {
+        h4 {
+            opacity: 0.5;
+            transition-duration: 300ms;
+        }
+        &::before {
+        background: $keyColorOne url(../Images/rightTriangleIcon.svg);
+        background-size: 80px 80px;
+        background-repeat: no-repeat;
+        background-position: -10px 60px;
+        transition-duration: 300ms;
+        }
     }
 }
+
 
 .soothingScreen {
     width: 100vw;

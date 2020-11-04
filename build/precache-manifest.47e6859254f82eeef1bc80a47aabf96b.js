@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3cd9b88d0fe719ce36b797c1d73f781",
+    "revision": "fe923e319a4a946899ade574b6035e82",
     "url": "/strangers/index.html"
   },
   {
-    "revision": "0da1a1e25ae633b63cdd",
+    "revision": "ebc1c6a3ccf925442485",
     "url": "/strangers/static/css/2.d34346ea.chunk.css"
   },
   {
-    "revision": "e8d2f01c1ca5ad4d9409",
-    "url": "/strangers/static/css/main.ddd377b1.chunk.css"
+    "revision": "6076f5457efbeedd7ac2",
+    "url": "/strangers/static/css/main.1063e8ae.chunk.css"
   },
   {
-    "revision": "0da1a1e25ae633b63cdd",
-    "url": "/strangers/static/js/2.c2cd1bf3.chunk.js"
+    "revision": "ebc1c6a3ccf925442485",
+    "url": "/strangers/static/js/2.b5f2f64c.chunk.js"
   },
   {
     "revision": "941f8f72494347a350bc7a70aed71ae3",
-    "url": "/strangers/static/js/2.c2cd1bf3.chunk.js.LICENSE.txt"
+    "url": "/strangers/static/js/2.b5f2f64c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e8d2f01c1ca5ad4d9409",
-    "url": "/strangers/static/js/main.8b55e9a1.chunk.js"
+    "revision": "6076f5457efbeedd7ac2",
+    "url": "/strangers/static/js/main.6855f98b.chunk.js"
   },
   {
     "revision": "f65ac0104e05f8b69b70",
@@ -136,12 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/strangers/static/media/infoIcons-voices.9249c39b.svg"
   },
   {
-    "revision": "96e5cfad6436131803263296bbe09a83",
-    "url": "/strangers/static/media/leftTriangle-hov.96e5cfad.svg"
-  },
-  {
-    "revision": "dbc71aad08bed9306b20ca5467673700",
-    "url": "/strangers/static/media/leftTriangle.dbc71aad.svg"
+    "revision": "b2f0de8e91e3524bbfb30adad8f09d97",
+    "url": "/strangers/static/media/leftTriangleIcon.b2f0de8e.svg"
   },
   {
     "revision": "36454b676329fe1b36f2219e8a2e49e5",
@@ -164,12 +160,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/strangers/static/media/quoteOpen.5c02ef37.svg"
   },
   {
-    "revision": "c8174f6eead3d46716a7d9bce1722537",
-    "url": "/strangers/static/media/rightTriangle-hov.c8174f6e.svg"
-  },
-  {
-    "revision": "e26c63ce3169cefd41dcf319fedc5875",
-    "url": "/strangers/static/media/rightTriangle.e26c63ce.svg"
+    "revision": "3285e77fb04064a43d2c4eb4e65b77ee",
+    "url": "/strangers/static/media/rightTriangleIcon.3285e77f.svg"
   },
   {
     "revision": "747394e6641b37ef11a0114041744eb5",
