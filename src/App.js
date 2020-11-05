@@ -14,6 +14,7 @@ import Help from './Views/Help';
 import Info from './Views/Info';
 import Breathe from './Views/Breathe';
 import BreatheIcon from './Components/BreatheIcon';
+import Documentary from './Views/Documentary';
 // import Home from './Views/Home';
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/scene">
             <Scene/>
+          </Route>
+          <Route path="/documentary">
+            <Documentary/>
           </Route>
           <Route path="/voices">
             <Voices/>

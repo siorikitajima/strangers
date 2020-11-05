@@ -1,0 +1,109 @@
+.epContainer {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background: rgba(0,0,0,0.2);
+    h2 {
+        margin: 0 auto;
+        padding: 40px 0 0 0;
+    }
+    .react-photo-gallery--gallery {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    h4 {
+        font-family: $bodyFont;
+        font-style: italic;
+        font-weight: normal;
+    }
+}
+
+.embedVideoIframe {
+    margin: 20px auto;
+    @include smTablet(){
+    max-width: 100vw;
+    height: 57vw;
+    }
+}
+
+.embedAudioIframe {
+    margin: 20px auto;
+    @include smTablet(){
+    max-width: 100vw;
+    height: 100vw;
+    }
+}
+
+.docSectionDiv {
+    margin: 40px auto 60px auto;
+}
+
+// Accordion Style
+  
+  .accordion {
+    width: 800px;
+    max-width: 98%;
+    margin: 30px auto;
+    font-family: $bodyFont;
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        overflow: hidden;
+        &:last-of-type {
+                border-bottom: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+        }
+        .btn{
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            text-decoration: none;
+            padding: 0;
+            cursor: pointer;
+            .btn-link.focus, .btn-link:focus {
+                text-decoration: none;
+            }
+        }
+        .card-header{
+        background-color: $primaryColorDark;
+        color: $primaryColorLight;
+        text-decoration: none;
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        &:hover {
+            background-color: $keyColorOne;
+            transition-duration: 300ms;
+        }
+        }
+        .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            p.right {
+                text-align: right;
+            }
+        }
+        .show {
+            display: block;
+        }
+        .collapse:not(.show) {
+            display: none;
+        }
+    }
+  }
+  
+// Accordion End

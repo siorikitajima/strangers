@@ -34,6 +34,11 @@ function Header() {
                             Scene
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/documentary/series">
+                            Documentary
+                        </Link>
+                    </li>
                         <li>
                         <Link to="/voices">
                             Voices

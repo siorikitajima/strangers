@@ -1,4 +1,4 @@
-.about {
+.about, .docu {
     @include pageContainer();
     padding: 0 0 40px 0;
 
@@ -35,7 +35,7 @@
     }
 }
 
-p.aboutCredit {
+p.aboutCredit, p.docuCredit {
     font-size: 0.9em;
     line-height: 1.6em;
     text-align: center;
@@ -204,3 +204,4 @@ p.aboutCredit {
         }
     }
 }
+
