@@ -14,6 +14,12 @@ function NavMenuMobile(props){
                     </Link>
                 </li>
                 <li>
+                    <Link to="/documentary/series"
+                    onClick={props.closeMenu}>
+                        Documentary
+                    </Link>
+                </li>
+                <li>
                     <Link to="/voices"
                     onClick={props.closeMenu}>
                         Voices
