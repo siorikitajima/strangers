@@ -6,14 +6,33 @@ function DocuNotes() {
     <div className="docSectionDiv">
     <h2>Creators' Notes</h2>
 
-      <Accordion defaultActiveKey="1">
-        <Card>
+      <Accordion defaultActiveKey="0">
+      <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 <Card.Header>
-    <b>A note</b> by Angeline Swee, Executive Producer, Very!
+    A note by <b>Mui Koon</b>, Director
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
+            <Card.Body>
+    <p>When I was first conceptualizing this series together with the team, I asked myself what is it that I want to see and know about mental health issues that’s not already common knowledge? Is it the science behind it? Is it to question what causes mental health conditions? Or is it to explore the treatment involved?</p>
+    <p>As a teenager and young adult, I’ve gone through periods of depression. I’ve explored self-harm, not to take my life but to feel and see the pain inside me. I’ve also danced with the idea of suicide. But till this day, I’m not sure what exactly is mental illness. How does it look like? When does it warrant a trip to the doctor?</p>
+    <p>I believe that the role of documentary is not to instruct but rather, to understand. Only having gained some understanding and knowledge can we then attempt to help and find solutions. For me, it all begins with empathy.</p>
+    <p>Strangers In My Head is an invitation to all of you. Come, enter the lives of Le Yong, Dheesha, Jess and Karen. Experience their pain, share in their frustrations, celebrate their triumphs – no matter how big or small.</p>
+    <p>It’s my hope that after watching this documentary, you’d ask yourself as a family member, a friend, a colleague, an employer or even a stranger – what can you do to walk alongside someone who may be suffering with their mental health?</p>
+    <p>It’s been a privilege to know our contributors and to see their pain and courage up-close. Their illness may be invisible but their pain is real. May their stories move you and may we all do our part to make space for them in our world.</p>
+    <p className="right">Mui Koon<br/>Director</p>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+
+      <Card>
+            <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                <Card.Header>
+    A note by <b>Angeline Swee</b>, Executive Producer, Very!
+                </Card.Header>
+            </Accordion.Toggle>
+          <Accordion.Collapse eventKey="1">
             <Card.Body>
     <p>For a long time, I have been thinking of realizing a documentary series on mental health – a series that tells the nuanced stories of the many struggles and complexities related to mental health conditions.</p>
     <p>But, for an even longer time, I felt that a project like this is too close to home. In reality, we are still a society where mental conditions, mental decline and mental illnesses are kept behind closed doors. Unlike physical ailments, mental health conditions carry a social stigma.</p>
@@ -30,27 +49,18 @@ function DocuNotes() {
         </Card>
 
         <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                <Card.Header>
-    <b>'Title of the writing if any'</b> by First LastName, Whatyoudo, Very!
-                </Card.Header>
-            </Accordion.Toggle>
-          <Accordion.Collapse eventKey="1">
-            <Card.Body>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </Card.Body>
-          </Accordion.Collapse>
-        </Card>
-
-        <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 <Card.Header>
-    <b>'Title of the writing if any'</b> by First LastName, Whatyoudo, Very!
+    A note by <b>Danny Goh</b>, Director of Photography
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="2">
             <Card.Body>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Before working on this series as the Director of Photography, I knew very little about mental health. Sometimes, the shooting process can be highly stressful. It’s not easy to have a camera pointing directly at the protagonists’ faces and for them to pretend that the camera isn’t there. I was worried that the contributors might not feel comfortable with that.</p>
+    <p>True enough, many of our contributors were not very comfortable in front of the camera. What really moved me was that even though they struggle to face the camera during the shoots, they still did their best every single day. What I saw through my viewfinder was immense courage from each and every one of them.</p>
+    <p>Through them, I learned that true courage is in overcoming the small things that seem so easy to do for others, but yet so hard to accomplish for them. And they have to face their fears every single day.</p>
+    <p>At the end of the shoot, I don’t see them as individuals with mental health conditions. I see them as people who are incredibly strong and courageous.</p>
+    <p className="right">Danny Goh<br/>Director of Photography</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -58,12 +68,18 @@ function DocuNotes() {
         <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 <Card.Header>
-    <b>'Title of the writing if any'</b> by First LastName, Whatyoudo, Very!
+    A note by <b>Carl Pereira</b>, Location Sound Recordist
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="3">
             <Card.Body>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Being mindful.<br/>
+    I remember meeting them on our first day of filming and thinking to myself - these guys look and behave no different from anyone else on the street.</p>
+    <p>As their sound recordist throughout this journey, I had the privilege of listening to their carefully- crafted words. They are more than willing to speak their mind, but they do so with caution so as not to make their loved ones worry about them. That’s how thoughtful they are.</p>
+    <p>In my mind, being able to bring forward the essence of what each of them is going through was the main challenge for me. I hope I do them justice with the audio recordings. And, I do hope their heartfelt stories are listened carefully to by the viewer. </p>
+    <p>We all eventually became close, and each of them taught me a valuable lesson. To count your blessings and be grateful for what you have. </p>
+    <p>My love to them all – Le Yong, Dheesha, Karen and Jess.</p>
+    <p className="right">Carl Pereira<br/>Location Sound Recordist</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -71,25 +87,14 @@ function DocuNotes() {
         <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 <Card.Header>
-    <b>'Title of the writing if any'</b> by First LastName, Whatyoudo, Very!
+    A note by <b>Martyn</b>, Editor
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="4">
             <Card.Body>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </Card.Body>
-          </Accordion.Collapse>
-        </Card>
-
-        <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                <Card.Header>
-    <b>'Title of the writing if any'</b> by First LastName, Whatyoudo, Very!
-                </Card.Header>
-            </Accordion.Toggle>
-          <Accordion.Collapse eventKey="5">
-            <Card.Body>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>SIMH is edited in a manner that is quiet, introspective and meditative, in deliberate contrast to the constant war of voices that torment the minds of our profiles, all of whom spoke calmly and courageously about their mental condition.</p>
+    <p>I hope this series provide not just vital information to viewers but act as a 4-part companion to all of us who, in varying degrees, are battling inner voices in our heads.</p>
+    <p className="right">Peace, Martyn<br/>Editor</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

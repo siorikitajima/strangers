@@ -6,7 +6,7 @@ import DocuNotes from '../Components/DocuNotes';
 function Documentary() {
 
     return(
-        <div className="data docu">
+        <div className="docu">
             <h1>&#47;&#47; Documentary Heading &#47;&#47;</h1>
             <DocuTabs/>
             <DocuNotes/>

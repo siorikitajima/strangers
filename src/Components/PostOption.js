@@ -1,15 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
-// import {useTransition, animated} from 'react-spring';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function PostOption(props){
-//const [emailSent, setEmailSent] = useState(false);
     function handleChange() {
-        // props.onChange(event.this.value);
         props.onChange(false);
     }
 
@@ -20,14 +17,6 @@ function PostOption(props){
     issue: Yup.string()
       .required('Please select your issue'),
     })
-
-// const [isSent, setIsSent] = useState(false);
-
-// const isSentTransition = useTransition(isSent, null, {
-//     from: { transform: 'translateY(110%)'},
-//     enter: { transform: 'translateY(0%)'},
-//     leave: { transform: 'translateY(110%)'},
-// });
 
     return(
         <div className="postInput" id="formPanel">
@@ -41,7 +30,6 @@ function PostOption(props){
             onSubmit={async (values) => {
                 toast("Message Sent");
                 await new Promise((r) => setTimeout(r, 1500));
-                // alert(JSON.stringify(values, null, 2));
                 emailjs.send(
                     "service_wibfxg9", //Email service as defined in EmailJS setting
                     "template_76jepvv", // Email template ID provided by EmailJS
@@ -57,7 +45,6 @@ function PostOption(props){
             >
             {({ errors, touched }) => (
             <Form>
-                {/* <label htmlFor="quote">Quote</label> */}
                 <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Message to otheres, your story, and/or thoughts. We may add it to the page to share to others. You will be 100% anonymous here." />
                 <Field name="issue" component="select" className="issueSelect">
                     <option value="" hidden >Select your issue</option>
@@ -93,15 +80,6 @@ function PostOption(props){
         autoClose={2000}
         hideProgressBar={true}
         />
-        {/* {
-        isSentTransition.map(({ item, key, props}) =>
-        item && 
-        <animated.div 
-        key={key} style={props}
-        className="sentMsg">
-            <h2>Message sent</h2>
-        </animated.div>)
-        } */}
         </div>
     );
 }

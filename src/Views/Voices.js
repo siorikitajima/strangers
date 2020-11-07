@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import PostVoice from '../Components/PostVoice';
-// import SoothingIcon from '../Components/SoothingIcon';
 import Prismic from 'prismic-javascript'
 
 function Voices() {
@@ -40,7 +39,6 @@ function Voices() {
             </React.Fragment>
 
             <PostVoice />
-            {/* <SoothingIcon/> */}
             
         </div>
     );

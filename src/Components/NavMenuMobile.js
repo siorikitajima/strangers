@@ -8,9 +8,9 @@ function NavMenuMobile(props){
         <div>
             <ul>
                 <li>
-                    <Link to="/scene"
+                    <Link to="/perspective"
                     onClick={props.closeMenu}>
-                        Scene
+                        Perspective
                     </Link>
                 </li>
                 <li>
@@ -26,13 +26,13 @@ function NavMenuMobile(props){
                     </Link>
                 </li>
                 <li>
-                    <Link to="/data/general"
+                    <Link to="/explore/general"
                     onClick={props.closeMenu}>
-                        Data
+                        Explore
                     </Link>
                 </li>
                 <li>
-                    <Link to="/help/general"
+                    <Link to="/help/counselling"
                     onClick={props.closeMenu}>
                         Find Help
                     </Link>

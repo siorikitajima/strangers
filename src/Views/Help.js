@@ -1,16 +1,14 @@
 import React from 'react';
-// import SoothingIcon from '../Components/SoothingIcon';
 import HelpTabs from '../Components/HelpTabs';
-import DataSources from '../Components/DataSources';
+import HelpPartners from '../Components/HelpPartners';
 
 function Help() {
 
     return(
-        <div className="data">
+        <div className="help">
             <h1>&#47;&#47; Find Help &#47;&#47;</h1>
             <HelpTabs/>
-            <DataSources/>
-            {/* <SoothingIcon/> */}
+            <HelpPartners/>
         </div>
     );
 }

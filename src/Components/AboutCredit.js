@@ -7,7 +7,7 @@ import OpenSource from '../Images/CC-BY-SA_icons.svg';
 
 function AboutCredit() {
     return(
-        <div>
+        <div className="creditContainer">
             <h4>&#47;&#47; Documentary Credit &#47;&#47;</h4>
             <p className="aboutCredit">
                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
@@ -37,7 +37,7 @@ function AboutCredit() {
                  Analytics, Design, animation and Code by <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a>, <br/>
                  Music by <a href="https://www.josephminadeo.com/" rel="noopener noreferrer" target="_blank">Joseph Minadeo</a>, <br/>
                  Writing by <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Perry Ho</a> and <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Angie Swee</a>, <br/>
-                 Research by <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Shiying Wan</a>
+                 Research by <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Shiying Wan</a>, <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a> and <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Angie Swee</a>
             </p>
             <p className="aboutCredit"><b className="subsubHead">Made with amazing free tools includes:</b><br/> <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">React.js</a>, <a href="https://p5js.org/" rel="noopener noreferrer" target="_blank">p5.js</a>, <a href="https://molleindustria.github.io/p5.play/" rel="noopener noreferrer" target="_blank">p5.play.js</a>, <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">Visual Studio Code</a>, <a href="https://www.react-spring.io/" rel="noopener noreferrer" target="_blank">React Spring</a>, <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass SCSS</a>, <a href="https://github.com/" rel="noopener noreferrer" target="_blank">Github</a>, <a href="https://www.npmjs.com/" rel="noopener noreferrer" target="_blank">npm</a> and more.</p>
 

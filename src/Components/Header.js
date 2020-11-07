@@ -30,8 +30,8 @@ function Header() {
             <div className="nav">
                 <ul className="screenMenu">
                     <li>
-                        <Link to="/scene">
-                            Scene
+                        <Link to="/perspective">
+                            Perspective
                         </Link>
                     </li>
                     <li>
@@ -45,12 +45,12 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/data/general">
-                            Data
+                        <Link to="/explore/general">
+                            Explore
                         </Link>
                     </li>
                     <li>
-                        <Link to="/help/general">
+                        <Link to="/help/counselling">
                             Help
                         </Link>
                     </li>

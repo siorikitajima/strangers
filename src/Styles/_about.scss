@@ -1,15 +1,23 @@
 .about, .docu {
     @include pageContainer();
-    padding: 0 0 40px 0;
-
+    padding: 0;
+    height: 100%;
     h4 {
         font-family: $bodyFont;
         font-style: italic;
         font-weight: normal;
     }
-    h2 {
+    h2, h3 {
         font-family: $headingFont;
         font-style: italic;
+    }
+    h3 {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    @include laPhone(){
+        padding: 0;
+        height: 100%;
     }
   }
 
@@ -34,7 +42,10 @@
         height: 45vw;
     }
 }
-
+.creditContainer {
+    background: rgb(173, 173, 173);
+    padding: 30px 0;
+}
 p.aboutCredit, p.docuCredit {
     font-size: 0.9em;
     line-height: 1.6em;
@@ -50,7 +61,7 @@ p.aboutCredit, p.docuCredit {
         position: absolute;
         bottom: -2px;
         left: 0;
-        z-index: -1;
+        // z-index: -1;
     }
     &:nth-of-type(5n+0)::after {
         background-color: $keyColorTwo;
@@ -101,7 +112,7 @@ p.aboutCredit, p.docuCredit {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 180px;
+        height: 150px;
         min-height: fit-content;
         z-index: 10;
 
@@ -121,7 +132,7 @@ p.aboutCredit, p.docuCredit {
                 line-height: 1.4em;
             }
             @include smTablet(){
-                width: 100%;
+                width: calc(100% - 8px);
                 padding: 20px 0;
             }
             h2 {
@@ -142,19 +153,35 @@ p.aboutCredit, p.docuCredit {
     }
     .homePanelsTop{
         .homePanel {
-            background: $keyColorOne;
+            background: $primaryColorDark;
+            border: $keyColorOne 4px solid;
+            color: $primaryColorLight;
+            transition-duration: 300ms;
+            &:hover{
+                background: $keyColorOne;
+            }
             &:nth-of-type(2){
-                background: $keyColorTwo;
-                color: $primaryColorLight;
+                border: $keyColorTwo 4px solid;
+                &:hover{
+                    background: $keyColorTwo;
+                }
             }
         }
     }
     .homePanelsBottom{
         .homePanel {
-            background: $keyColorThree;
+            background: $primaryColorDark;
+            color: $primaryColorLight;
+            border: $keyColorThree 4px solid;
+            transition-duration: 300ms;
+            &:hover{
+                background: $keyColorThree;
+            }
             &:nth-of-type(1){
-                background: $keyColorFour;
-                color: $primaryColorLight;
+                border: $keyColorFour 4px solid;
+                &:hover{
+                    background: $keyColorFour;
+                }
             }
         }
     }
@@ -162,25 +189,60 @@ p.aboutCredit, p.docuCredit {
     .heroBanner {
         width: 100%;
         height: 500px;
+        max-height: 50vh;
         background:linear-gradient(0deg, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(../Images/opening-title.jpg);
-        background-size: cover;
-        background-position: center top;
+        background-size: auto 600px;
+        background-position: center 60px;
         background-attachment: fixed;
+        background-repeat: no-repeat;
         padding: 50px 0;
-
         z-index: 400;
+        @include laTablet(){
+            background-position: center 40px;
+        }
+        @include smTablet(){
+            background-size: auto 500px;
+            height: 400px;
+        }
         @include laPhone(){
-            height: calc(50% - 100px);
+            height: 40vw;
+            min-height: fit-content;
             padding: 50px 0;
             position: relative;
             left: 0;
             top: 0;
             transform: translate(0, 0);
             margin: 0 auto;
+            background-size: auto 40%;
+            background-position: center 40px;
+            p {
+                font-size: 0.9em;
+            }
         }
         p, h1 {
         text-align: center;
         color: $primaryColorLight;
+        a {
+            position: relative;
+            &::after {
+                @include afterUnderline();
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                bottom: -4px;
+            }
+            &:hover::after {
+                @include hoverUnderline();   
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+            }
+            &:hover {
+                color: $keyColorOne;
+                transition-duration: 300ms;
+            }
+        }
+
         }
         button {
             width: 300px;

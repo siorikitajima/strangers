@@ -120,6 +120,9 @@ $laTablet: 960px;
         max-width: 80%;
         text-align: justify;
         margin: 20px auto;
+        @include laPhone() {
+            text-align: left;
+        }
     }
     h4 {
         margin: 30px auto 0 auto;

@@ -1,4 +1,6 @@
-.data {
+// This covers Explore and Help page
+
+.explore, .help, .docu {
     @include pageContainer();
     padding: 40px 0 0 0;
     p {
@@ -6,20 +8,20 @@
             max-width: 90%;
         }
     }
-    #dataTab, #HelpTab, #docuTab {
+    #expTab, #HelpTab, #docuTab {
         width: 700px;
         display: block;
-        padding: 14px calc(50% - 350px) 14px calc(50% - 350px);
+        padding: 20px calc(50% - 350px) 20px calc(50% - 350px);
         margin: 20px auto 0 auto;
         background-color: $primaryColorDark;
         // border-bottom: $keyColorOne 5px solid;
         @include laTablet(){
             width: 80vw;
-            padding: 14px 10vw 14px 10vw;
+            padding: 20px 10vw 20px 10vw;
         }
         @include laPhone(){
             width: 90vw;
-            padding: 10px 5vw 10px 5vw;
+            padding: 14px 5vw 14px 5vw;
         }
         .tabs{
             list-style: none;
@@ -57,10 +59,21 @@
     }
   }
 
-.dataVizContainer {
+.dataVizContainer, .helpContainer {
     margin: 40px auto 0 auto;
     @include laPhone(){
         margin: 30px auto 0 auto;
+    }
+    h3 {
+        font-family: $headingFont;
+        font-style: italic;
+        font-size: 1.2em;
+        background: rgb(173, 173, 173);
+        padding: 10px;
+        width: 700px;
+        max-width: 90%;
+        margin: 30px auto 40px auto;
+        line-height: 1.2em;
     }
     .dataText {
         p {
@@ -95,93 +108,72 @@
         font-size: 0.9em;
         }
     }
-p.helpList {
+    .helpList {
         margin-bottom: 50px;
         span {
             font-weight: bold;
             font-size: 1.2em;
             display: inline-block;
-            margin: 30px 0 5px 0;
+            margin: 50px 0 5px 0;
+            position: relative;
             @include laPhone(){
-                margin: 40px 0 5px 0;
+                margin: 60px 0 5px 0;
+            }
+            &::after {
+                content: "";
+                width: 700px;
+                max-width: 90vw;
+                height: 1px;
+                border-top: rgb(173, 173, 173) solid 1px;
+                position: absolute;
+                top: -30px;
+                left: 0;
             }
             &:first-of-type {
                 margin: 0 0 5px 0;
                 @include laPhone(){
                     margin: 10px 0 5px 0;
                 }
+                &::after {
+                    border-top:none
+                }
             }
+
         }
     }
-p.helpList a {
-        position: relative;
-    &::after {
-        content: "";
-        height: 4px;
-        width: 100%;
+    .helpBtn {
+        display: inline-block;
+        padding: 10px 15px 10px 45px;
+        margin: 14px 14px 8px 0;
+        font-weight: bold;
+        color: $primaryColorLight;
+        min-height: 24px;
+        width: auto;
         background-color: $keyColorOne;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        z-index: -1;
-    }
-    &:nth-of-type(5n+0)::after {
-        background-color: $keyColorTwo;
-    }
-    &:nth-of-type(5n+1)::after {
-        background-color: $keyColorThree;
-    }
-    &:nth-of-type(5n+2)::after {
-        background-color: $keyColorFour;
-    }
-    &:nth-of-type(5n+3)::after {
-        background-color: $keyColorFive;
-    }
-    &:hover::after {
-        height: 20px;
-        opacity: 0.5;
-        transition-duration: 300ms;
-    }
-    }
-p.helpList a.helpBtn {
-    display: inline-block;
-    padding: 10px 10px 10px 40px;
-    margin: 8px 14px 0 0;
-    font-weight: bold;
-    color: $primaryColorLight;
-    @include laPhone(){
-        padding: 7px 10px 5px 36px;
-        margin: 14px 14px 0 0;
-    }
-    &::after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-color: $keyColorOne;
-        position: absolute;
         border-radius: 4px;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-    }
-    &:nth-of-type(5n+0)::after {
+        @include laPhone(){
+            padding: 8px 15px 6px 40px;
+            margin: 10px 14px 10px 0;
+        }
+    &:nth-of-type(5n+0) {
         background-color: $keyColorTwo;
     }
-    &:nth-of-type(5n+1)::after {
+    &:nth-of-type(5n+1) {
         background-color: $keyColorThree;
     }
-    &:nth-of-type(5n+2)::after {
+    &:nth-of-type(5n+2) {
         background-color: $keyColorFour;
     }
-    &:nth-of-type(5n+3)::after {
+    &:nth-of-type(5n+3) {
         background-color: $keyColorFive;
     }
-    &:hover::after {
+    &:hover {
         opacity: 0.5;
         transition-duration: 300ms;
     }
-}
-p.helpList a.phone {
+    }
+
+    .phone, .weburl, .email, .location {
     position: relative;
     &::before{
     content: "";
@@ -192,34 +184,31 @@ p.helpList a.phone {
     height: 40px;
     background-image: url(../Images/Phone_icon.svg);
     background-size: 36px 36px;
-    background-position: 3px 3px;
+    background-position: 6px 3px;
+    background-repeat: no-repeat;
     @include laPhone(){
         width: 32px;
         height: 32px;
         background-size: 30px 30px;
     }
     }
-}
-p.helpList a.weburl {
-    position: relative;
+    }
+    .weburl {
         &::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 40px;
-        height: 40px;
         background-image: url(../Images/Web_icon.svg);
-        background-size: 36px 36px;
-        background-position: 3px 3px;
-        @include laPhone(){
-            width: 32px;
-            height: 32px;
-            background-size: 30px 30px;
-        }
         }
     }
-    h2, h3 {
+    .email {
+        &::before{
+        background-image: url(../Images/Email_icon.svg);
+        }
+    }
+    .location {
+        &::before{
+        background-image: url(../Images/Location_icon.svg);
+        }
+    }
+    h2 {
         font-family: $headingFont;
         font-style: italic;
         margin: 30px auto 0 auto;
@@ -228,6 +217,28 @@ p.helpList a.weburl {
             max-width: 90%;
         }
     }
+}
+.helpContainer {
+    margin: 40px auto 0 auto;
+    @include laPhone(){
+        margin: 50px auto 0 auto;
+    }
+}
+.partners {
+    padding: 40px 0 80px 0;
+    margin: 0 auto;
+    background-color: #adadad;
+    h3 {
+        background: $primaryColorLight;
+        margin: 10px auto 40px auto;
+    }
+    .helpList {
+        span{
+            &::after {
+                border-top: $primaryColorLight solid 1px;
+            }
+        }
+        }
 }
 
 .dataVizImg {
