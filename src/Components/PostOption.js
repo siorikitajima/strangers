@@ -12,7 +12,7 @@ function PostOption(props){
 
     const QuoteSchema = Yup.object().shape({
     quote: Yup.string()
-      .max(300, 'Max length is set as 300 characters')
+      .max(400, 'Max length is set as 400 characters')
       .required('Please fill in your quote'),
     issue: Yup.string()
       .required('Please select your issue'),
@@ -45,7 +45,7 @@ function PostOption(props){
             >
             {({ errors, touched }) => (
             <Form>
-                <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Message to otheres, your story, and/or thoughts. We may add it to the page to share to others. You will be 100% anonymous here." />
+                <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Message to otheres, your story, and/or thoughts. We may add it to the page to share to others. You will be 100% anonymous here. (Max 400 characters)" />
                 <Field name="issue" component="select" className="issueSelect">
                     <option value="" hidden >Select your issue</option>
                     <option value="mdd">MDD / Depression</option>
@@ -61,6 +61,7 @@ function PostOption(props){
                     <option value="eating-disorder">Eating Disorder</option>
                     <option value="schizophrenia">Schizophrenia</option>
                     <option value="other">Other mental health issue</option>
+                    <option value="general">General mental health issue</option>
                     <option value="morethanone">More than one issue</option>
                     <option value="noissue">No mental health issue</option>
                 </Field>

@@ -3,41 +3,155 @@
   }
 
 .voiceContainer {
-    width: 80%;
-    margin: 40px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
-    grid-auto-rows: min-content;
-    @include smTablet() {
-        margin: 30px auto;
-        grid-gap: 10px;
+    width: 100%;
+    // margin: 40px auto;
+
+    .allVoices {
+        width: 80%;
+        margin: 40px auto;
+        height: 100%;
+        // display: grid;
+        // grid-gap: 20px;
+        // grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+        // grid-auto-rows: min-content;
+
+        @include laTablet() {
+            // grid-gap: 10px;
+            margin: 30px auto;
+            width: 90%;
+        }
+        @include laPhone() {
+            width: 90%;
+            margin: 20px auto 60px auto;
+        }
     }
-    @include laPhone() {
-        width: 90%;
-        margin: 20px auto 60px auto;
-    }
+
+    .my-masonry-grid {
+        display: -webkit-box; /* Not needed if autoprefixing */
+        display: -ms-flexbox; /* Not needed if autoprefixing */
+        display: flex;
+        margin-left: -20px; /* gutter size offset */
+        width: 100%;
+        @include smTablet(){
+            margin-left: -10px;
+        }
+        @include laPhone(){
+            margin-left: 0;
+        }
+      }
+      .my-masonry-grid_column {
+        padding-left: 20px; /* gutter size */
+        background-clip: padding-box;
+        &:first-of-type{
+            padding-left: 0;
+        }
+        &:last-of-type{
+            padding-right: 20px;
+            @include smTablet(){
+                padding-right: 0;
+            }
+        }
+        &:nth-of-type(4n+0){
+            .voice {
+                background: $keyColorThree;
+                &:nth-of-type(5n+0) {
+                    background: $keyColorTwo;
+                    color: $primaryColorLight;
+                }
+                &:nth-of-type(5n+1) {
+                    background: $keyColorOne;
+                }
+                &:nth-of-type(5n+2) {
+                    background: $keyColorFour;
+                    color: $primaryColorLight;
+                }
+                &:nth-of-type(5n+3) {
+                    background: $keyColorFive;
+                }
+            }
+        }
+        &:nth-of-type(4n+1){
+            .voice {
+                background: $keyColorOne;
+                &:nth-of-type(5n+0) {
+                    background: $keyColorFive;
+                }
+                &:nth-of-type(5n+1) {
+                    background: $keyColorFour;
+                    color: $primaryColorLight;
+                }
+                &:nth-of-type(5n+2) {
+                    background: $keyColorTwo;
+                    color: $primaryColorLight;
+                }
+                &:nth-of-type(5n+3) {
+                    background: $keyColorThree;
+                }
+            }
+        }
+        &:nth-of-type(4n+2){
+            .voice {
+                background: $keyColorFive;
+                &:nth-of-type(5n+0) {
+                    background: $keyColorFour;
+                    color: $primaryColorLight;
+                }
+                &:nth-of-type(5n+1) {
+                    background: $keyColorThree;
+                }
+                &:nth-of-type(5n+2) {
+                    background: $keyColorOne;
+                }
+                &:nth-of-type(5n+3) {
+                    background: $keyColorTwo;
+                    color: $primaryColorLight;
+                }
+            }
+        }
+        &:nth-of-type(4n+3){
+            .voice {
+                background: $keyColorTwo;
+                color: $primaryColorLight;
+                &:nth-of-type(5n+0) {
+                    background: $keyColorOne;
+                    color: $primaryColorDark;
+                }
+                &:nth-of-type(5n+1) {
+                    background: $keyColorFive;
+                    color: $primaryColorDark;
+                }
+                &:nth-of-type(5n+2) {
+                    background: $keyColorThree;
+                    color: $primaryColorDark;
+                }
+                &:nth-of-type(5n+3) {
+                    background: $keyColorFour;
+                }
+            }
+        }
+      }
 }
 
 .voice {
     padding: 20px;
     border-radius: 5px;
-    background: $keyColorOne;
+    // background: $keyColorThree;
     position: relative;
-    &:nth-of-type(5n+0) {
-        background: $keyColorTwo;
-        color: $primaryColorLight;
-    }
-    &:nth-of-type(5n+1) {
-        background: $keyColorThree;
-    }
-    &:nth-of-type(5n+2) {
-        background: $keyColorFour;
-        color: $primaryColorLight;
-    }
-    &:nth-of-type(5n+3) {
-        background: $keyColorFive;
-    }
+    margin: 20px 0;
+    // &:nth-of-type(5n+0) {
+    //     background: $keyColorTwo;
+    //     color: $primaryColorLight;
+    // }
+    // &:nth-of-type(5n+1) {
+    //     background: $keyColorOne;
+    // }
+    // &:nth-of-type(5n+2) {
+    //     background: $keyColorFour;
+    //     color: $primaryColorLight;
+    // }
+    // &:nth-of-type(5n+3) {
+    //     background: $keyColorFive;
+    // }
     h3 {font-size: 1em;}
     h3::before, h3::after {
         width: 20px;

@@ -225,14 +225,20 @@ p.aboutCredit, p.docuCredit {
         a {
             position: relative;
             &::after {
-                @include afterUnderline();
+                content: "";
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background: $keyColorOne;
+                left: 0;
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
                 bottom: -4px;
             }
             &:hover::after {
-                @include hoverUnderline();   
                 visibility: hidden;
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);

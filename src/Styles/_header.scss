@@ -15,17 +15,26 @@
         height: 20px;
     }
     .appName {
-        font-size: 1.1em;
-        line-height: 0.9em;
-        margin: 14px;
-        color: $primaryColorLight;
-        a, a:hover {
-            color: $primaryColorLight;
+        width: 112px;
+        height: 40px;
+        background: url('../Images/StrangersInMyHead_logo.png');
+        background-size: 112px 40px;
+        // font-size: 1.1em;
+        // line-height: 0.9em;
+        // margin: 14px;
+        // color: $primaryColorLight;
+        &:hover {
+            opacity: 0.5;
+            transition-duration: 300ms;
             text-decoration: none;
         }
         @include laTablet {
+            width: 200px;
+            height: 20px;
             font-size: 1em;
-            margin: 4px 10px;
+            margin: 0 10px;
+            background: url('../Images/StrangersInMyHead_logo_banner.png');
+            background-size: 200px 20px;
         }
     }
     .nav {

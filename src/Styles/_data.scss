@@ -8,7 +8,8 @@
             max-width: 90%;
         }
     }
-    #expTab, #HelpTab, #docuTab {
+}
+    #expTab, #HelpTab, #docuTab, #voiceTab {
         width: 700px;
         display: block;
         padding: 20px calc(50% - 350px) 20px calc(50% - 350px);
@@ -16,11 +17,11 @@
         background-color: $primaryColorDark;
         // border-bottom: $keyColorOne 5px solid;
         @include laTablet(){
-            width: 80vw;
+            width: calc(100vw - 20vw);
             padding: 20px 10vw 20px 10vw;
         }
         @include laPhone(){
-            width: 90vw;
+            width: calc(100vw - 10vw);
             padding: 14px 5vw 14px 5vw;
         }
         .tabs{
@@ -57,7 +58,16 @@
             }
         }
     }
-  }
+
+    #voiceTab{
+     .tabs {
+        padding: 10px 10px;
+        &:hover {
+            color: $keyColorOne;
+            transition-duration: 300ms;
+        }
+        }
+    }
 
 .dataVizContainer, .helpContainer {
     margin: 40px auto 0 auto;

@@ -21,12 +21,11 @@ function Header() {
 
     return(
         <header className="headerContainer">
-            <div className="appName">
-                <Link to="/#"
+            <Link to="/#"
                 onClick={() => setShowMenu(false)}>
-                Strangers in my Head
-                </Link>
+                <div className="appName">
                 </div>
+            </Link>
             <div className="nav">
                 <ul className="screenMenu">
                     <li>

@@ -15,7 +15,7 @@ function AboutMain(){
         <div className="aboutMain">
             <div className="heroBanner">
                 <h1>&#47;&#47; Hello Stranger &#47;&#47;</h1>
-                <p>This is a Singapore- based mental health resource site created alongside the <Link to="/documentary/series">documentary series <b>Strangers in My Head</b></Link>.</p>
+                <p>This is a Singapore- based mental health resource site created alongside the <Link to="/documentary/series">documentary series</Link> <b>Strangers in My Head</b>.</p>
             </div>
 
             <div className="homePanelsTop">
