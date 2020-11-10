@@ -19,11 +19,11 @@ function DocuSeries() {
                 className = "embedVideoIframe"
                 styles={{margin: "0", border: "none"}}/>
 
-            <a href="#/help/alcohol-abuse">
-            <div className="helpLink">
-                Watch Online
+            {/* <a href="#/help/alcohol-abuse"> */}
+            <div className="helpLink disable">
+                Coming Soon on CNA
             </div>
-            </a>
+            {/* </a> */}
 
         </div>
     );

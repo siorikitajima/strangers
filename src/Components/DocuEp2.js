@@ -29,11 +29,11 @@ function DocuEp2() {
                 <b>Episode 2 "Episode1 title"</b> releasing on <b>December 16</b>, 2020 12:00 AM SGT
             </p>
             <Gallery photos={photos}/>
-            <a href="#/help/alcohol-abuse">
-            <div className="helpLink">
-                Watch Online
+            {/* <a href="#/help/alcohol-abuse"> */}
+            <div className="helpLink disable">
+                Coming Soon on CNA
             </div>
-            </a>
+            {/* </a> */}
             <Ep2Credit/>
         </div>
     );

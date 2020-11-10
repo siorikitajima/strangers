@@ -58,6 +58,36 @@
             }
         }
     }
+    @keyframes slidedown {
+        0% {bottom: 0; opacity:0;}
+        100% {bottom: -40px; opacity:1;}
+    }
+
+    #HelpTab {
+        position: relative;
+        margin: 20px auto 80px auto;
+        &::after {
+            content: "Following services are for Singapore only.";
+            height: 20px;
+            width: calc( 100% - 20px);
+            padding: 10px;
+            font-family: $bodyFont;
+            color: $primaryColorDark;
+            background-color: #adadad;
+            font-style: italic;
+            position: absolute;
+            animation: slidedown 500ms;
+            animation-fill-mode: forwards;
+            // bottom: -40px;
+            left: 0;
+            display: block;
+            @include smPhone() {
+                font-size: 0.9em;
+                height: auto;
+                min-height: 20px;
+            }
+        }
+    }
 
     #voiceTab{
      .tabs {
@@ -278,6 +308,10 @@
         opacity: 0.5;
         transition-duration: 300ms;
     }
+}
+.disable {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .watchBanner {

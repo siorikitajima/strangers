@@ -20,7 +20,7 @@
 .embedVideoIframe {
     margin: 20px auto;
     @include smTablet(){
-    max-width: 100vw;
+    max-width: 98vw;
     height: 57vw;
     }
 }
@@ -28,7 +28,7 @@
 .embedAudioIframe {
     margin: 20px auto;
     @include smTablet(){
-    max-width: 100vw;
+    max-width: 98vw;
     height: 100vw;
     }
 }

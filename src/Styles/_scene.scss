@@ -160,6 +160,7 @@
     right: 20px;
     top: 80px;
     opacity: 0.8;
+    z-index: 300;
     &:hover {
         opacity: 1;
         transition-duration: 300ms;

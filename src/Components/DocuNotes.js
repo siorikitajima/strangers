@@ -27,6 +27,22 @@ function DocuNotes() {
         </Card>
 
       <Card>
+            <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Card.Header>
+    A note by <b>Shiying</b>, Producer
+                </Card.Header>
+            </Accordion.Toggle>
+          <Accordion.Collapse eventKey="7">
+            <Card.Body>
+    <p>To: Le Yong, Dheesha, Karen and Jess<br/>
+Thank you for letting us into your home and into your life. We know it was a difficult and demanding decision to make. You trusted us with your vexations, your tears, your solitude. At the same time, you are unaware that we have also witnessed your deep compassion and acute regard of the feelings of those around you as you carefully share but not want to burden. Through each moment spent together during the making of the documentary, I realise that there are much I do not yet understand about mental health issues and about life in fact, but you have been patient in educating me.<br/>
+Thank you for helping me re-learn to take one step at a time no matter how small that step might be. Thank you for reminding me of the grace to find your own path even when others misjudge you. Thank you for showing me the strength to persevere and not give up. You have been an inspiration and I truly wish someday I’ll be half as tenacious and determined as you are.<br/>
+With all my love and ears whenever you may need,</p>
+    <p className="right">Shiying<br/>Producer</p>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 <Card.Header>
     A note by <b>Angeline Swee</b>, Executive Producer, Very!
@@ -98,7 +114,32 @@ function DocuNotes() {
             </Card.Body>
           </Accordion.Collapse>
         </Card>
-
+        <Card>
+            <Accordion.Toggle as={Button} variant="link" eventKey="5">
+                <Card.Header>
+    A note by <b>Veron Tan</b>, Post Production Manager
+                </Card.Header>
+            </Accordion.Toggle>
+          <Accordion.Collapse eventKey="5">
+            <Card.Body>
+    <p>This series opened my eyes to a world I’ve never encountered. I never knew these issues existed. I’ll learn to be more sensitive towards people from now on. Indeed, a little patience & understanding go a long way.</p>
+    <p className="right">Veron Tan<br/>Post Production Manager</p>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+            <Accordion.Toggle as={Button} variant="link" eventKey="6">
+                <Card.Header>
+    A note by <b>Koon Su</b>, Audio Engineer
+                </Card.Header>
+            </Accordion.Toggle>
+          <Accordion.Collapse eventKey="6">
+            <Card.Body>
+    <p>It is important to educate the general public about mental health conditions. Many go about their own lives without bothering to find out more about the struggles of others. Not every life is smooth-sailing, some go through much more challenges than others and it is definitely not of their own choice or doing.</p>
+    <p className="right">Koon Su<br/>Audio Engineer</p>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
       </Accordion>
 
     </div>
