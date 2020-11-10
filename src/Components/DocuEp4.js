@@ -1,6 +1,7 @@
 import React from 'react';
 import Ep4Credit from '../Components/Ep4Credit';
 import Gallery from "react-photo-gallery";
+import Iframe from 'react-iframe';
 
 function DocuEp4() {
     const photos = [
@@ -29,6 +30,17 @@ function DocuEp4() {
                 <b>Episode 4 "Episode1 title"</b> releasing on <b>December 30</b>, 2020 12:00 AM SGT
             </p>
             <Gallery photos={photos}/>
+
+            <Iframe url="https://player.vimeo.com/video/175612072"
+                width="640"
+                height = "360"
+                display="initial"
+                position="relative"
+                allow="autoplay; fullscreen" allowfullscreen
+                frameBorder="none"
+                className = "embedVideoIframe"
+                styles={{margin: "0", border: "none"}}/>
+                
             {/* <a href="#/help/alcohol-abuse"> */}
             <div className="helpLink disable">
                 Coming Soon on CNA

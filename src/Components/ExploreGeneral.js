@@ -1,6 +1,6 @@
 import React from 'react';
-import Img1in7 from '../Images/Data_1-in-7.png'
-import Img3in4 from '../Images/Data_3-in-4.png'
+import Img1in7 from '../Images/Data_1-in-7.png';
+import Img3in4 from '../Images/Data_3-in-4.png';
 import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 
 function ExploreGeneral() {

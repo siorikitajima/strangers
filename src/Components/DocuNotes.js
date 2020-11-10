@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, Card, Button } from 'react-bootstrap'
+import { Accordion, Card, Button } from 'react-bootstrap';
 
 function DocuNotes() {
   return (
@@ -137,6 +137,23 @@ With all my love and ears whenever you may need,</p>
             <Card.Body>
     <p>It is important to educate the general public about mental health conditions. Many go about their own lives without bothering to find out more about the struggles of others. Not every life is smooth-sailing, some go through much more challenges than others and it is definitely not of their own choice or doing.</p>
     <p className="right">Koon Su<br/>Audio Engineer</p>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+            <Accordion.Toggle as={Button} variant="link" eventKey="8">
+                <Card.Header>
+    A note by <b>Joseph Minadeo</b>, Composer
+                </Card.Header>
+            </Accordion.Toggle>
+          <Accordion.Collapse eventKey="8">
+            <Card.Body>
+    <p>It has been an honor to compose the score for Strangers in my Head considering how important mental health is to me and those around me. As someone who has experienced a range of mental health issues, I feel that I can relate to the people profiled in this show, in some cases, very deeply.</p>
+    <p>The subject of mental health feels vast and somewhat nebulous covering biology, psychology, society, perception, consciousness etc.. and it all intersects with politics, socioeconomics, vast and growing inequality and injustice, environmental destruction and living in a period of mass extinction. These things can cause great anxiety, especially, and rightfully so, in younger generations. It seems perfectly natural and normal that they do. I think billions of animals burning to death in Australia SHOULD cause great and possibly prolonged anxiety to anyone with empathy.. anyone that cares about this world. Watching the world breakdown IS depressing and anxious to any thinking and caring human and it should be ok to talk about.</p>
+    <p>I also believe that the science is still VERY young regarding the brain, perception and how individuals experience the world. Some terms like Attention Deficit Disorder (something I have been diagnosed with) I often disagree with. I think attention 'issues' can actually be a healthy brain interacting with an overstimulating world. Our biology evolved over millions of years on a planet much different than the one that exists all of the sudden. A much quieter, darker and simpler planet. Now we are bombarded with light and sound pollution, air pollution, information overload, manipulative media etc. To put it as simply as I can, I actually often think 'crazy' is normal.</p>
+    <p>I am no stranger to mental health issues and I think, whether diagnosed or not, very few people are. But like Greta Thunberg, I often think of the things a doctor would diagnose as a disorder as my super powers. What a doctor might call ADD, I call fast tangential thinking and it is clearly a driving force behind making original music and art. My strong empathy for life on this planet, while sometimes soul crushing, is also a huge reason I can make emotive creations and match aesthetics of projects. I am extremely lucky and privileged that I have an outlet.. a way to turn my emotions and inner turbulence into something.</p>
+    <p>Mental health will continue to evolve and change as society changes. Advances in neuroscience, biology and even things like quantum mechanics and computing power will continue to shape our understanding of the mind and mental health. When I see terms like neural diversity, it makes me feel like we are moving in the right direction in regards to mental health.. away from reductive binaries, spectrums and simplistic terms and towards acknowledging the infinitely complex beings we are all. My hope is that a deeper understanding of these things will help lead to a more empathetic and humane society.</p>
+    <p className="right">Joseph Minadeo<br/>Composer</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

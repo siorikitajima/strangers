@@ -19,7 +19,7 @@ function ExploreBPD() {
             </div>
             </a>
 
-            <WatchBanner issue={"Borderline Personality Disorder"} ep={"3"} date={"23 Dec"} link={"http://very.sg/"} />
+            <WatchBanner issue={"Borderline Personality Disorder"} ep={"3"} date={"23 Dec"} link={"../../documentary/ep3"} />
 
         </div>
     );

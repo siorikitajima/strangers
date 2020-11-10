@@ -19,7 +19,7 @@ function ExploreDepression() {
             </div>
             </a>
 
-            <WatchBanner issue={"Depression"} ep={"2"} date={"16 Dec"} link={"http://very.sg/"} />
+            <WatchBanner issue={"Depression"} ep={"2"} date={"16 Dec"} link={"../../documentary/ep2"} />
 
         </div>
     );

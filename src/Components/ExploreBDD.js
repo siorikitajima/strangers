@@ -19,7 +19,7 @@ function ExploreBDD() {
             </div>
             </a>
 
-            <WatchBanner issue={"Body dysmorphic disorder"} ep={"1"} date={"9 Dec"} link={"http://very.sg/"} />
+            <WatchBanner issue={"Body dysmorphic disorder"} ep={"1"} date={"9 Dec"} link={"../../documentary/ep1"} />
             
         </div>
     );

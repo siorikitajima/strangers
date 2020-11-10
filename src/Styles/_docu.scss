@@ -8,7 +8,7 @@
     }
     .react-photo-gallery--gallery {
         max-width: 700px;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
     h4 {
         font-family: $bodyFont;
@@ -35,6 +35,28 @@
 
 .docSectionDiv {
     margin: 40px auto 60px auto;
+    h4 {
+        width: 700px;
+        max-width: 80%;
+        font-weight: normal;
+        margin: 20px auto;
+        padding-bottom: 10px;
+        color: $keyColorOne;
+        text-align: right;
+        position: relative;
+        @include laPhone() {
+            max-width: 90%;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background-color: $keyColorOne;
+        }
+    }
 }
 
 // Accordion Style

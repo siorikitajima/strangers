@@ -8,6 +8,11 @@
             max-width: 90%;
         }
     }
+    h2 {
+        font-family: $headingFont;
+        font-style: italic;
+        margin: 20px auto 20px auto;
+    }
 }
     #expTab, #HelpTab, #docuTab, #voiceTab {
         width: 700px;
@@ -59,8 +64,10 @@
         }
     }
     @keyframes slidedown {
-        0% {bottom: 0; opacity:0;}
-        100% {bottom: -40px; opacity:1;}
+        0% {bottom: 0; opacity:0; background-color: #adadad;}
+        50% {bottom: -40px; opacity:1;background-color: #adadad;}
+        75% {bottom: -40px; opacity:1;background-color: $keyColorOne;}
+        100% {bottom: -40px; opacity:1;background-color: #adadad;}
     }
 
     #HelpTab {
@@ -76,7 +83,7 @@
             background-color: #adadad;
             font-style: italic;
             position: absolute;
-            animation: slidedown 500ms;
+            animation: slidedown 2000ms ease-in-out;
             animation-fill-mode: forwards;
             // bottom: -40px;
             left: 0;
@@ -115,6 +122,9 @@
         margin: 30px auto 40px auto;
         line-height: 1.2em;
     }
+    .right {
+        text-align: right;
+    }
     .dataText {
         p {
             text-align: center;
@@ -131,9 +141,9 @@
             }
     }
     }
-    .dataSources {
+    .dataSources, .sources {
         background: rgb(173, 173, 173);
-        padding: 20px 0;
+        padding: 20px;
         @include laPhone(){
             padding: 20px 0 140px 0;
         }
@@ -141,11 +151,31 @@
             font-family: $bodyFont;
             font-style: italic;
             font-weight: normal;
-            margin: 10px auto;
+            margin: 10px auto 0 auto;
         }
         p {
         text-align: center;
         font-size: 0.9em;
+        margin-bottom: 50px;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    .storyHead {
+        width: calc(700px - 20px);
+        max-width: 90%;
+        margin: 40px auto 20px auto;
+        min-height: 20px;
+        padding: 10px;
+        background-color: rgb(173, 173, 173);
+        font-family: $bodyFont;
+        font-style: italic;
+    }
+    .sources {
+        @include laPhone(){
+            width: calc(90% - 40px);
+            padding: 20px 20px 20px 20px;
         }
     }
     .helpList {
@@ -316,7 +346,7 @@
 
 .watchBanner {
     width: 700px;
-    height: 140px;
+    min-height: 140px;
     max-width: 80%;
     margin: 0 auto 50px auto;
     display: flex;
@@ -336,23 +366,25 @@
         padding: 0 0 5px 0;
     }
     .showThumb {
-        width: 240px;
-        height: 140px;
+        width: 300px;
+        min-height: 140px;
         overflow: hidden;
         background: gray;
         border-radius: 4px 0 0 4px;
+        position: relative;
         img {
             width: auto;
-            height: 140px;
-            margin-left: -35px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
         @include laPhone(){
             width: 100%;
             display: block;
             border-radius: 4px 4px 0 0;
             img {
-                width: 100%;
-                margin-left: unset;
             }
         }
     }
