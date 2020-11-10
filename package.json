@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.3",
     "emailjs-com": "^2.6.3",
+    "express": "^4.17.1",
     "formik": "^2.2.0",
     "node": "^10.22.1",
     "node-fetch": "^2.6.1",
