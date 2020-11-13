@@ -45,7 +45,7 @@ function PostOption(props){
             >
             {({ errors, touched }) => (
             <Form>
-                <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Message to otheres, your story, and/or thoughts. We may add it to the page to share to others. You will be 100% anonymous here. (Max 400 characters)" />
+                <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Type your message, your story or thoughts on mental health here and we may add it to this page. You will be 100% anonymous. (Max 400 characters)" />
                 <Field name="issue" component="select" className="issueSelect">
                     <option value="" hidden >Select your issue</option>
                     <option value="mdd">MDD / Depression</option>
