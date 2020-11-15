@@ -4,7 +4,7 @@ import {useSpring, animated} from 'react-spring';
 // import {useTransition, useSpring, animated} from 'react-spring';
 // import SoothingScreen from './SoothingScreen';
 import {Link, useRouteMatch, useHistory} from 'react-router-dom';
-import { isIOS } from "react-device-detect";
+// import { isIOS, isFirefox, isSafari } from "react-device-detect";
 
 function BreatheIcon() {
     const soothingtransition = useSpring ({
@@ -38,27 +38,27 @@ function BreatheIcon() {
     
     function CloseBreathe() {
         let history = useHistory()
-        if(isIOS) {
-        return(
-            <Link to="/scene">                        
-                <animated.div 
-                        className="soothingIcon" style={soothingtransition}>
-                            <h4>BREATHE</h4>
-                </animated.div>
-            </Link>
-        );
-        } else {
+        // if(isIOS) {
+        // return(
+        //     <Link to="/perspective">                        
+        //         <animated.div 
+        //                 className="soothingIcon" style={soothingtransition}>
+        //                     <h4>BREATHE</h4>
+        //         </animated.div>
+        //     </Link>
+        // );
+        // } else {
             return(
-                <Link to="/scene">                        
+                // <Link to="/perspective">                  
                     <animated.div 
                             className="soothingIcon" style={soothingtransition}
                             onClick={() => history.goBack()}
                             >
                                 <h4>BREATHE</h4>
                     </animated.div>
-                </Link>
+                // </Link>
             );
         }
-    }
+    // }
 }
 export default BreatheIcon;

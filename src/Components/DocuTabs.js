@@ -16,6 +16,11 @@ import DocEp2 from '../Components/DocuEp2';
 import DocEp3 from '../Components/DocuEp3';
 import DocEp4 from '../Components/DocuEp4';
 import DocuSoundtrack from '../Components/DocuSoundtrack';
+import DocuPhotos from '../Components/DocuPhotos';
+import DocuPhotosEP1 from '../Components/DocuPhotosEP1';
+import DocuPhotosEP2 from '../Components/DocuPhotosEP2';
+import DocuPhotosEP3 from '../Components/DocuPhotosEP3';
+import DocuPhotosEP4 from '../Components/DocuPhotosEP4';
 
 function DocuTabs() {
     let { path, url } = useRouteMatch();
@@ -60,21 +65,27 @@ function DocuTabs() {
             <Switch>
                 <Route exact path={path}>
                     <DocuSeries/>
+                    <DocuPhotos/>
                 </Route>
                 <Route exact path={`${path}/series`}>
                     <DocuSeries/>
+                    <DocuPhotos/>
                 </Route>
                 <Route exact path={`${path}/ep1`}>
                     <DocEp1/>
+                    <DocuPhotosEP1/>
                 </Route>
                 <Route path={`${path}/ep2`}>
                     <DocEp2/>
+                    <DocuPhotosEP2/>
                 </Route>
                 <Route path={`${path}/ep3`}>
                     <DocEp3/>
+                    <DocuPhotosEP3/>
                 </Route>
                 <Route path={`${path}/ep4`}>
                     <DocEp4/>
+                    <DocuPhotosEP4/>
                 </Route>
                 <Route path={`${path}/soundtrack`}>
                     <DocuSoundtrack/>

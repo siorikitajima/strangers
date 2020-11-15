@@ -1,17 +1,21 @@
 import React from 'react';
 import Img1in62 from '../Images/Data_1-in-62.png';
+import {IssueInfoData} from '../Components/IssueInfoData';
 
 function ExploreAnxiety() {
     return(
         <div className="dataVizContainer">
+            <h2>{IssueInfoData[2].h1}</h2>
+
             <img src={Img1in62} alt="data" className="dataVizImg"/>
             <div className="dataText">
-            <p><span>1/62</span> people in Singapore has experienced <br/><b>Anxiety</b> in their life.</p>
+            <p><span>1/{IssueInfoData[2].number}</span><br/> {IssueInfoData[2].location} has experienced <br/><b>{IssueInfoData[2].h1}</b> in their life.<br/>(Source: <a href={IssueInfoData[2].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[2].source}</a>)
+            </p>
             </div>
-            <p>A wide range of conditions that affect mood, thinking, and behavior. Among the conditions assessed in this study, MDD, alcohol abuse and OCD emerged as the top three mental disorders in Singapore.</p>
-            <h2>What is Anxiety</h2>
-            <p>In the 2016 study, more than 3/4 with a mental disorder in their lifetime did not seek any professional help. Among those who sought help, the majority of them did not seek help for 4 to 11 years. Past research have found that the inability to recognise the symptoms of a mental illness and concerns regarding the stigma associated with mental illness are two common reasons for treatment delay for mental disorders.</p>
 
+            <p className="infoText">{IssueInfoData[2].body} (Source: <a href={IssueInfoData[2].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[2].source}</a>)</p>
+
+            <p className="infoText">{IssueInfoData[14].body}</p>
             <a href="#/help/counselling">
             <div className="helpLink">
                 Find Help

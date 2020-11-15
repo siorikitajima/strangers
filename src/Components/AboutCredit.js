@@ -8,30 +8,7 @@ import OpenSource from '../Images/CC-BY-SA_icons.svg';
 function AboutCredit() {
     return(
         <div className="creditContainer">
-            <h4>&#47;&#47; Documentary Credit &#47;&#47;</h4>
-            <p className="aboutCredit">
-                Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>,
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>, 
-                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">Creators Name</a>
-            </p>
-            <h4>&#47;&#47; Mini-App Credit &#47;&#47;</h4>
+            <h4>&#47;&#47; SIMH App Credit &#47;&#47;</h4>
             <p className="aboutCredit">
                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">PatternBased</a>, <br/>
                  Analytics, Design, animation and Code by <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a>, <br/>

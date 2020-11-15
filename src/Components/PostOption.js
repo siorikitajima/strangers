@@ -28,7 +28,6 @@ function PostOption(props){
             }}
             validationSchema={QuoteSchema}
             onSubmit={async (values) => {
-                toast("Message Sent");
                 await new Promise((r) => setTimeout(r, 1500));
                 emailjs.send(
                     "service_wibfxg9", //Email service as defined in EmailJS setting
@@ -39,6 +38,7 @@ function PostOption(props){
                     },
                     "user_GJVnDS7vbw31lYWmcZT82" // EmailJS user ID
                   )
+                toast("Message Sent");
                 handleChange();
             }}
             

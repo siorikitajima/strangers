@@ -157,3 +157,21 @@ $laTablet: 960px;
 iframe {
     border-width: 0;
 }
+
+.ie-warning {
+    width: 400px;
+    max-width: 90%;
+    height: 300px;
+    margin: 40vh auto;
+    text-align: center;
+    h2 {
+        font-family: $headingFont;
+        font-style: italic;
+    }
+    p {
+        font-family: $bodyFont;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
