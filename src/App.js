@@ -17,16 +17,6 @@ import BreatheIcon from './Components/BreatheIcon';
 import Documentary from './Views/Documentary';
 
 function App() {
-  // if (isIE) {
-  //   return (
-  //     <div className="ie-warning">
-  //       <h2>Unsupported Browser</h2>
-  //       <p>App "Strangers in My Head" will not work in Internet Explorer. Use <a href="https://www.microsoft.com/en-us/edge/business/download" rel="noopener noreferrer" target="_blank">Microsoft Edge</a> or <a href="https://www.google.com/chrome/" rel="noopener noreferrer" target="_blank">Google Chrome</a> for the full experience.</p>
-  //       <p>For streaming the documentary "Strangers in My Head", please visit <a href="https://www.channelnewsasia.com/" rel="noopener noreferrer" target="_blank">CNA</a></p>
-  //     </div>
-  //   );
-  // }
-  // else {
   return (
     <Router>
     <div className="App">
@@ -64,7 +54,6 @@ function App() {
     <BreatheIcon/>
     </Router>
   );
-  // }
 }
 
 export default App;
