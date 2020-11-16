@@ -14,7 +14,7 @@ import Masonry from 'react-masonry-css';
 function VoicesPosts() {
     let { path, url } = useRouteMatch();
     const [filter, setFilter] = useState('all');
-    const thelink = 'https://siorikitajima.github.io/strangers/#/voices';
+    const thelink = 'https://strangersinmyhead.info/voices';
     const notify = () => toast("URL Copied");
     // const {breakpointColumnsObj} = {
     //     default: 4,

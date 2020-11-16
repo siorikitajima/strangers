@@ -240,6 +240,12 @@
         margin-top: 20px;
         font-size: 1em;
     }
+    @include smTablet(){
+        height: 100px;
+        h3 {
+            margin-top: 40px;
+        }
+    }
     @include laPhone(){
         height: 100px;
         display: block;

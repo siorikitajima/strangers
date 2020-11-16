@@ -175,16 +175,16 @@
                 margin-left: 50px;
                 padding: 0;
                 margin-right: 30px;
+                margin-top: 10px;
             }
         }
     }
 }
 
-.playButton, .pauseButton {
+div.playButton, div.pauseButton {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url(../Images/Pause_btn.svg);
     margin: 5px 0;
     border: none;
     cursor: pointer;
@@ -195,17 +195,25 @@
     &:focus {
        outline: none;
     }
-    @include laPhone(){
+    @include smTablet(){
         width: 40px;
         height: 40px;
-        margin: 0;
     }
 
 }
-.playButton {
-    background: url(../Images/Play_btn.svg);
+// .playButton {
+//     background-image: url(../Images/Play_btn.svg);
+// }
+// .pauseButton {
+//     background-image: url(../Images/Pause_btn.svg);
+// }
+.audio-msg {
+    font-family: $bodyFont;
+    font-size: 0.6em;
+    font-weight: normal;
+    opacity: 0.5;
+    color: $primaryColorLight;
 }
-
 .soothingMobileTop {
     @include dropShadow();
     z-index: 650;

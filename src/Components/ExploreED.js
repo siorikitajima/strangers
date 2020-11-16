@@ -16,7 +16,7 @@ function ExploreED() {
             <p className="infoText">{IssueInfoData[12].body} (Source: <a href={IssueInfoData[12].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[12].source}</a>)</p>
             
             <p className="infoText">{IssueInfoData[14].body}</p>
-            <a href="#/help/specialists">
+            <a href="../help/specialists">
             <div className="helpLink">
                 Find Help
             </div>

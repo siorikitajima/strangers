@@ -21,7 +21,7 @@ function DocuEp2() {
                 className = "embedVideoIframe"
                 styles={{margin: "0", border: "none"}}/>
                 
-            {/* <a href="#/help/alcohol-abuse"> */}
+            {/* <a href="../help/alcohol-abuse"> */}
             <div className="helpLink disable">
                 Coming Soon on CNA
             </div>

@@ -16,7 +16,7 @@ function ExploreAnxiety() {
             <p className="infoText">{IssueInfoData[2].body} (Source: <a href={IssueInfoData[2].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[2].source}</a>)</p>
 
             <p className="infoText">{IssueInfoData[14].body}</p>
-            <a href="#/help/counselling">
+            <a href="../help/counselling">
             <div className="helpLink">
                 Find Help
             </div>

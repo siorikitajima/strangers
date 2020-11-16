@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './Components/Header'
 import './App.scss';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
+  // HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";

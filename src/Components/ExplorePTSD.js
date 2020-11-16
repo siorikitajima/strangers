@@ -16,7 +16,7 @@ function ExplorePTSD() {
             <p className="infoText">{IssueInfoData[10].body} (Source: <a href={IssueInfoData[10].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[10].source}</a>)</p>
             
             <p className="infoText">{IssueInfoData[14].body}</p>
-            <a href="#/help/counselling">
+            <a href="../help/counselling">
             <div className="helpLink">
                 Find Help
             </div>

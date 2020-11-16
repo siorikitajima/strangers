@@ -21,7 +21,7 @@ function Header() {
 
     return(
         <header className="headerContainer">
-            <Link to="/#"
+            <Link to="/"
                 onClick={() => setShowMenu(false)}>
                 <div className="appName">
                 </div>

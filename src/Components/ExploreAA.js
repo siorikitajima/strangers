@@ -17,7 +17,7 @@ function ExploreAA() {
             <p className="infoText">{IssueInfoData[4].body} (Source: <a href={IssueInfoData[4].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[4].source}</a>)</p>
 
             <p className="infoText">{IssueInfoData[14].body}</p>
-            <a href="#/help/specialists">
+            <a href="../help/specialists">
             <div className="helpLink">
                 Find Help
             </div>

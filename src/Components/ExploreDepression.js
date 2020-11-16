@@ -18,7 +18,7 @@ function ExploreDepression() {
             <p className="infoText">{IssueInfoData[0].body} (Source: <a href={IssueInfoData[0].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[0].source}</a>)</p>
             
             <p className="infoText">{IssueInfoData[14].body}</p>
-            <a href="#/help/counselling">
+            <a href="../help/counselling">
             <div className="helpLink">
                 Find Help
             </div>
