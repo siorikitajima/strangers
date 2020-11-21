@@ -8,8 +8,6 @@ import trackOne from '../Sounds/Soothing02.mp3';
 import trackTwo from '../Sounds/Soothing03.mp3';
 import { isIOS } from "react-device-detect";
 
-
-
 const soothingData = [
     {id:0, 
       sketch:'Sine Orbit', 
@@ -51,7 +49,7 @@ function Breathe(){
                     {/* <div className="playButton"></div> */}
                     <div className="trackInfo">
                         <h3>{soothingData[sketch].sketch}</h3>
-                        <p className="soothingCredit">Code by Siori Kitajima<br/> Music by Joseph Minadeo "{soothingData[sketch].track}"</p>
+                        <p className="soothingCredit">Code by <a href='https://siorikitajima.com/' rel="noopener noreferrer" target="_blank">Siori Kitajima</a><br/> Music by <a href='https://albums.patternbased.com/album/strangers-in-my-head-soundtrack' rel="noopener noreferrer" target="_blank">Joseph Minadeo "{soothingData[sketch].track}"</a></p>
                     </div>
                 </div>
                 <div className="numberBtns">
@@ -71,7 +69,7 @@ function Breathe(){
             </div>
             <div className="soothingMobileBottom">
                 <h3>{soothingData[sketch].sketch}</h3>
-                <p className="soothingCredit">Code by Siori Kitajima<br/> Music by Joseph Minadeo "{soothingData[sketch].track}"</p>
+                <p className="soothingCredit">Code by <a href='https://siorikitajima.com/' rel="noopener noreferrer" target="_blank">Siori Kitajima</a><br/> Music by <a href='https://albums.patternbased.com/album/strangers-in-my-head-soundtrack' rel="noopener noreferrer" target="_blank">Joseph Minadeo "{soothingData[sketch].track}"</a></p>
             </div>
 
         </div>
