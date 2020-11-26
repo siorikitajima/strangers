@@ -6,7 +6,7 @@ function Documentary() {
 
     return(
         <div className="docu">
-            <h1>&#47;&#47; Documentary Heading &#47;&#47;</h1>
+            <h1>&#47;&#47; Documentary &#47;&#47;</h1>
             <DocuTabs/>
             <DocuNotes/>
         </div>

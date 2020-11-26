@@ -1,5 +1,6 @@
 import React from 'react';
 import Img1in335 from '../Images/Data_1-in-335.png';
+import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 import {IssueInfoData} from '../Components/IssueInfoData';
 
 function ExploreSchizophrenia() {
@@ -22,6 +23,9 @@ function ExploreSchizophrenia() {
                 Find Help
             </div>
             </a>
+
+            <WatchBannerGeneral/>
+
         </div>
     );
 }

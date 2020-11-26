@@ -4,7 +4,7 @@ import {
     Link
   } from "react-router-dom";
 
-function WatchBanner(props, link, issue, ep, date) {
+function WatchBanner(props, link, prg, issue, ep, date) {
     return(
         <div>
          <Link to={props.link} >
@@ -13,8 +13,8 @@ function WatchBanner(props, link, issue, ep, date) {
                         <img src={showSS} alt="SIMH"/>
                     </div>
                     <div className="showInfo">
-                        <p><span>{props.issue}</span> is featured in the documentary <span>Strangers in My Head</span> episode #{props.ep}.</p>
-                        <p className="watchCTA">Coming Soon on {props.date} 2020 &#9656;&#9656;</p>
+                        <p><span>STRANGERS IN MY HEAD</span> invites you into the life of {props.prg} <span>{props.issue}</span>.</p>
+                        <p className="watchCTA">Episode {props.ep}, Premiering {props.date} 2020 &#9656;&#9656;</p>
                     </div>
                 </div>
             </Link>

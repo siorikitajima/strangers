@@ -368,17 +368,20 @@
         opacity: 0.6;
         transition-duration: 300ms;
     }
-    @include laPhone(){
-        max-width: 90%;
+    @include smTablet(){
+        max-width: 80%;
         display: block;
         height: auto;
         padding: 0 0 5px 0;
+    }
+    @include laPhone(){
+        max-width: 90%;
     }
     .showThumb {
         width: 300px;
         min-height: 140px;
         overflow: hidden;
-        background: gray;
+        background: $primaryColorLight;
         border-radius: 4px 0 0 4px;
         position: relative;
         img {
@@ -389,7 +392,7 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        @include laPhone(){
+        @include smTablet(){
             width: 100%;
             display: block;
             border-radius: 4px 4px 0 0;
@@ -413,7 +416,7 @@
         p.watchCTA {
             font-weight: bold;
         }
-        @include laPhone(){
+        @include smTablet(){
             width: 90%;
             margin: 20px auto;
             p {

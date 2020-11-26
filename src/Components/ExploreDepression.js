@@ -24,7 +24,7 @@ function ExploreDepression() {
             </div>
             </a>
 
-            <WatchBanner issue={"Depression"} ep={"2"} date={"16 Dec"} link={"../../documentary/ep2"} />
+            <WatchBanner issue={"Depression and Asperger Syndrome"} ep={"3"} date={"23 Dec"} link={"../../documentary/ep3"} prg={"Karen as she shares her experience as a caregiver to her son dealing with"} />
 
         </div>
     );

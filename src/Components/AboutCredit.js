@@ -3,12 +3,12 @@ import PBLogo from '../Images/patternbasedlogo.png';
 import VeryLogo from '../Images/verylogo.png';
 import GithubIcon from '../Images/github-icon.svg';
 import P5Icon from '../Images/p5-icon.png';
-import OpenSource from '../Images/CC-BY-SA_icons.svg';
 
 function AboutCredit() {
     return(
         <div className="creditContainer">
-            <h4>&#47;&#47; SIMH App Credit &#47;&#47;</h4>
+             <p className="aboutCredit"><br/>© 2020 PatternBased and Very! Pte Ltd. All Rights Reserved.</p>
+
             <p className="aboutCredit">
                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">PatternBased</a>, <br/>
                 Analytics, Design, animation and Code by <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a>, <br/>
@@ -17,11 +17,11 @@ function AboutCredit() {
                 Research by <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Shiying Wan</a>, <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a> and <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Angie Swee</a>, <br/>
                 Logo design by <a href="http://www.cindyashes.tv/about" rel="noopener noreferrer" target="_blank">Cindy Liu</a>
             </p>
+
             <p className="aboutCredit"><b className="subsubHead">Made with amazing free tools includes:</b><br/> 
             <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">React.js</a>, <a href="https://p5js.org/" rel="noopener noreferrer" target="_blank">p5.js</a>, <a href="https://molleindustria.github.io/p5.play/" rel="noopener noreferrer" target="_blank">p5.play.js</a>, <a href="https://www.emailjs.com/" rel="noopener noreferrer" target="_blank">EmailJS</a>, <a href="https://formik.org/" rel="noopener noreferrer" target="_blank">Formik</a>, <a href="https://www.npmjs.com/package/react-masonry-css" rel="noopener noreferrer" target="_blank">React Masonry CSS</a>, <a href="https://www.npmjs.com/package/react-photo-gallery" rel="noopener noreferrer" target="_blank">React Photo Gallery</a>, <a href="https://www.npmjs.com/package/react-toastify" rel="noopener noreferrer" target="_blank">React Toastify</a>, <a href="https://www.react-spring.io/" rel="noopener noreferrer" target="_blank">React Spring</a>, <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass SCSS</a>, <a href="https://www.heymeta.com/" rel="noopener noreferrer" target="_blank">Hey Meta</a>, <a href="https://coolors.co/" rel="noopener noreferrer" target="_blank">Coolors</a>, <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">Visual Studio Code</a>, <a href="https://github.com/" rel="noopener noreferrer" target="_blank">Github</a>, <a href="https://www.npmjs.com/" rel="noopener noreferrer" target="_blank">npm</a> and more.</p>
 
-            <p className="aboutCredit"><b className="subsubHead">Open Source License:</b><br/> All generative and procedural art created for this project are shared under a Creative Commons Attribution-ShareAlike 4.0 International License (<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">CC-BY-SA</a>). They can be shared and modified freely as long as attributed and 'shared alike'.</p>
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank"><img src={OpenSource} alt="CC-BY-SA" id="OSicon"/></a>
+            <p className="aboutCredit"><b className="subsubHead">Open Source License:</b><br/> Generative and procedural art pieces created for this project are shared under GNU General Public License v3 (<a href="https://www.gnu.org/licenses/gpl-3.0.en.html" rel="noopener noreferrer" target="_blank">GPL 3.0</a>). They can be used and modified freely as long as the copyright and license are preserved.</p>
 
             <p className="aboutCredit">
             <img src={GithubIcon}alt="Github icon" className="sm-icons"/>

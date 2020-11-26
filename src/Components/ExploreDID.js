@@ -1,5 +1,6 @@
 import React from 'react';
 import Img1in67 from '../Images/Data_1-in-67.png';
+import WatchBanner from '../Components/WatchBanner';
 import {IssueInfoData} from '../Components/IssueInfoData';
 
 function ExploreDID() {
@@ -22,6 +23,9 @@ function ExploreDID() {
                 Find A Help
             </div>
             </a>
+
+            <WatchBanner issue={"co-morbid mental health issues"} ep={"4"} date={"30 Dec"} link={"../../documentary/ep4"} prg={"Jess as she shares her experience managing"} />
+
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Img1in19 from '../Images/Data_1-in-19.png';
+import WatchBanner from '../Components/WatchBanner';
 import {IssueInfoData} from '../Components/IssueInfoData';
 
 function ExplorePTSD() {
@@ -21,6 +22,9 @@ function ExplorePTSD() {
                 Find Help
             </div>
             </a>
+
+            <WatchBanner issue={"co-morbid mental health issues"} ep={"4"} date={"30 Dec"} link={"../../documentary/ep4"} prg={"Jess as she shares her experience managing"} />
+
         </div>
     );
 }

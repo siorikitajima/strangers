@@ -16,8 +16,7 @@ const AudioPlayer = ({ file }) => {
  
     return (
             <div onClick={togglePlayPause} className="playButton">
-             {/* className={playing?"pauseButton" : "playButton"}> */}
-                <img src={playing? PauseBtn : PlayBtn}/>
+                <img src={playing? PauseBtn : PlayBtn} alt="Audio button"/>
             </div>
     )
 }

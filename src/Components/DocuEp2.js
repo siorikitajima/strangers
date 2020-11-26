@@ -5,11 +5,11 @@ function DocuEp2() {
 
     return(
         <div className="epContainer">
-            <h2>Episode #2 Title</h2>
+            <h2>Episode 2 - Dheesha</h2>
             <p className="dataText">
-                <b>Episode 2 Synopsis here.</b> The episodic synopsis for each episode comes here. The episodic synopsis for each episode comes here. The episodic synopsis for each episode comes here. The episodic synopsis for each episode comes here. The episodic synopsis for each episode comes here.<br/>
-                <b>Episode 2 "Episode1 title"</b> releasing on <b>December 16</b>, 2020 12:00 AM SGT
-            </p>
+            Dheesha was a happy and outgoing child. She was energetic and excelled in school. She was never ‘like this’ until she first experienced depression and anxiety whilst studying in University, and later, diagnosed with Borderline Personality Disorder (BPD). BPD has impacted the way Dheesha thinks and feels about herself and others, it has caused her to be uncertain of her own interests. BPD has sequestered her with an invisible wall from the world and she wants to get out.</p>
+            <p>Over the years as Dheesha learns to cope with the mental health issues, she has had to set aside some plans, goals and dreams. But she is far from giving them up. Instead, Dheesha is meticulous and contemplative in finding ways to move forward. With a smile, Dheesha tries to conceal her feelings of precariousness and musters up the determination to keep trying. Because for Dheesha, she has to scale a wall and journey a much longer route than others in order to get to where she wants.</p>
+            <p><b>Episode 2</b> Premiering <b>16 Dec 2020</b></p>
 
             <Iframe url="https://player.vimeo.com/video/477453826"
                 width="640"

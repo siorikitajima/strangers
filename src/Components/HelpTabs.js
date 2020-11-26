@@ -39,8 +39,8 @@ function HelpTabs() {
 
             <ul id="HelpTab">
             <li className="tabs">
-                <NavLink to={`${url}/emergency`} activeClassName = "selectedTab"
-                >Emergency</NavLink>
+                <NavLink to={`${url}/suicide-prevention`} activeClassName = "selectedTab"
+                >Suicide Prevention</NavLink>
                 </li>
                 <li className="tabs">
                 <NavLink to={`${url}/counselling`} activeClassName = "selectedTab">Counselling</NavLink>
@@ -65,7 +65,7 @@ function HelpTabs() {
                 <Route exact path={path}>
                     <HelpSuicide/>
                 </Route>
-                <Route exact path={`${path}/emergency`}>
+                <Route exact path={`${path}/suicide-prevention`}>
                     <HelpSuicide/>
                 </Route>
                 <Route path={`${path}/counselling`}>

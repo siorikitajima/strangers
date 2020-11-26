@@ -1,5 +1,6 @@
 import React from 'react';
 import Img1in28 from '../Images/Data_1-in-28.png';
+import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 import {IssueInfoData} from '../Components/IssueInfoData';
 
 function ExploreAA() {
@@ -22,6 +23,8 @@ function ExploreAA() {
                 Find Help
             </div>
             </a>
+
+            <WatchBannerGeneral/>
         </div>
     );
 }

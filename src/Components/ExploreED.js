@@ -1,5 +1,6 @@
 import React from 'react';
 import Img1in200 from '../Images/Data_1-in-200.png';
+import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 import {IssueInfoData} from '../Components/IssueInfoData';
 
 function ExploreED() {
@@ -21,6 +22,9 @@ function ExploreED() {
                 Find Help
             </div>
             </a>
+
+            <WatchBannerGeneral/>
+
         </div>
     );
 }

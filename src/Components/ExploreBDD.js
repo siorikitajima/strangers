@@ -23,7 +23,7 @@ function ExploreBDD() {
             </div>
             </a>
 
-            <WatchBanner issue={"Body dysmorphic disorder"} ep={"1"} date={"9 Dec"} link={"../../documentary/ep1"} />
+            <WatchBanner issue={"Body dysmorphic disorder"} ep={"1"} date={"9 Dec"} link={"../../documentary/ep1"} prg={"Le Yong as he shares his experience coping with"} />
             
         </div>
     );
