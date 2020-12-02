@@ -1,5 +1,21 @@
 .voices {
     @include pageContainer();
+    p.center {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            max-width: 90vw;
+            height: 1px;
+            background-color: $primaryColorDark;
+            position: absolute;
+            top: -5px;
+            left: 0;
+        }
+    }
   }
 
 .voiceContainer {
@@ -54,57 +70,118 @@
         &:nth-of-type(4n+0){
             .voice {
                 background: $keyColorThree;
+                .readmoreBtn {
+                    background-color: $primaryColorDark;
+                    color: $keyColorThree;
+                }
                 &:nth-of-type(5n+0) {
                     background: $keyColorTwo;
                     color: $primaryColorLight;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorTwo;
+                    }
                 }
                 &:nth-of-type(5n+1) {
                     background: $keyColorOne;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorOne;
+                    }
                 }
                 &:nth-of-type(5n+2) {
                     background: $keyColorFour;
                     color: $primaryColorLight;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorFour;
+                    }
                 }
                 &:nth-of-type(5n+3) {
                     background: $keyColorFive;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorFive;
+                    }
                 }
             }
         }
         &:nth-of-type(4n+1){
             .voice {
                 background: $keyColorOne;
+                .readmoreBtn {
+                    background-color: $primaryColorLight;
+                    color: $keyColorOne;
+                }
                 &:nth-of-type(5n+0) {
                     background: $keyColorFive;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorFive;
+                    }
                 }
                 &:nth-of-type(5n+1) {
                     background: $keyColorFour;
                     color: $primaryColorLight;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorFour;
+                    }
                 }
                 &:nth-of-type(5n+2) {
                     background: $keyColorTwo;
                     color: $primaryColorLight;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorTwo;
+                    }
                 }
                 &:nth-of-type(5n+3) {
                     background: $keyColorThree;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorThree;
+                    }
                 }
             }
         }
         &:nth-of-type(4n+2){
             .voice {
                 background: $keyColorFive;
+                .readmoreBtn {
+                    background-color: $primaryColorDark;
+                    color: $keyColorFive;
+                }
+
                 &:nth-of-type(5n+0) {
                     background: $keyColorFour;
                     color: $primaryColorLight;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorFour;
+                    }
                 }
                 &:nth-of-type(5n+1) {
                     background: $keyColorThree;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorThree;
+                    }
                 }
                 &:nth-of-type(5n+2) {
                     background: $keyColorOne;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorOne;
+                    }
                 }
                 &:nth-of-type(5n+3) {
                     background: $keyColorTwo;
                     color: $primaryColorLight;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorTwo;
+                    }
                 }
             }
         }
@@ -112,20 +189,40 @@
             .voice {
                 background: $keyColorTwo;
                 color: $primaryColorLight;
+                .readmoreBtn {
+                    background-color: $primaryColorLight;
+                    color: $keyColorTwo;
+                }
                 &:nth-of-type(5n+0) {
                     background: $keyColorOne;
                     color: $primaryColorDark;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorOne;
+                    }
                 }
                 &:nth-of-type(5n+1) {
                     background: $keyColorFive;
                     color: $primaryColorDark;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorFive;
+                    }
                 }
                 &:nth-of-type(5n+2) {
                     background: $keyColorThree;
                     color: $primaryColorDark;
+                    .readmoreBtn {
+                        background-color: $primaryColorDark;
+                        color: $keyColorThree;
+                    }
                 }
                 &:nth-of-type(5n+3) {
                     background: $keyColorFour;
+                    .readmoreBtn {
+                        background-color: $primaryColorLight;
+                        color: $keyColorFour;
+                    }
                 }
             }
         }
@@ -172,6 +269,18 @@
         font-size: 0.8em;
         text-align: center;
         margin: 10px auto;
+    }
+    .readmoreBtn {
+        width: 100%;
+        height: 30px;
+        border-radius: 4px;
+        border: none;
+        opacity: 0.9;
+        font-weight: bold;
+        &:hover {
+            opacity: 0.5;
+            transition-duration: 300ms;
+        }
     }
 }
 
@@ -360,14 +469,91 @@
     }
 }
 
-// .sentMsg {
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: $primaryColorDark;
-//     display: flex;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     text-align: center;
-//     justify-content: center;
-// }
+.story {
+    @include pageContainer();
+    h1 {
+        width: 700px;
+        max-width: 90%;
+        margin: 20px auto 30px auto;
+        position: relative;
+    }
+    h3 {
+        width: 700px;
+        max-width: 90%;
+        font-family: $headingFont;
+        font-size: 1.4em;
+        font-style: italic;
+        margin: 30px auto 0 auto;
+        @include laPhone(){
+            font-size: 1.1em;
+        }
+    }
+    p.storyText {
+        margin-top: 10px;
+        max-width: 90%;
+    }
+    p.storyText a {
+        text-decoration: underline;
+    }
+    .helpLink {
+        margin: 30px auto;
+        width: 700px;
+        max-width: 90%;
+    }
+    img.imageSingle {
+        width: 700px;
+        max-width: 90%;
+        margin: 20px auto 30px auto;
+    }
+    img.imageDouble {
+        display: inline;
+        width: 40%;
+        margin: 20px 10px 30px 10px;
+        @include laPhone(){
+            display: block;
+            width: 90%;
+            margin: 20px auto;
+            &:last-of-type{
+                margin: 20px auto 30px auto;
+            }
+        }
+    }
+    .storyList {
+        width: calc(700px - 40px);
+        max-width: calc(90% - 40px);
+        margin: 20px auto;
+        font-family: $bodyFont;
+        font-size: 1em;
+        line-height: 1.5em;
+        text-align: left;
+        li {
+            margin-top: 10px;
+        }
+    }
+    p.storyTextSource {
+        width: calc(700px - 60px);
+        max-width: calc(90% - 60px);
+        background-color: rgb(173, 173, 173);
+        padding: 30px;
+        span {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    p.right {
+        text-align: right;
+        width: 700px;
+        max-width: 90%;
+        a {
+            text-decoration: underline;
+        }
+    }
+    hr {
+        margin: 40px 0;
+    }
+}
+

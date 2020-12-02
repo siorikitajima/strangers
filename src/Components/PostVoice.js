@@ -43,7 +43,7 @@ function PostVoice(props) {
             setPostClicked(true);
         }}
         >
-            <h4>POST YOURS</h4>
+            <h4>POST</h4>
         </animated.div>
 
         <animated.div className="promptPost"
@@ -52,7 +52,6 @@ function PostVoice(props) {
             setPostClicked(true);
         }}
         style={postClicked ? null : promptPostTransition}
-
         >
             <img src={PostIcon} alt="Post icon"/>
             <h3>POST YOURS</h3>

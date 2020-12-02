@@ -26,6 +26,12 @@ function NavMenuMobile(props){
                     </Link>
                 </li>
                 <li>
+                    <Link to="/about"
+                    onClick={props.closeMenu}>
+                        About
+                    </Link>
+                </li>      
+                <li>
                     <Link to="/explore/general"
                     onClick={props.closeMenu}>
                         Explore
@@ -34,15 +40,9 @@ function NavMenuMobile(props){
                 <li>
                     <Link to="/help/counselling"
                     onClick={props.closeMenu}>
-                        Find Help
+                        Help
                     </Link>
-                </li>
-                <li>
-                    <Link to="/about"
-                    onClick={props.closeMenu}>
-                        About SIMH
-                    </Link>
-                </li>       
+                </li> 
                 <li>
                 <a href="https://patternbased.com/"
                  rel="noopener noreferrer" target="_blank"><img src={PBLogoL} alt="PB logo" className="headerLogo"/></a>

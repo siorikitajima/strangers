@@ -106,49 +106,6 @@
     }
 }
 
-.info {
-    @include pageContainer();
-    h1 {
-        width: 700px;
-        max-width: 90%;
-        margin: 10px auto 30px auto;
-        position: relative;
-    }
-    p.infoNumber {
-        font-family: $bodyFont;
-        font-weight: normal;
-        text-align: center;
-        span {
-            font-family: $headingFont;
-            color: $keyColorOne;
-            font-size: 3em;
-            font-style: italic;
-            line-height: 0.8em;
-        }
-        b {
-             color: $keyColorOne;
-        }
-    }
-    h3 {
-        font-family: $headingFont;
-        font-size: 1.4em;
-        font-style: italic;
-        margin-bottom: 0;
-        margin-top: 30px;
-        .headingIcons {
-            width: 50px;
-            height: 50px;
-            margin-bottom: -15px;
-        }
-    }
-    p.infoText {
-        margin-top: 10px;
-    }
-    .helpLink {
-        margin: 20px auto 50px auto;
-        width: 300px;
-    }
-}
 .shareIcon {
     width: 40px;
     height: 40px;

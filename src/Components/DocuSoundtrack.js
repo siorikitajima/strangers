@@ -19,7 +19,7 @@ function DocuSoundtrack() {
 
             <a href="https://albums.patternbased.com/album/strangers-in-my-head-soundtrack" target="_blank" rel="noopener noreferrer">
             <div className="helpLink">
-                Purchase Online
+                More Info
             </div>
             </a>
         </div>

@@ -13,8 +13,8 @@ function WatchBanner(props, link, prg, issue, ep, date) {
                         <img src={showSS} alt="SIMH"/>
                     </div>
                     <div className="showInfo">
-                        <p><span>STRANGERS IN MY HEAD</span> invites you into the life of {props.prg} <span>{props.issue}</span>.</p>
-                        <p className="watchCTA">Episode {props.ep}, Premiering {props.date} 2020 &#9656;&#9656;</p>
+                        <p className="showInfoP"><span>STRANGERS IN MY HEAD</span> invites you into the life of {props.prg} <span>{props.issue}</span>.</p>
+                        <p className="showInfoP watchCTA">Episode {props.ep}, Premiering {props.date} 2020 &#9656;&#9656;</p>
                     </div>
                 </div>
             </Link>

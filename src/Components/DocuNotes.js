@@ -10,7 +10,7 @@ function DocuNotes() {
       <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 <Card.Header>
-    A note by <b>Mui Koon</b>, Director
+    <b>Mui Koon</b>, Director
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
@@ -29,7 +29,7 @@ function DocuNotes() {
       <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="7">
                 <Card.Header>
-    A note by <b>Shiying</b>, Producer
+    <b>Shiying</b>, Producer
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="7">
@@ -42,35 +42,14 @@ function DocuNotes() {
             </Card.Body>
           </Accordion.Collapse>
         </Card>
-      <Card>
+
+        <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 <Card.Header>
-    A note by <b>Angeline Swee</b>, Executive Producer, Very!
+    <b>Danny Goh</b>, Director of Photography
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="1">
-            <Card.Body>
-    <p>For a long time, I have been thinking of realising a documentary series on mental health – a series that tells the nuanced stories of the many struggles and complexities related to mental health conditions.</p>
-    <p>But, for an even longer time, I felt that a project like this is too close to home. In reality, we are still a society where mental conditions, mental decline, and mental illnesses are kept behind closed doors. Unlike physical ailments, mental health conditions carry a social stigma.</p>
-    <p>A couple of days ago, I watched the film <i>Joker</i> on my flight back to Singapore. In the film, Joaquin Phoenix, playing the role of Joker wrote in his journal – <i>The worst part about having a mental illness is people expect you to behave like you don’t.</i> This line stayed with me long after the film ended and long after my plane hit the tarmac at the airport.</p>
-    <p>I am guilty of this line too – <i>The worst part about having a mental illness is people expect you to behave like you don’t.</i> How often have I expected this? How convenient would it be if people with mental illnesses can just function like what society expects?</p>
-    <p>I have come to understand that our mental health sits on a very broad and delicate spectrum. Multiple unfortunate events, personal tragedies, accumulated extreme work stress, a particularly bad patch, lost of loved ones and even just life going about its own business can tip us over and push us towards poor mental health. In the event of a downward spiral, who is there to catch us? Who is there to listen and soften the landing?</p>
-    <p>I asked myself who dare I tell if I am heading towards a nervous breakdown. Who can I trust if I am having an anxiety attack? The answer was no one for a long time. And I ask myself why. Why is this conversation so daunting? Why is the topic of mental health such a taboo and party pooper?</p>
-    <p>From being the world's favourite airport to the best metropolis to do business, Singapore has shown the world its prowess. Maybe the time has come to look inwards and nurture a collective consciousness that is open and empathetic on matters of mental health? <i>Strangers In My Head</i> is , I hope, our contribution towards this consciousness.</p>
-    <p>Created alongside the documentary series, this resource site is our attempt to reach out. The journey towards better mental health need not be lonesome. To quote Winnie the Pooh - You can't stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes. Strangers In My Head is us walking with and walking towards friends, families, caregivers and strangers who are coping and living with mental health conditions. While we may not fully understand or grasp the arduous path each person struggling with a mental health condition is walking, let us not judge. Let us be willing to hold the other person’s hand.</p>
-    <p>Thank you to all our contributors who are so brave to share their stories on Strangers In My Head. Your courage has inspired us and we hope we have made you proud with our work.</p>
-    <p className="right">Love always, Angie<br/>Executive Producer, Very!</p>
-            </Card.Body>
-          </Accordion.Collapse>
-        </Card>
-
-        <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                <Card.Header>
-    A note by <b>Danny Goh</b>, Director of Photography
-                </Card.Header>
-            </Accordion.Toggle>
-          <Accordion.Collapse eventKey="2">
             <Card.Body>
     <p>Before working on this series as the <i>Director of Photography</i>, I knew very little about mental health. Sometimes, the shooting process can be highly stressful. It’s not easy to have a camera pointing directly at the protagonists’ faces and for them to pretend that the camera isn’t there. I was worried that the contributors might not feel comfortable with that.</p>
     <p>True enough, many of our contributors were not very comfortable in front of the camera. What really moved me was that even though they struggled to face the camera during shoot, they still did their best every single day. What I saw through my viewfinder was immense courage from each and every one of them.</p>
@@ -82,12 +61,12 @@ function DocuNotes() {
         </Card>
 
         <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="3">
+            <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 <Card.Header>
-    A note by <b>Carl Pereira</b>, Location Sound Recordist
+    <b>Carl Pereira</b>, Location Sound Recordist
                 </Card.Header>
             </Accordion.Toggle>
-          <Accordion.Collapse eventKey="3">
+          <Accordion.Collapse eventKey="2">
             <Card.Body>
     <p>Being mindful.</p>
     <p>I remember meeting them on our first day of filming and thinking to myself – these guys look and behave no different from anyone else on the street.</p>
@@ -101,12 +80,12 @@ function DocuNotes() {
         </Card>
 
         <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="4">
+            <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 <Card.Header>
-    A note by <b>Martyn</b>, Editor
+    <b>Martyn</b>, Editor
                 </Card.Header>
             </Accordion.Toggle>
-          <Accordion.Collapse eventKey="4">
+          <Accordion.Collapse eventKey="3">
             <Card.Body>
     <p><i>Strangers In My Head</i> is edited in a manner that is quiet, introspective, and meditative, in deliberate contrast to the constant war of voices that torment the minds of our profiles, all of whom spoke calmly and courageously about their mental condition.</p>
     <p>I hope this series provides not just vital information to viewers but act as a 4-part companion to all of us who, in varying degrees, are battling inner voices in our heads.</p>
@@ -115,25 +94,25 @@ function DocuNotes() {
           </Accordion.Collapse>
         </Card>
         <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="5">
+            <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 <Card.Header>
-    A note by <b>Veron Tan</b>, Post Production Manager
+    <b>Veron Tan</b>, Post Production Manager
                 </Card.Header>
             </Accordion.Toggle>
-          <Accordion.Collapse eventKey="5">
+          <Accordion.Collapse eventKey="4">
             <Card.Body>
-    <p>This series opened my eyes to a world I’ve never encountered. I never knew these issues existed. I’ll learn to be more sensitive towards people from now on. Indeed, a little patience & understanding go a long way.</p>
+    <p>This series opened my eyes to a world I’ve never encountered. I never knew these issues existed. I’ll learn to be more sensitive towards people from now on. Indeed, a little patience and understanding go a long way.</p>
     <p className="right">Veron Tan<br/>Post Production Manager</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="6">
+            <Accordion.Toggle as={Button} variant="link" eventKey="5">
                 <Card.Header>
-    A note by <b>Koon Su</b>, Audio Engineer
+    <b>Koon Su</b>, Audio Engineer
                 </Card.Header>
             </Accordion.Toggle>
-          <Accordion.Collapse eventKey="6">
+          <Accordion.Collapse eventKey="5">
             <Card.Body>
     <p>It is important to educate the general public about mental health conditions. Many go about their own lives without bothering to find out more about the struggles of others. Not every life is smooth-sailing, some go through much more challenges than others and it is definitely not of their own choice or doing.</p>
     <p className="right">Koon Su<br/>Audio Engineer</p>
@@ -141,12 +120,12 @@ function DocuNotes() {
           </Accordion.Collapse>
         </Card>
         <Card>
-            <Accordion.Toggle as={Button} variant="link" eventKey="8">
+            <Accordion.Toggle as={Button} variant="link" eventKey="6">
                 <Card.Header>
-    A note by <b>Joseph Minadeo</b>, Composer
+    <b>Joseph Minadeo</b>, Composer
                 </Card.Header>
             </Accordion.Toggle>
-          <Accordion.Collapse eventKey="8">
+          <Accordion.Collapse eventKey="6">
             <Card.Body>
     <p>It has been an honour to compose the score for <i>Strangers In My Head</i> considering how important mental health is to me and those around me. As someone who has experienced a range of mental health issues, I feel that I can relate to the people profiled in this show, in some cases, very deeply.</p>
     <p>The subject of mental health feels vast and somewhat nebulous covering biology, psychology, society, perception, consciousness, etc., and it all intersects with politics, socioeconomics, vast and growing inequality and injustice, environmental destruction and living in a period of mass extinction. These things can cause great anxiety, especially, and rightfully so, in younger generations. It seems perfectly natural and normal that they do. I think billions of animals burning to death in Australia SHOULD cause great and possibly prolonged anxiety to anyone with empathy, anyone who cares about this world. Watching the world breakdown IS depressing and anxious to any thinking and caring human and it should be ok to talk about.</p>

@@ -5,15 +5,22 @@ import {useTransition, animated} from 'react-spring';
 import NavMenuMobile from './NavMenuMobile';
 import PBLogoL from '../Images/patternbasedlogo-light.png';
 import VeryLogoL from '../Images/verylogo-light.png';
+import MoreIcon from '../Images/More_icon.svg';
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false)
+    const [showMore, setShowMore] = useState(false)
     const masktransition = useTransition(showMenu, null, {
         from: { position: 'absolute', opacity:0},
         enter: { opacity: 1},
         leave: { opacity: 0},
     })
     const menutransition = useTransition(showMenu, null, {
+        from: { opacity: 0, transform: 'translateY(-100%)'},
+        enter: { opacity: 1, transform: 'translateY(0%)'},
+        leave: { opacity: 0, transform: 'translateY(-100%)'},
+    })
+    const moretransition = useTransition(showMore, null, {
         from: { opacity: 0, transform: 'translateY(-100%)'},
         enter: { opacity: 1, transform: 'translateY(0%)'},
         leave: { opacity: 0, transform: 'translateY(-100%)'},
@@ -44,20 +51,37 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/explore/general">
-                            Explore
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/help/counselling">
-                            Help
-                        </Link>
-                    </li>
-                    <li>
                         <Link to="/about">
                             About
                         </Link>
-                    </li>                  
+                    </li>
+                    <li className="moreLi">
+                        <img src={MoreIcon} alt="More" 
+                        onMouseEnter={() => setShowMore(true)}
+                        onClick={() => setShowMore(!showMore)}
+                        />
+                        {
+                            moretransition.map(({ item, key, props}) =>
+                            item && 
+                            <animated.div 
+                            key={key} style={props}
+                            className="moreMenu"
+                            onMouseLeave={() => setShowMore(false)}>
+                                <ul>
+                                    <li>
+                                        <Link to="/explore/general">
+                                            Explore
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/help/counselling">
+                                            Help
+                                        </Link>
+                                    </li>                 
+                                </ul>
+                            </animated.div>)
+                        }  
+                    </li> 
                 </ul>
                 <img src={MenuIcon} alt="MenuIcon" className="mobileMenuIcon" onClick={() => setShowMenu(!showMenu)}/>
                 {

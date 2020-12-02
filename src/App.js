@@ -3,7 +3,6 @@ import Header from './Components/Header'
 import './App.scss';
 import {
   BrowserRouter as Router,
-  // HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -12,10 +11,10 @@ import About from './Views/About';
 import Perspective from './Views/Perspective';
 import Explore from './Views/Explore';
 import Help from './Views/Help';
-import Info from './Views/Info';
 import Breathe from './Views/Breathe';
 import BreatheIcon from './Components/BreatheIcon';
 import Documentary from './Views/Documentary';
+import Story from './Views/Story';
 
 function App() {
   return (
@@ -44,11 +43,11 @@ function App() {
           <Route path="/help">
             <Help/>
           </Route>
-          <Route path="/info">
-            <Info/>
-          </Route>
           <Route path="/breathe">
             <Breathe/>
+          </Route>
+          <Route path="/story">
+            <Story/>
           </Route>
         </Switch>
     </div>

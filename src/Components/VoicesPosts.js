@@ -4,7 +4,8 @@ import {
     Switch,
     Route,
     NavLink,
-    useRouteMatch
+    useRouteMatch,
+    Link
   } from "react-router-dom";
 import ShareIcon from '../Images/infoIcons-share.svg';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
@@ -53,10 +54,10 @@ function VoicesPosts() {
                 <li className="tabs"
                 onClick={() => {setFilter('anxiety');}}>
                 <NavLink to={`${url}/anxiety`} activeClassName = "selectedTab">Anxiety</NavLink></li>
-                {/* <li className="tabs"
+                <li className="tabs"
                 onClick={() => {setFilter('ocd');}}>
                 <NavLink to={`${url}/ocd`} activeClassName = "selectedTab">OCD</NavLink></li>
-                <li className="tabs"
+                {/* <li className="tabs"
                 onClick={() => {setFilter('alcohol');}}>
                 <NavLink to={`${url}/alcohol-abuse`} activeClassName = "selectedTab">Alcohol Abuse</NavLink></li>
                 <li className="tabs"
@@ -76,10 +77,10 @@ function VoicesPosts() {
                 <NavLink to={`${url}/psychosis`} activeClassName = "selectedTab">Psychosis</NavLink></li>
                 <li className="tabs"
                 onClick={() => {setFilter('eating');}}>
-                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating Disorder</NavLink></li>
+                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating Disorder</NavLink></li> */}
                 <li className="tabs"
                 onClick={() => {setFilter('schizophrenia');}}>
-                <NavLink to={`${url}/schizophrenia`} activeClassName = "selectedTab">Schizophrenia</NavLink></li> */}
+                <NavLink to={`${url}/schizophrenia`} activeClassName = "selectedTab">Schizophrenia</NavLink></li>
                 </ul>
                 <Switch>
                 <Route exact path={path}>
@@ -95,6 +96,11 @@ function VoicesPosts() {
                         <div key={filteredPost.id} className="voice">
                             <h3>{filteredPost.quote}</h3>
                             <h6 className="byline">{filteredPost.name}</h6>
+                            {filteredPost.link == null ?  <div></div> :
+                            <Link to={filteredPost.link}>
+                            <button className="readmoreBtn">READ MORE</button>
+                            </Link>
+                            }
                             <p className="byline">{filteredPost.issue}</p>
                         </div>
                     ))

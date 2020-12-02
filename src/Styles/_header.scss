@@ -68,6 +68,31 @@
                     }
                 }
             }
+            li.moreLi {
+                position: relative;
+                img {
+                    width: 30px;
+                    margin: -10px 0;
+                    cursor: pointer;
+                }
+                .moreMenu {
+                    width: 100px;
+                    height: fit-content;
+                    background-color: $primaryColorDark;
+                    position: absolute;
+                    top: 30px;
+                    right: -36px;
+                    ul{
+                        padding: 10px;
+                        text-align: center;
+                        li {
+                            font-size: 1em;
+                            line-height: 2.4em;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
         }
         img.mobileMenuIcon {
             width: 20px;
