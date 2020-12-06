@@ -110,7 +110,7 @@
             .voice {
                 background: $keyColorOne;
                 .readmoreBtn {
-                    background-color: $primaryColorLight;
+                    background-color: $primaryColorDark;
                     color: $keyColorOne;
                 }
                 &:nth-of-type(5n+0) {
@@ -417,6 +417,7 @@
         color: $primaryColorLight;
         font-family: $bodyFont;
         font-size: 1.1em;
+        white-space: pre-wrap;
         @include laTablet {
             max-width: calc(100% - 40px);
             font-size: 1.4em;

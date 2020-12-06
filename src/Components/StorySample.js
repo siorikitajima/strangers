@@ -17,7 +17,7 @@ function StorySample() {
         Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Ut etiam sit amet nisl purus in mollis nunc sed. Diam volutpat commodo sed egestas egestas. Porttitor lacus luctus accumsan tortor posuere ac. Nibh tortor id aliquet lectus. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer.
         </p>
 
-        <img className="imageSingle" src="https://strangersinmyhead.info/media/ep1/SIMH-EP1_1.jpg" alt="Sample photo Single"/>
+        <img className="imageSingle" src="https://strangersinmyhead.info/media/ep1/SIMH-EP1_1.jpg" alt="Sample Single"/>
 
         <h3>Unordered List Example</h3>
         <ul className="storyList">
@@ -44,8 +44,8 @@ function StorySample() {
           </li>
         </ol>
 
-        <img className="imageDouble" src="https://strangersinmyhead.info/media/ep2/SIMH-EP2_2.jpg" alt="Sample photo Double"/>
-        <img className="imageDouble" src="https://strangersinmyhead.info/media/ep4/SIMH-EP4_1.jpg" alt="Sample photo Double"/>
+        <img className="imageDouble" src="https://strangersinmyhead.info/media/ep2/SIMH-EP2_2.jpg" alt="Sample Double"/>
+        <img className="imageDouble" src="https://strangersinmyhead.info/media/ep4/SIMH-EP4_1.jpg" alt="Sample Double"/>
 
         <p className="storyText">
         Fusce ut placerat orci nulla pellentesque dignissim enim. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Ut morbi tincidunt augue interdum. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum.

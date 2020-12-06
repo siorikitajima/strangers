@@ -17,6 +17,7 @@ import Documentary from './Views/Documentary';
 import Story from './Views/Story';
 
 function App() {
+
   return (
     <Router>
     <div className="App">
@@ -50,8 +51,8 @@ function App() {
             <Story/>
           </Route>
         </Switch>
+        <BreatheIcon/>
     </div>
-    <BreatheIcon/>
     </Router>
   );
 }

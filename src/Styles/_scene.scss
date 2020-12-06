@@ -121,8 +121,11 @@
         opacity: 1;
         transition-duration: 300ms;
     }
+    @include laTablet {
+        top: 60px;
+    }
     @include laPhone {
         right: 10px;
-        top: 50px;
+        top: 55px;
     }
 }

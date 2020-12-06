@@ -11,8 +11,8 @@ function PostOption(props){
     }
 
     const QuoteSchema = Yup.object().shape({
-    quote: Yup.string()
-      .max(400, 'Max length is set as 400 characters')
+    quote: Yup.mixed()
+    //   .max(400, 'Max length is set as 400 characters')
       .required('Please fill in your quote'),
     issue: Yup.string()
       .required('Please select your issue'),
@@ -33,7 +33,7 @@ function PostOption(props){
                     "service_wibfxg9", //Email service as defined in EmailJS setting
                     "template_76jepvv", // Email template ID provided by EmailJS
                     {
-                        quote_html: values.quote,
+                        quote_html: values.quote.replace(/\n\r?/g, '<br />'),
                         issue_html: values.issue,
                     },
                     "user_GJVnDS7vbw31lYWmcZT82" // EmailJS user ID
@@ -45,7 +45,7 @@ function PostOption(props){
             >
             {({ errors, touched }) => (
             <Form>
-                <Field className="quoteForm" id="quote" as="textarea" name="quote" placeholder="Type your message, your story or thoughts on mental health here and we may add it to this page. You will be 100% anonymous. (Max 400 characters)" />
+                <Field className="quoteForm" component="textarea" id="quote" name="quote" placeholder="Type your message, your story or thoughts on mental health here and we may add it to this page. You will be 100% anonymous."/>
                 <Field name="issue" component="select" className="issueSelect">
                     <option value="" hidden >Select your issue</option>
                     <option value="mdd">MDD / Depression</option>
@@ -60,10 +60,9 @@ function PostOption(props){
                     <option value="psychosis">Psychosis</option>
                     <option value="eating-disorder">Eating Disorder</option>
                     <option value="schizophrenia">Schizophrenia</option>
-                    <option value="other">Other mental health issue</option>
-                    <option value="general">General mental health issue</option>
+                    <option value="general">General</option>
+                    <option value="other">Others</option>
                     <option value="morethanone">More than one issue</option>
-                    <option value="noissue">No mental health issue</option>
                 </Field>
                 <button className="quoteBtn" type="submit"></button>
             {errors.quote && touched.quote ? (

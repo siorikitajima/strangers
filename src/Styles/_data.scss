@@ -2,7 +2,7 @@
 
 .explore, .help, .docu {
     @include pageContainer();
-    padding: 40px 0 0 0;
+    padding: 20px 0 0 0;
     p {
         @include laPhone(){
             max-width: 90%;
@@ -107,7 +107,6 @@
 
     #voiceTab{
      .tabs {
-        padding: 10px 10px;
         &:hover {
             color: $keyColorOne;
             transition-duration: 300ms;

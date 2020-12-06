@@ -10,7 +10,7 @@
     justify-content: space-between;
     font-family: $headingFont;
     font-style: italic;
-    z-index: 500;
+    z-index: 900;
     @include laTablet {
         height: 20px;
     }
@@ -136,7 +136,7 @@
     left: 0;
     top: 0;
     text-align: center;
-    z-index: -1;
+    z-index: 800;
     ul {
         padding: 0;
     }
@@ -166,5 +166,5 @@
     position: fixed;
     left: 0;
     top: 0;
-    z-index: -100;
+    z-index: 700;
   }
