@@ -3,9 +3,9 @@ import Iframe from 'react-iframe';
 import AudioPlayer from '../Components/AudioPlayer';
 import { AudioPlayerProvider } from "react-use-audio-player";
 
-import trackZero from '../Sounds/Soothing01.mp3';
-import trackOne from '../Sounds/Soothing02.mp3';
-import trackTwo from '../Sounds/Soothing03.mp3';
+import trackZero from '../Sounds/36SineOrbit.mp3';
+import trackOne from '../Sounds/37EternalMoment.mp3';
+import trackTwo from '../Sounds/38PastoralWaves.mp3';
 import { isIOS } from "react-device-detect";
 
 const soothingData = [
@@ -77,8 +77,8 @@ function Breathe(){
 
         function IFrameSketch() {
             if(sketch === 0 && isIOS) {
-                // return <Iframe url="https://strangersinmyhead.info/breathe-sketches/zero-iOS/"
-                return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/zero-iOS/"
+                return <Iframe url="https://strangersinmyhead.info/breathe-sketches/zero-iOS/"
+                // return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/zero-iOS/"
                 width="100%"
                 height = {window.innerHeight}
                 display="initial"
@@ -86,8 +86,8 @@ function Breathe(){
                 frameBorder="none"
                 styles={{margin: "0", border: "none"}}/>
             } else if(sketch === 0 && !isIOS) {
-                // return <Iframe url="https://strangersinmyhead.info/breathe-sketches/zero/"
-                return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/zero/"
+                return <Iframe url="https://strangersinmyhead.info/breathe-sketches/zero/"
+                // return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/zero/"
                 width="100%"
                 height = {window.innerHeight}
                 display="initial"
@@ -95,8 +95,8 @@ function Breathe(){
                 frameBorder="none"
                 styles={{margin: "0", border: "none"}}/>
             } else if(sketch === 1) {
-                // return <Iframe url="https://strangersinmyhead.info/breathe-sketches/one/"
-                return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/one/"
+                return <Iframe url="https://strangersinmyhead.info/breathe-sketches/one/"
+                // return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/one/"
                 width="100%"
                 height = {window.innerHeight}
                 display="initial"
@@ -104,8 +104,8 @@ function Breathe(){
                 frameBorder="none"
                 styles={{margin: "0", border: "none"}}/>
             } else {
-                // return <Iframe url="https://strangersinmyhead.info/breathe-sketches/two/"
-                return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/two/"
+                return <Iframe url="https://strangersinmyhead.info/breathe-sketches/two/"
+                // return <Iframe url="https://dev.strangersinmyhead.info/breathe-sketches/two/"
                 width="100%"
                 height = {window.innerHeight}
                 display="initial"

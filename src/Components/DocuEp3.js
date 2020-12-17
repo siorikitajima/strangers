@@ -11,7 +11,7 @@ function DocuEp3() {
             <p>With the help of <i>Caregivers Alliance Limited</i> (CAL), Karen became aware of the importance of having a network of support. As her son’s condition improved, Karen is now helping to care for other caregivers. And at times when things get too much for her, Karen has to relearn how to take care of herself.</p>
             <p><b>Episode 3</b> Premiering <b>23 Dec 2020</b></p>
 
-            <Iframe url="https://player.vimeo.com/video/477453845"
+            <Iframe url="https://player.vimeo.com/video/487974278"
                 width="640"
                 height = "360"
                 display="initial"
@@ -21,9 +21,9 @@ function DocuEp3() {
                 className = "embedVideoIframe"
                 styles={{margin: "0", border: "none"}}/>
                 
-            {/* <a href="../help/alcohol-abuse"> */}
+            {/* <a href="https://www.channelnewsasia.com/news/video-on-demand/strangers-in-my-head/" target="_blank" rel="noopener noreferrer"> */}
             <div className="helpLink disable">
-                Coming Soon on CNA
+                Watch Online
             </div>
             {/* </a> */}
         </div>

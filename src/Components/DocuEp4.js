@@ -21,9 +21,9 @@ function DocuEp4() {
                 className = "embedVideoIframe"
                 styles={{margin: "0", border: "none"}}/>
                 
-            {/* <a href="../help/alcohol-abuse"> */}
+            {/* <a href="https://www.channelnewsasia.com/news/video-on-demand/strangers-in-my-head/" target="_blank" rel="noopener noreferrer"> */}
             <div className="helpLink disable">
-                Coming Soon on CNA
+                Watch Online
             </div>
             {/* </a> */}
         </div>

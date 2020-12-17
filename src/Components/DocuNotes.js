@@ -46,7 +46,7 @@ function DocuNotes() {
         <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 <Card.Header>
-    <b>Danny Goh</b>, Director of Photography
+    <b>Danny</b>, Director of Photography
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="1">
@@ -55,7 +55,7 @@ function DocuNotes() {
     <p>True enough, many of our contributors were not very comfortable in front of the camera. What really moved me was that even though they struggled to face the camera during shoot, they still did their best every single day. What I saw through my viewfinder was immense courage from each and every one of them.</p>
     <p>Through them, I learned that true courage is in overcoming the small things that seem so easy to do for others, but yet so hard to accomplish for them. And they have to face their fears every single day.</p>
     <p>At the end of the shoot, I don’t see them as individuals with mental health conditions. I see them as people who are incredibly strong and courageous.</p>
-    <p className="right">Danny Goh<br/>Director of Photography</p>
+    <p className="right">Danny<br/>Director of Photography</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -63,7 +63,7 @@ function DocuNotes() {
         <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 <Card.Header>
-    <b>Carl Pereira</b>, Location Sound Recordist
+    <b>Carl</b>, Location Sound Recordist
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="2">
@@ -74,7 +74,7 @@ function DocuNotes() {
     <p>In my mind, being able to bring forward the essence of what each of them is going through was the main challenge for me. I hope I did them justice with the audio recordings. And, I do hope their heartfelt stories are listened to carefully by the viewer.</p>
     <p>We all eventually became close, and each of them taught me a valuable lesson. To count your blessings and be grateful for what you have.</p>
     <p>My love to them all – Le Yong, Dheesha, Karen, and Jess.</p>
-    <p className="right">Carl Pereira<br/>Location Sound Recordist</p>
+    <p className="right">Carl<br/>Location Sound Recordist</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -96,13 +96,13 @@ function DocuNotes() {
         <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 <Card.Header>
-    <b>Veron Tan</b>, Post Production Manager
+    <b>Veron</b>, Post Production Manager
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="4">
             <Card.Body>
     <p>This series opened my eyes to a world I’ve never encountered. I never knew these issues existed. I’ll learn to be more sensitive towards people from now on. Indeed, a little patience and understanding go a long way.</p>
-    <p className="right">Veron Tan<br/>Post Production Manager</p>
+    <p className="right">Veron<br/>Post Production Manager</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -122,7 +122,7 @@ function DocuNotes() {
         <Card>
             <Accordion.Toggle as={Button} variant="link" eventKey="6">
                 <Card.Header>
-    <b>Joseph Minadeo</b>, Composer
+    <b>Joseph</b>, Composer
                 </Card.Header>
             </Accordion.Toggle>
           <Accordion.Collapse eventKey="6">
@@ -132,7 +132,25 @@ function DocuNotes() {
     <p>I also believe that the science is still VERY young regarding the brain, perception, and how individuals experience the world. Some terms like <i>Attention Deficit Disorder</i> (something I have been diagnosed with), I often disagree with. I think attention “issues” can actually be a healthy brain interacting with an overstimulating world. Our biology evolved over millions of years on a planet much different than the one that exists all of the sudden. A much quieter, darker and simpler planet. Now we are bombarded with light and sound pollution, air pollution, information overload, manipulative media, etc. To put it as simply as I can, I actually often think “crazy” is normal.</p>
     <p>I am no stranger to mental health issues and I think, whether diagnosed or not, very few people are. But like Greta Thunberg, I often think of the things a doctor would diagnose as a disorder as my super powers. What a doctor might call <i>ADD</i>, I call fast tangential thinking, and it is clearly a driving force behind making original music and art. My strong empathy for life on this planet, while sometimes soul crushing, is also a huge reason I can make emotive creations and match aesthetics of projects. I am extremely lucky and privileged that I have an outlet, a way to turn my emotions and inner turbulence into something.</p>
     <p>Mental health will continue to evolve and change as society changes. Advances in neuroscience, biology, and even things like quantum mechanics and computing power will continue to shape our understanding of the mind and mental health. When I see terms like neural diversity, it makes me feel like we are moving in the right direction in regards to mental health, away from reductive binaries, spectrums, and simplistic terms, and towards acknowledging the infinitely complex beings we all are. My hope is that a deeper understanding of these things will help lead to a more empathetic and humane society.</p>
-    <p className="right">Joseph Minadeo<br/>Composer</p>
+    <p className="right">Joseph<br/>Composer</p>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+            <Accordion.Toggle as={Button} variant="link" eventKey="8">
+                <Card.Header>
+    <b>Siori</b>, Multimedia Artist
+                </Card.Header>
+            </Accordion.Toggle>
+          <Accordion.Collapse eventKey="8">
+            <Card.Body>
+    <p>Le Young, Deesha, Karen, and Jess. You are my true heroes.<br/>Thank you for being an inspiration and helping so many people by sharing your stories. All my respect for your courage.</p>
+    <p>I grew up in downtown Tokyo in the 80s, where mental issues were ignored and invisible. Since I was a little kid, I had problems understanding people’s emotions. For me, people got mad, frustrated, sad or happy all of a sudden, and in a way I couldn’t follow, and yet I was often badly affected by their emotional outcomes. It was like riding a rollercoaster to be with a group of kids my age: they were crying, angry, screaming and laughing, it was overwhelming and made me anxious and awkward.</p>
+    <p>As I grew up, I got depressed, anxious and avoided people more because I was afraid of them finding out I had problems. I spent most of my time in school reading books or drawing on a notebook - so that I had an excuse not to interact with others.</p>
+    <p>When I was 14 years old, I read a book about mental health issues, and then I finally knew that I was not alone. I still remember the feeling of newfound hope. I wish I remembered the name of the book. It was an academic book about psychology and mental issues that I found in a sale wagon outside of a vintage book store.</p>
+    <p>For me, the book was the first turning point that eventually led me to finding people I feel comfortable with, and the lifestyle that is easier for me to keep up with. There are many of us if you look around, and I hope we help each other, and normalise our differences. I like it when I can say “I’m depressed and need a nap,” without feeling guilty, just like I say “I’m gonna go to a grocery store for a carton of milk.”</p>
+    <p>Thank you to the amazing team of Very! for this meaningful project and having me as a part of it. I hope <i>Strangers In My Head</i> will make someone feel less alone, like one long forgotten book did for me when I was a kid. It is not easy to live in this world when you feel alone, but I want to believe there is always hope.</p>
+    <p className="right">Siori<br/>Multimedia Artist</p>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

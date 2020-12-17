@@ -1,15 +1,50 @@
 export const PostData = [
+    {   id: 13,
+        quote:"“JOY” I was at a house party celebrating Canada Day - when I met a woman named Joy. - I said: “It’s a joy to meet you Joy.” - She beamed at me, - then said: “I am manic-depressive.” - At once the conversation dried up. - Not knowing what to say...",
+        issue:"MDD / Depression",
+        issueslug: "depression all",
+        link:"../story/joy"
+    },
+    {   id: 21,
+        quote:"“A random note for fellow warriors in therapy” You are braver and stronger than you think - Because when I see you getting help, - I know that what you are actually doing is mustering insane amounts of strength and resilience to focus and sit with your demons week after week...",
+        issue:"General",
+        issueslug: "general all",
+        link:"../story/a-random-note-for-fellow-warriors"
+    },
+    {   id: 26,
+        quote:"Hello Le Yong, I just wanted to say thank you. You opened our eyes to this condition and you, as well as your family, are brave to be willing to share your story. Since you 'cannot' always see how you really look like, then you must trust us viewers that you are fine looking and don't need to check in the mirror! All the best to you and keep your chin up always. Regards,",
+        issue:"BDD / Body Dysmorphic Disorder",
+        issueslug: "bdd all",
+        name:"–a viewer of Episode 1"
+    },
+    {   id: 24,
+        quote:"There is no standard normal. Normal is subjective. There are 7 billion versions of normal on this planet.",
+        issue:"General",
+        issueslug: "general all",
+        name:"–Matt Haigs"
+    },
+    {   id: 25,
+        quote:"My personal experience with mental illness is seeing a close one dealing with addiction. It was like a dark cloud over our heads - a painful 6-year journey that still impacts me today. The person I know had changed completely with the addiction...",
+        issue:"General",
+        issueslug: "general all",
+        link:"../story/my-personal-experience"
+    },
+    {   id: 19,
+        quote:"When I was first diagnosed with depression, I had no idea that was what it was. I just didn't know anything about it.",
+        issue:"MDD / Depression",
+        issueslug: "depression all"
+    },
     {   id: 0,
         quote:"I’ve lost some friends to depression, because they either felt that no one could understand them, or the stigma of mental illness prevents them from reaching out. This is why encouraging open discussion and acceptance of mental illnesses is so important. We should let our friends and family know that it’s ok to not be ok.",
         issue:"MDD / Depression",
-        issueslug: "depression all"
-        // name:"–Sun Koh, Filmmaker"
+        issueslug: "depression all",
+        name:"–Sun Koh, Filmmaker"
     },
     {   id: 1,
         quote:"While walking the streets of NYC one day I came across a sign that said “depression is a flaw of chemistry, not character.” Those words itself were enough to pierce an arrow deep into my psyche. Remember, you’re not alone and can get through this. I’m talking from 18 years of personal experience.",
         issue:"MDD / Depression",
-        issueslug: "depression all"
-        // name:"–Sid Reddy, Wildlife Photographer, India"
+        issueslug: "depression all",
+        name:"–Sid Reddy, Wildlife Photographer, India"
     },
     {   id: 2,
         quote:"“Healthy Healthcare Workers” TWe live in a world where healthcare workers are heroes. We clap, sing, and even salute them with a fly pass during the National Day Parade. But who cares for these heroes when they fall? Especially when they are robbed of their mental health, by the very work for which they are lauded...",
@@ -20,26 +55,32 @@ export const PostData = [
     {   id: 3,
         quote:"In every day life, we all experience ups and downs. And sometimes this down time continues without our knowing. We all have this moment and it is perfectly fine to feel in such a way. If we all can accept this, then, no one will need to suffer because they feel alone to experience this down moment.",
         issue:"General",
-        issueslug: "general all"
-        // name:"–Haruka Hikita, Body, Mind, Soul Gardener"
+        issueslug: "general all",
+        name:"–Haruka Hikita, Body, Mind, Soul Gardener"
     },
     {   id: 4,
         quote:"Move: Jump, run, squat, dance - a short burst of movements will release dopamine. When it hits me hard, I called a friend and laughed over silly things, she didn’t even need to realize what I’m going through.",
         issue:"General",
-        issueslug: "general all"
-        // name:"–Jacqueline Tan, Singapore"
+        issueslug: "general all",
+        name:"–Jacqueline Tan, Singapore"
+    },
+    {   id: 18,
+        quote:"I was first diagnosed with Major Depressive Disorder when I was 20, and in University. It took me about three or four years before I could bring myself to believe that something may not be quite right, and it was only through the persistence of a close friend that I finally saw a Counsellor...",
+        issue:"BPD / Borderline Personality Disorder",
+        issueslug: "bpd depression all",
+        link:"../story/i-was-first-diagnosed"
     },
     {   id: 5,
         quote:"Grab your mask and go outside to enjoy nature. Take some pics of the beautiful changing fall and enjoy a hot cup of tea when you get back in.",
         issue:"General",
-        issueslug: "general all"
-        // name:"–Nikola Spoljaric, Nature Lover, Croatia"
+        issueslug: "general all",
+        name:"–Nikola Spoljaric, Nature Lover, Croatia"
     },
     {   id: 6,
         quote:"Everyone has his own demons to wrestle. There are some who are given more ferocious, potentially fatal monsters to fight, of which we can only vaguely imagine what it’s like and hope we would never experience ourselves. If you have an easier monster, lesser demons; if you believe you fall into the spectrum of the “normal”, then show some support to those who were dealt the harder ones.",
         issue:"General",
-        issueslug: "general all"
-        // name:"–Ang Sookoon, Artist"
+        issueslug: "general all",
+        name:"–Ang Sookoon, Artist"
     },
     {   id: 7,
         quote:"思い切って原因から遠ざかることは必要なことでした。自分ではどうすることもできないとき手を差し伸べてくれた人たちへの感謝は忘れません。今でも苦しいけれど、生きていこうと思えるようになりました。It was nessesary to change the dynamics of my life to stay away from the problem. I am still alive because of people who helped me when I needed it most.",
@@ -64,21 +105,16 @@ export const PostData = [
         issueslug: "depression all",
         link:"../story/in-1983-my-father"
     },
-    {   id: 11,
-        quote:"“Dying to be Alive: an unconventional path to finding happiness” Tragedy strikes - In 2015, I received a text from an ex-colleague: “Recalling all CARE (Caring Action in Response to Emergencies) trained officers. Please standby to offer support.” At that moment, I was puzzled – what support did they need from us?...",
-        issue:"General",
-        issueslug: "general all",
-        link:"../story/dying-to-be-alive"
-    },
     {   id: 12,
         quote:"Mental health problems don’t define who we are.",
         issue:"Bipolar",
         issueslug: "bipolar all"
     },
-    {   id: 13,
-        quote:"It’s my experience that people are a lot more sympathetic if they can see you hurting, and for the millionth time in my life I wish for measles or smallpox or some other easily understood disease just to make it easier on me and also on them.",
+    {   id: 11,
+        quote:"“Dying to be Alive: an unconventional path to finding happiness” Tragedy strikes - In 2015, I received a text from an ex-colleague: “Recalling all CARE (Caring Action in Response to Emergencies) trained officers. Please standby to offer support.” At that moment, I was puzzled – what support did they need from us?...",
         issue:"General",
-        issueslug: "general all"
+        issueslug: "general all",
+        link:"../story/dying-to-be-alive"
     },
     {   id: 14,
         quote:"“An Average Morning” This post is not going to be pretty.I crawled back into bed when I started to feel overwhelming feelings of unworthiness from underachievement. From guilt, and from shame. Crawling back into bed and hiding under the blanket is like running back...",
@@ -103,28 +139,11 @@ export const PostData = [
         issueslug: "general all",
         link:"../story/intense-highs-crushing-lows"
     },
-    {   id: 18,
-        quote:"I was first diagnosed with Major Depressive Disorder when I was 20, and in University. It took me about three or four years before I could bring myself to believe that something may not be quite right, and it was only through the persistence of a close friend that I finally saw a Counsellor...",
-        issue:"BPD / Borderline Personality Disorder",
-        issueslug: "bpd depression all",
-        link:"../story/i-was-first-diagnosed"
-    },
-    {   id: 19,
-        quote:"When I was first diagnosed with depression, I had no idea that was what it was. I just didn't know anything about it.",
-        issue:"MDD / Depression",
-        issueslug: "depression all"
-    },
     {   id: 20,
         quote:"“Superhuman” In your wounded, raw and vulnerable state, you give in to their hopeful, almost pleading coaxing. You hear how much they want you to open up and share something about what you are going through with them - you have people who love you and want to help. It is beautiful, you are blessed...",
         issue:"General",
         issueslug: "general all",
         link:"../story/superhuman"
-    },
-    {   id: 21,
-        quote:"“A random note for fellow warriors in therapy” You are braver and stronger than you think - Because when I see you getting help, - I know that what you are actually doing is mustering insane amounts of strength and resilience to focus and sit with your demons week after week...",
-        issue:"General",
-        issueslug: "general all",
-        link:"../story/a-random-note-for-fellow-warriors"
     },
     {   id: 22,
         quote:"It's been 11 months, a month more to celebrating a year relationship with my girlfriend struggling with a borderline personality disorder. Most people tend to make conclusions of the difficulties in my relationship and very often the general crowd are quick to feel pity for a person like me being in a challenging relationship...",

@@ -10,7 +10,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import StorySample from '../Components/StorySample';
+// import StorySample from '../Components/StorySample';
 import Story01 from '../Components/Story01';
 import Story02 from '../Components/Story02';
 import Story03 from '../Components/Story03';
@@ -24,6 +24,8 @@ import Story10 from '../Components/Story10';
 import Story11 from '../Components/Story11';
 import Story12 from '../Components/Story12';
 import Story13 from '../Components/Story13';
+import Story14 from '../Components/Story14';
+import Story15 from '../Components/Story15';
 
 function Story() {
     let { path } = useRouteMatch();
@@ -48,9 +50,9 @@ function Story() {
             <Route exact path={path}>
                 <Redirect to="../voices" />
             </Route>
-            <Route path={`${path}/sample`}>
+            {/* <Route path={`${path}/sample`}>
                 <StorySample/>
-            </Route>
+            </Route> */}
             <Route path={`${path}/healthy-healthcare-workers`}>
                 <Story01/>
             </Route>
@@ -89,6 +91,12 @@ function Story() {
             </Route>
             <Route path={`${path}/a-couple-of-decades-ago`}>
                 <Story13/>
+            </Route>
+            <Route path={`${path}/joy`}>
+                <Story14/>
+            </Route>
+            <Route path={`${path}/my-personal-experience`}>
+                <Story15/>
             </Route>
           </Switch>
       </div>

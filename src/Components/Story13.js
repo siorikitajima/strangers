@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import WatchBannerGeneral from '../Components/WatchBannerGeneral';
 
-function Story12() {
+function Story13() {
 
     return (
       <div>
@@ -27,4 +27,4 @@ function Story12() {
     );
   }
 
-  export default Story12;
+  export default Story13;

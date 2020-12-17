@@ -22,7 +22,8 @@ function ExploreGeneral() {
             <div className="dataText">
             <p><span>3/4</span><br/> people with mental health issues <br/><b>did not seek help</b>.</p>
             </div>
-            <p className="infoText">More than 3/4 of people with a mental disorder in Singapore did not seek any professional help. Among those who sought help, the majority of them did not seek help for 4 to 11 years. Past research have found that the inability to recognise the symptoms of a mental illness and concerns regarding the stigma associated with mental illness are two common reasons for the treatment delay. (Source: <a href={IssueInfoData[7].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[7].source}</a>)<br/>If you are experiencing mental health issues, we encourage you to reach out for help.</p>
+            <p className="infoText">More than 3/4 of people with a mental disorder in Singapore did not seek any professional help. Among those who sought help, the majority of them did not seek help for 4 to 11 years. Past research have found that the inability to recognise the symptoms of a mental illness and concerns regarding the stigma associated with mental illness are two common reasons for the treatment delay. (Source: <a href={IssueInfoData[7].sourceurl} rel="noopener noreferrer" target="_blank">{IssueInfoData[7].source}</a>)</p>
+            <p className="infoText">If you are experiencing mental health issues, we encourage you to reach out for help.</p>
             
             <a href="../help/counselling">
             <div className="helpLink">

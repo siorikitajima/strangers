@@ -51,6 +51,9 @@
     background: rgb(173, 173, 173);
     padding: 30px 0;
     height: fit-content;
+    @include laPhone() {
+        padding: 10px 0;
+    }
 }
 p.aboutCredit, p.docuCredit {
     // font-size: 0.9em;
@@ -95,6 +98,12 @@ p.aboutCredit, p.docuCredit {
     .subsubHead {
         display: inline-block;
         margin-top: 10px;
+    }
+}
+
+p.aboutCredit:first-of-type {
+    @include laPhone(){
+    margin: 0 auto 10px auto;
     }
 }
 
@@ -198,18 +207,29 @@ p.aboutCredit, p.docuCredit {
         background-image:linear-gradient(0deg, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url(../Images/opening-title.jpg);
         background-size: cover;
         background-position: center;
-        // background-attachment: fixed;
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         padding: 50px 0;
         z-index: 400;
+        overflow-x: hidden;
+
+        /* Hiding scrollbar */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+            overflow-y: hidden !important;
+        &:hover {
+            overflow-y: auto !important;
+        }
 
         @include laPhone(){
             height: 60vh;
             min-height: fit-content;
-            padding: 50px 0;
+            padding: 40px 0;
             position: relative;
             left: 0;
             top: 0;

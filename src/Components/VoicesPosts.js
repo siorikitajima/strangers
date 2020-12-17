@@ -48,9 +48,9 @@ function VoicesPosts() {
                 <li className="tabs">
                 <NavLink to={`${url}/alcohol-abuse`} activeClassName = "selectedTab">Alcohol Abuse</NavLink></li>
                 <li className="tabs">
-                <NavLink to={`${url}/did`} activeClassName = "selectedTab">DID</NavLink></li>
+                <NavLink to={`${url}/did`} activeClassName = "selectedTab">DID</NavLink></li> */}
                 <li className="tabs">
-                <NavLink to={`${url}/bdd`} activeClassName = "selectedTab">BDD</NavLink></li> */}
+                <NavLink to={`${url}/bdd`} activeClassName = "selectedTab">BDD</NavLink></li>
                 <li className="tabs">
                 <NavLink to={`${url}/bpd`} activeClassName = "selectedTab">BPD</NavLink></li>
                 {/* <li className="tabs">

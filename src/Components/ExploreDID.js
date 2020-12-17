@@ -20,7 +20,7 @@ function ExploreDID() {
             <p className="infoText">{IssueInfoData[14].body}</p>
             <a href="../help/counselling">
             <div className="helpLink">
-                Find A Help
+                Find Help
             </div>
             </a>
 

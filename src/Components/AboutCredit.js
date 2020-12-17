@@ -11,7 +11,7 @@ function AboutCredit() {
 
             <p className="aboutCredit">
                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">PatternBased</a>, <br/>
-                Analytics, Design, animation and Code by <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a>, <br/>
+                Analytics, Design, Animation and Code by <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a>, <br/>
                 Music by <a href="https://www.josephminadeo.com/" rel="noopener noreferrer" target="_blank">Joseph Minadeo</a>, <br/>
                 Writing by <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Perry Ho</a> and <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Angie Swee</a>, <br/>
                 Research by <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Shiying Wan</a>, <a href="http://siorikitajima.com/" rel="noopener noreferrer" target="_blank">Siori Kitajima</a> and <a href="https://very.sg/" rel="noopener noreferrer" target="_blank">Angie Swee</a>, <br/>
