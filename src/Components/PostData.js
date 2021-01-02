@@ -11,6 +11,11 @@ export const PostData = [
         issueslug: "general all",
         link:"../story/a-random-note-for-fellow-warriors"
     },
+    {   id: 27,
+        quote:"YOU are really inspiring and thank you for being vulnerable + so real in sharing snippets of your life. It's so easy to forget we are all humans too and our struggles in life shouldn't be so easily dismissed. Thanks le yong! :)",
+        issue:"BDD / Body Dysmorphic Disorder",
+        issueslug: "bdd all"
+    },
     {   id: 26,
         quote:"Hello Le Yong, I just wanted to say thank you. You opened our eyes to this condition and you, as well as your family, are brave to be willing to share your story. Since you 'cannot' always see how you really look like, then you must trust us viewers that you are fine looking and don't need to check in the mirror! All the best to you and keep your chin up always. Regards,",
         issue:"BDD / Body Dysmorphic Disorder",
