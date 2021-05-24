@@ -56,9 +56,9 @@ function VoicesPosts() {
                 {/* <li className="tabs">
                 <NavLink to={`${url}/ptsd`} activeClassName = "selectedTab">PTSD</NavLink></li>
                 <li className="tabs">
-                <NavLink to={`${url}/psychosis`} activeClassName = "selectedTab">Psychosis</NavLink></li>
+                <NavLink to={`${url}/psychosis`} activeClassName = "selectedTab">Psychosis</NavLink></li> */}
                 <li className="tabs">
-                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating Disorder</NavLink></li> */}
+                <NavLink to={`${url}/eating-disorder`} activeClassName = "selectedTab">Eating Disorder</NavLink></li>
                 <li className="tabs">
                 <NavLink to={`${url}/schizophrenia`} activeClassName = "selectedTab">Schizophrenia</NavLink></li>
                 </ul>

@@ -11,6 +11,31 @@ export const PostData = [
         issueslug: "general all",
         link:"../story/a-random-note-for-fellow-warriors"
     },
+    {   id: 32,
+        quote:"Hi Le Yong and Jess, my name is Ling. After watching your episodes on 'Strangers in my head' on CNA, I really feel motivated by your strength and resilience despite your challenges and what you both have gone through. I would like to widen my scope of friends and hope to know both Le Yong and Jess.",
+        issue:"Schizophrenia",
+        issueslug: "schizophrenia all"
+    },
+    {   id: 31,
+        quote:"Bipolar disorder has completely derailed my life. I've completely wiped out my savings and had to quit my job due to numerous suicide attempts triggered by my mixed episodes due to work stress. I've learnt to take things an hour at a time, to prevent myself from getting overwhelmed. To anybody reading this, you are loved and you are not alone.",
+        issue:"Bipolar",
+        issueslug: "bipolar all"
+    },
+    {   id: 30,
+        quote:"i'm so happy to see that there's awareness being raised in singapore. i am dealing with borderline personality disorder, depression and anxiety and i'm undergoing therapy after a failed suicide attempt. it's nice that there's more perspectives being shown and i hope someday reaching out for help will be accepted.",
+        issue:"More than one issue",
+        issueslug: "anxiety depression bpd all"
+    },
+    {   id: 29,
+        quote:"I developed an eating disorder when I was 14 year old and the biggest problem was keeping quiet about it. As someone who has gone through around 3 years of ED + recovery and now, fully recovered, I would like to ask those going through the same situation to speak up and find help as soon as possible. Keeping it to yourself will only cause the situation to worsen. Hang in there, you got this!",
+        issue:"Eating Disorder",
+        issueslug: "eating-disorder all"
+    },
+    {   id: 28,
+        quote:"I've been bullied since I was 6 years old. I was also bullied in primary and secondary school. As a result, I grew up with a really bad social anxiety. I couldn't even finish giving a 1 minute speech back in secondary school. I have no friends when i went to university because it was hard for me to strike up a conversation with people. There were also people in school who laughed at me just because of the way I look. Sometimes, when i walk in shopping centres, people would also look at me and laugh. This year during the pandemic, I've locked myself up at home for many days. I'll only go out once a week. The rest of the days. I try not to have any human contact as much as possible. I feel alone sometimes.",
+        issue:"Anxiety / GAD",
+        issueslug: "anxiety all"
+    },
     {   id: 27,
         quote:"YOU are really inspiring and thank you for being vulnerable + so real in sharing snippets of your life. It's so easy to forget we are all humans too and our struggles in life shouldn't be so easily dismissed. Thanks le yong! :)",
         issue:"BDD / Body Dysmorphic Disorder",
@@ -134,7 +159,7 @@ export const PostData = [
     },
     {   id: 16,
         quote:"“Social Anxiety” Being socially anxious is exhausting, as is being anxious in general. Social anxiety, however, is particularly challenging in my opinion, because we all live in communities and communities are essentially based upon social relationships and interactions...",
-        issue:"Anxiety",
+        issue:"Anxiety / GAD",
         issueslug: "anxiety all",
         link:"../story/social-anxiety"
     },

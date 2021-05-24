@@ -11,6 +11,14 @@
           location.href = "https://strangersinmyhead.info/ie-warning/";
         }
 
+            // If GA Cookie exist
+        if (document.cookie.indexOf("_ga") >= 0){
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GM78LQ0XZ2');
+        }
+
         // Cookie Consent
 
         const cookieName = 'cookieconsent';
@@ -43,14 +51,14 @@
         function declineCookie() {
           const date = new Date();
             date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
-            document.cookie = `${cookieName}=${cookieValue};expires=${date.toUTCString()};path=/`;
+            document.cookie = `${cookieName}=${cookieValue};expires=${date.toUTCString()};path=/;SameSite=Lax`;
 
           document.getElementById('ga-popup').style.top = '-120%';
         }
         function acceptCookie() {
           const date = new Date();
             date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
-            document.cookie = `${cookieName}=${cookieValue};expires=${date.toUTCString()};path=/`;
+            document.cookie = `${cookieName}=${cookieValue};expires=${date.toUTCString()};path=/;SameSite=Lax`;
 
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

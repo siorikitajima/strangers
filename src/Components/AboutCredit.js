@@ -7,7 +7,7 @@ import P5Icon from '../Images/p5-icon.png';
 function AboutCredit() {
     return(
         <div className="creditContainer">
-             <p className="aboutCredit"><br/>© 2020 PatternBased and Very! Pte Ltd. All Rights Reserved.</p>
+             <p className="aboutCredit"><br/>© 2020-2021 PatternBased and Very! Pte Ltd. All Rights Reserved.</p>
 
             <p className="aboutCredit">
                 Created by <a href="https://patternbased.com/" rel="noopener noreferrer" target="_blank">PatternBased</a>, <br/>
